@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { TelegramUser } from "@/types";
 import WebApp from "@twa-dev/sdk";
 
@@ -21,11 +22,26 @@ export default function TgUser() {
       <UserAvatar
         user={{
           name: user?.first_name || "Mehmon",
-          image: user?.photo_url || 'https://www.asadbek.me/images/4.png',
+          image: user?.photo_url || "https://www.asadbek.me/images/4.png",
         }}
         className="size-8 border"
       />
       <ul>
+        <li>
+          <strong>ID:</strong> {user?.id}
+        </li>
+        <li>
+          <Image
+            src={user?.photo_url || ""}
+            alt="User Avatar"
+            width={100}
+            height={100}
+          />
+        </li>
+        <li>
+          <strong>Is Premium:</strong>
+          {user?.is_premium ? "Yes" : "No"}
+        </li>
         <li>
           <strong>First Name:</strong> {user?.first_name}
         </li>
@@ -37,6 +53,9 @@ export default function TgUser() {
         </li>
         <li>
           <strong>Language:</strong> {user?.language_code}
+        </li>
+        <li>
+          <strong>Is Bot:</strong> {user?.is_bot ? "Yes" : "No"}
         </li>
       </ul>
     </div>
