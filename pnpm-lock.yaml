@@ -110,6 +110,9 @@ dependencies:
   '@t3-oss/env-nextjs':
     specifier: ^0.11.0
     version: 0.11.0(typescript@5.5.3)(zod@3.23.8)
+  '@twa-dev/sdk':
+    specifier: ^7.10.1
+    version: 7.10.1(react@18.3.1)
   '@typescript-eslint/parser':
     specifier: ^7.17.0
     version: 7.17.0(eslint@8.57.0)(typescript@5.5.3)
@@ -4751,6 +4754,19 @@ packages:
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.6
     dev: true
+
+  /@twa-dev/sdk@7.10.1(react@18.3.1):
+    resolution: {integrity: sha512-mY9JaBPspYfLdzoaARVmr0GKXUO3X4hi1vuP+04UUFWST2lB50xGSxExOFz5I3vBaxnrdLregBGiaitvvWaX6w==}
+    peerDependencies:
+      react: ^18.3.1
+    dependencies:
+      '@twa-dev/types': 7.10.0
+      react: 18.3.1
+    dev: false
+
+  /@twa-dev/types@7.10.0:
+    resolution: {integrity: sha512-BXHyNLXy+cPbOZ2qQq5ArPKcP4kUfuX3YBSFT0XUxtMNWAzvyMuYAiq59UTfQ8OnELXlfChrAoIT3c2pujBtcQ==}
+    dev: false
 
   /@types/acorn@4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}

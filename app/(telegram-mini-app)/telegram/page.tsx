@@ -6,17 +6,14 @@ import InfoLanding from "@/components/sections/info-landing";
 import Powered from "@/components/sections/powered";
 import PreviewLanding from "@/components/sections/preview-landing";
 import Testimonials from "@/components/sections/testimonials";
+import TgUser from "@/components/telegram/tg-user";
 
 export default function IndexPage() {
   return (
     <>
-      <HeroLanding />
-      <PreviewLanding />
-      <Powered />
-      <BentoGrid />
-      <InfoLanding data={infos[0]} reverse={true} />
-      <Features />
-      <Testimonials />
+    <TgUser />
+
+    
     </>
   );
 }

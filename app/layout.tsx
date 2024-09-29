@@ -9,6 +9,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/analytics";
 import ModalProvider from "@/components/modals/providers";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
+import Script from "next/script";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -19,7 +20,9 @@ export const metadata = constructMetadata();
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <Script src='https://telegram.org/js/telegram-web-api.js' strategy="beforeInteractive" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
