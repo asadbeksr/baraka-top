@@ -27,17 +27,18 @@ export default function TgNavbar() {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 z-50 h-16 w-full border-t">
-      <div className="mx-auto grid h-full max-w-lg grid-cols-3">
+    <div className="fixed bottom-0 z-50 h-16 w-full border-t b-5 bg-background">
+      <div className="mx-auto grid h-full max-w-lg grid-cols-3 ">
         {navLinks.map((link) => (
           <Link
             key={link.name}
             href={`${link.path}`}
-            className="group inline-flex flex-col items-center justify-center gap-1 px-5 font-medium hover:bg-gray-50 dark:hover:bg-gray-800"
+            className="group inline-flex flex-col items-center justify-center gap-1 px-5 font-medium hover:bg-gray-50 dark:hover:bg-card"
           >
-            <link.icon color={pathname === link.path ? "#3C82F6" : "#9CA3AF"} />
+            <link.icon 
+            color={pathname === link.path ? "#22C55F" : "#9CA3AF"} />
             <span
-              className={`text-sm ${pathname === link.path ? "text-blue-600 dark:text-blue-500" : "text-gray-500 dark:text-gray-400"}`}
+              className={`text-sm ${pathname === link.path ? "text-primary dark:text-primary" : "text-gray-500 dark:text-gray-400"}`}
             >
               {link.name}
             </span>
