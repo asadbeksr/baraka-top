@@ -23,15 +23,20 @@ const defaultUser: TelegramUser = {
 
 export default function TgUser() {
   const [user, setUser] = useState<TelegramUser | null>(defaultUser);
+  const [object, setObject] = useState<any | null>(null);
   useEffect(() => {
     if (WebApp.initDataUnsafe.user) {
       setUser(WebApp.initDataUnsafe.user as TelegramUser);
-      console.log(WebApp.bottomBarColor, "bottomBarColor");
-      console.log(WebApp.isExpanded, "isExpanded");
-      console.log(WebApp.viewportHeight, "viewportHeight");
-      console.log(WebApp.bottomBarColor, "bottomBarColor");
-      console.log(WebApp.themeParams, "themeParams");
-      console.log(WebApp.BiometricManager, "BiometricManager");
+      setObject({
+        bottomBarColor: WebApp.bottomBarColor,
+        isExpanded: WebApp.isExpanded,
+        viewportHeight: WebApp.viewportHeight,
+        viewportStableHeight: WebApp.viewportStableHeight,
+        themeParams: WebApp.themeParams,
+        BiometricManager: WebApp.BiometricManager,
+        colorScheme: WebApp.colorScheme,
+        isVerticalSwipesEnabled: WebApp.isVerticalSwipesEnabled,
+      });
     }
   }, []);
   return (
@@ -52,6 +57,19 @@ export default function TgUser() {
       </TgCard>
 
       <TgCard className="min-h-svh">
+        <ul>
+          {Object.keys(object).map((key) => {
+            return (
+              <li
+                key={key}
+                className="flex items-center justify-between border-b py-2"
+              >
+                <span>{key}</span>
+                <span>{object[key]}</span>
+              </li>
+            );
+          })}
+        </ul>
       </TgCard>
     </div>
   );
