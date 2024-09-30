@@ -27,6 +27,7 @@ export default function TgUser() {
   useEffect(() => {
     if (WebApp.initDataUnsafe.user) {
       setUser(WebApp.initDataUnsafe.user as TelegramUser);
+      if(WebApp.viewportHeight || WebApp.viewportStableHeight || WebApp.colorScheme || WebApp.isVerticalSwipesEnabled){
       setObject({
         bottomBarColor: WebApp.bottomBarColor || "default",
         isExpanded: WebApp.isExpanded || false,
@@ -35,6 +36,7 @@ export default function TgUser() {
         colorScheme: WebApp.colorScheme,
         isVerticalSwipesEnabled: WebApp.isVerticalSwipesEnabled || false,
       });
+    }
     }
   }, []);
   return (
