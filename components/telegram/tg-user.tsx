@@ -28,14 +28,12 @@ export default function TgUser() {
     if (WebApp.initDataUnsafe.user) {
       setUser(WebApp.initDataUnsafe.user as TelegramUser);
       setObject({
-        bottomBarColor: WebApp.bottomBarColor,
-        isExpanded: WebApp.isExpanded,
-        viewportHeight: WebApp.viewportHeight,
-        viewportStableHeight: WebApp.viewportStableHeight,
-        themeParams: WebApp.themeParams,
-        BiometricManager: WebApp.BiometricManager,
+        bottomBarColor: WebApp.bottomBarColor || "default",
+        isExpanded: WebApp.isExpanded || false,
+        viewportHeight: WebApp.viewportHeight || 0,
+        viewportStableHeight: WebApp.viewportStableHeight  || 0,
         colorScheme: WebApp.colorScheme,
-        isVerticalSwipesEnabled: WebApp.isVerticalSwipesEnabled,
+        isVerticalSwipesEnabled: WebApp.isVerticalSwipesEnabled || false,
       });
     }
   }, []);
@@ -58,17 +56,7 @@ export default function TgUser() {
 
       <TgCard className="min-h-svh">
         <ul>
-          {Object.keys(object).map((key) => {
-            return (
-              <li
-                key={key}
-                className="flex items-center justify-between border-b py-2"
-              >
-                <span>{key}</span>
-                <span>{object[key]}</span>
-              </li>
-            );
-          })}
+         {object?.JSON.stringify()}
         </ul>
       </TgCard>
     </div>
