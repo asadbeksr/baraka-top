@@ -8,7 +8,7 @@ import { cn, constructMetadata } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/analytics";
 import ModalProvider from "@/components/modals/providers";
-import { TailwindIndicator } from "@/components/tailwind-indicator";
+// import { TailwindIndicator } from "@/components/tailwind-indicator";
 import Script from "next/script";
 
 interface RootLayoutProps {
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <SessionProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="light"
+            defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >

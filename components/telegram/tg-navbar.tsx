@@ -27,7 +27,7 @@ export default function TgNavbar() {
   ];
 
   return (
-    <div className="fixed bottom-0 z-50 h-16 w-full border-t b-5 bg-background">
+    <div className="fixed bottom-0 z-50 h-16 w-full border-t b-5 pb-20 pt-2 bg-background">
       <div className="mx-auto grid h-full max-w-lg grid-cols-3 ">
         {navLinks.map((link) => (
           <Link

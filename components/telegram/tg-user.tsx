@@ -23,20 +23,20 @@ const defaultUser: TelegramUser = {
 
 export default function TgUser() {
   const [user, setUser] = useState<TelegramUser | null>(defaultUser);
-  const [object, setObject] = useState<any | null>(null);
+  // const [object, setObject] = useState<any | null>(null);
   useEffect(() => {
     if (WebApp.initDataUnsafe.user) {
       setUser(WebApp.initDataUnsafe.user as TelegramUser);
-      if(WebApp.viewportHeight || WebApp.viewportStableHeight || WebApp.colorScheme || WebApp.isVerticalSwipesEnabled){
-      setObject({
-        bottomBarColor: WebApp.bottomBarColor || "default",
-        isExpanded: WebApp.isExpanded || false,
-        viewportHeight: WebApp.viewportHeight || 0,
-        viewportStableHeight: WebApp.viewportStableHeight  || 0,
-        colorScheme: WebApp.colorScheme,
-        isVerticalSwipesEnabled: WebApp.isVerticalSwipesEnabled || false,
-      });
-    }
+    //   if(WebApp.viewportHeight || WebApp.viewportStableHeight || WebApp.colorScheme || WebApp.isVerticalSwipesEnabled){
+    //   setObject({
+    //     bottomBarColor: WebApp.bottomBarColor || "default",
+    //     isExpanded: WebApp.isExpanded || false,
+    //     viewportHeight: WebApp.viewportHeight || 0,
+    //     viewportStableHeight: WebApp.viewportStableHeight  || 0,
+    //     colorScheme: WebApp.colorScheme,
+    //     isVerticalSwipesEnabled: WebApp.isVerticalSwipesEnabled || false,
+    //   });
+    // }
     }
   }, []);
   return (
@@ -58,7 +58,7 @@ export default function TgUser() {
 
       <TgCard className="min-h-svh">
         <ul>
-         {object?.JSON.stringify()}
+         {JSON.stringify(user)}
         </ul>
       </TgCard>
     </div>

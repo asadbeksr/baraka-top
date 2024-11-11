@@ -24,6 +24,7 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import Link from "next/link";
 
 export default function TgHome() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -31,7 +32,7 @@ export default function TgHome() {
   const filters = [
     { id: "all", label: "Hudud", icon: Globe },
     { id: "map", label: "Xaritada", icon: Map },
-    { id: "stadium", label: "Filtr", icon: SlidersHorizontalIcon },
+    { id: "station", label: "Filtr", icon: SlidersHorizontalIcon },
   ];
 
   const stations = [
@@ -148,7 +149,7 @@ export default function TgHome() {
   ];
 
   return (
-    <div className="flex min-h-screen w-full flex-col bg-card text-white">
+    <div className="flex min-h-screen w-full flex-col">
       <ScrollArea className="no-scrollbar w-full border-b">
         <div className="flex gap-2 p-4">
           {filters.map((filter) => (
@@ -167,46 +168,54 @@ export default function TgHome() {
       </ScrollArea>
 
       <div className="mb-20 flex-1 space-y-4 overflow-auto p-4">
-        {stations.map((stadium) => (
-          <Card key={stadium.id} className="bg-card">
+        {stations.map((station) => (
+          <Card key={station.id} className="bg-card">
             <CardHeader className="p-0">
               <div className="relative aspect-video">
                 <Image
-                  src={stadium.image}
-                  alt={stadium.title}
+                  src={station.image}
+                  alt={station.title}
                   fill
                   className="rounded-t-lg object-cover"
                 />
                 <div className="absolute bottom-2 right-2 flex items-center gap-1 rounded-full bg-green-600 px-3 py-1 text-white">
                   <Star className="h-4 w-4 fill-current" />
-                  <span>{stadium.rating}</span>
+                  <span>{station.rating}</span>
                 </div>
               </div>
             </CardHeader>
 
             <CardContent className="p-4">
-              <h3 className="mb-2 text-xl font-bold">{stadium.title}</h3>
-              <p className="text-gray-400">{stadium.description}</p>
+              <h3 className="mb-2 text-xl font-bold">{station.title}</h3>
+              <p className="text-gray-400">{station.description}</p>
             </CardContent>
 
-            <CardFooter className="just flex flex-wrap items-center gap-2 p-4 py-0">
+            <CardFooter className="just flex flex-wrap items-center justify-between gap-2 p-4 py-0 w-full">
+
               <span className="font-semibold text-primary">
-                {stadium.price} so&apos;m / m³
+                {station.price} so&apos;m / m³
               </span>
-              <div className="flex-1" />
+
+              <div className="flex justify-between">
               <Button variant="ghost" size="icon" className="rounded-full">
                 <Heart className="h-5 w-5" />
               </Button>
+
               <Button variant="ghost" size="icon" className="rounded-full">
                 <Share2 className="h-5 w-5" />
               </Button>
-              <Button className="bg-primary">Batafsil</Button>
+
+              <Link href={`/telegram/stations/${station.id}`}>
+              <Button className="bg-primary ml-2">Batafsil</Button>
+              </Link>
+              </div>
+
             </CardFooter>
 
             <CardFooter className="flex flex-wrap items-center gap-2 p-4 text-sm">
               <div className="flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1">
                 <Gauge className="h-5 w-5 text-primary" />
-                <span>{stadium.pressure} bar</span>
+                <span>{station.pressure} bar</span>
               </div>
 
               <div className="flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1">
@@ -289,6 +298,7 @@ export default function TgHome() {
                   <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555"></path>
                 </svg>
               </div>
+
             </CardFooter>
           </Card>
         ))}
