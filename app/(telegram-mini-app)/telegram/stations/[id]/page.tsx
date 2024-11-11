@@ -139,7 +139,10 @@ const amenities = [
 export default function TgStationSingle() {
   return (
     <div className="min-h-screen bg-black pb-20 text-white">
-      <Carousel className="w-full">
+        <div className="relative aspect-video">
+         <img src="http://97.68.104.34:80/mjpg/video.mjpg" alt="Live Camera Feed" width="100%" height="auto" />
+         </div>
+      {/* <Carousel className="w-full">
         <CarouselContent>
           {[1, 2, 3, 4].map((_, index) => (
             <CarouselItem key={index}>
@@ -153,7 +156,7 @@ export default function TgStationSingle() {
             </CarouselItem>
           ))}
         </CarouselContent>
-      </Carousel>
+      </Carousel> */}
 
       <div className="space-y-3 p-6">
         <h1 className="text-2xl font-bold text-primary">Shaffof - Metan</h1>
