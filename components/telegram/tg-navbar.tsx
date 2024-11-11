@@ -36,7 +36,7 @@ export default function TgNavbar() {
             className="group inline-flex flex-col items-center justify-center gap-1 px-5 font-medium hover:bg-gray-50 dark:hover:bg-card"
           >
             <link.icon 
-            color={pathname === link.path ? "#22C55F" : "#9CA3AF"} />
+            color={pathname === link.path ? "#facc14" : "#9CA3AF"} />
             <span
               className={`text-sm ${pathname === link.path ? "text-primary dark:text-primary" : "text-gray-500 dark:text-gray-400"}`}
             >

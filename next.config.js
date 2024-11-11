@@ -20,6 +20,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "randomuser.me",
       },
+      {
+        protocol: 'https',
+        hostname: "www.asadbek.tech"
+      },
+      {
+        protocol: 'https',
+        hostname: "www.gazeta.uz"
+      }
     ],
   },
   experimental: {
