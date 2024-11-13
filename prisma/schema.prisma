@@ -72,3 +72,70 @@ enum UserRole {
   ADMIN
   USER
 }
+
+model Station {
+  id                  String   @id @default(cuid())
+  title               String
+  locationDescription String  @map("location_description")
+  geolocation         String?  
+  landmark            String?  
+  legalName           String  @map("legal_name") 
+  price               Float   
+  pressure            Float?
+  workingHours        String?  @map("working_hours")
+  columnsCount        Int?     @map("columns_count")
+  gasTemperature      Float?   @map("gas_temperature")
+  methaneDensity      Float?   @map("methane_density")
+  liveCameraIp        String?  @map("live_camera_ip") // live camera api in mjpeg format
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  amenities        Amenity[] // Relation to Amenity model
+  photos           Photo[] // Relation to Photo model
+  primaryRelations RelatedStation[] @relation("StationAsPrimary") // Relation for stations where this station is the primary
+  relatedRelations RelatedStation[] @relation("StationAsRelated") // Relation for stations where this station is the related
+  reviews          Review[] 
+
+  @@map("stations")
+}
+
+model Amenity {
+  id        String  @id @default(cuid())
+  name      String
+  slug      String
+  enabled   Boolean @default(true)
+  stationId String  @map("station_id")  // Maps Prisma's 'stationId' to 'station_id' in the DB
+  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+
+  @@map("amenities")
+}
+
+model Photo {
+  id        String  @id @default(cuid())
+  url       String
+  stationId String  @map("station_id")  // Maps Prisma's 'stationId' to 'station_id' in the DB
+  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+
+  @@map("photos")
+}
+
+model RelatedStation {
+  id               String  @id @default(cuid())
+  stationId        String
+  relatedStationId String @map("related_station_id")
+  station          Station @relation("StationAsPrimary", fields: [stationId], references: [id], onDelete: Cascade)
+  relatedStation   Station @relation("StationAsRelated", fields: [relatedStationId], references: [id], onDelete: Cascade)
+
+  @@unique([stationId, relatedStationId])
+  @@map("related_stations")
+}
+
+model Review {
+  id        String  @id @default(cuid())
+  rating    Int
+  comment   String?
+  stationId String
+  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+
+  @@map("reviews")
+}

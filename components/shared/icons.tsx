@@ -51,6 +51,7 @@ export const Icons = {
   copy: Copy,
   dashboard: LayoutPanelLeft,
   ellipsis: MoreVertical,
+  fuel: FuelIcon,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

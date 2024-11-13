@@ -27,6 +27,8 @@ export function UserAccountNav() {
 
   const { isMobile } = useMediaQuery();
 
+  console.log(user, 'U S E R')
+
   if (!user)
     return (
       <div className="size-8 animate-pulse rounded-full border bg-muted" />

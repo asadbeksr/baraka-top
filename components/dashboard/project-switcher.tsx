@@ -21,14 +21,14 @@ type ProjectType = {
 
 const projects: ProjectType[] = [
   {
-    title: "Project 1",
-    slug: "project-number-one",
-    color: "bg-red-500",
+    title: "Zapravkachi.uz",
+    slug: "zapravkachi",
+    color: "bg-blue-500",
   },
   {
-    title: "Project 2",
-    slug: "project-number-two",
-    color: "bg-blue-500",
+    title: "Metanchi.uz",
+    slug: "metanchi",
+    color: "bg-primary",
   },
 ];
 const selected: ProjectType = projects[1];
@@ -68,7 +68,7 @@ export default function ProjectSwitcher({
                     large ? "w-full" : "max-w-[80px]",
                   )}
                 >
-                  {selected.slug}
+                  {selected.title}
                 </span>
               </div>
             </div>
@@ -101,7 +101,7 @@ function ProjectList({
 }) {
   return (
     <div className="flex flex-col gap-1">
-      {projects.map(({ slug, color }) => (
+      {projects.map(({ slug, color, title }) => (
         <Link
           key={slug}
           className={cn(
@@ -119,7 +119,7 @@ function ProjectList({
                 : "font-normal"
             }`}
           >
-            {slug}
+            {title}
           </span>
           {selected.slug === slug && (
             <span className="absolute inset-y-0 right-0 flex items-center pr-3 text-foreground">
@@ -128,7 +128,7 @@ function ProjectList({
           )}
         </Link>
       ))}
-      <Button
+      {/* <Button
         variant="outline"
         className="relative flex h-9 items-center justify-center gap-2 p-2"
         onClick={() => {
@@ -137,7 +137,7 @@ function ProjectList({
       >
         <Plus size={18} className="absolute left-2.5 top-2" />
         <span className="flex-1 truncate text-center">New Project</span>
-      </Button>
+      </Button> */}
     </div>
   );
 }
