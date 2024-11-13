@@ -21,8 +21,8 @@ export const getStationById = async (id: string) => {
       },
       select: {
         id: true,
-        title: true,           // Assuming 'title' is the correct field name
-        locationDescription: true, // Assuming 'locationDescription' is correct
+        name: true,         
+        address: true
       },
     });
 

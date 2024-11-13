@@ -1,0 +1,82 @@
+id,name,slug,phone_number,region,website,address,latitude,longitude
+c66ff65d-ee6d-4783-9157-7e265267b679,Arena Petrol & Cng,arena-petrol-cng,+998992000055,d970d402-c47a-4e74-a3fe-b2bf30f435d8,http://arenafuel.uz,"Ташкент, ул. Корасув, 9А",41.300464,69.342896
+a8028461-53bc-465d-9526-7665a0e00cbb,АГНКС Интергаз,mssf,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,http://intergaz.uz,"Ташкент, Сергелийский район, населённый пункт Бабур",41.243332,69.233054
+5c24f159-61ed-4e66-9f7c-aee476cbbac3,АГЗС,ujnm,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"сход сельских жителей Чигатай-Актепа, Istiqlolning 5-yillik mahallasi, 467/2",41.362738,69.176103
+2b97f937-86ce-4382-9626-8d94717dff14,Пропан,ozy9,+998712158579,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Ташкент, Сергелийский район, махалля Кумарик, улица Сайполина, 22",41.24483,69.245926
+55a49fdc-6c43-4225-9d48-9be319d3c618,"ООО ""CARAT GAZ-OIL""",carat-gaz-oil,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Olmazor tumani",41.384233,69.212272
+138b33ee-c93b-4a06-9b92-6ea2e6e2f071,"МЧЖ ""TASHABUS RAUF SHAMS AAA""",tashabus-rauf-shams-aaa,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.4221988201193,69.449328915035
+e9531f72-7138-4795-a93e-2ab972726a1e,"MCHJ ""QIBRAY METAN""",mchj-qibray-metan,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.330884,69.43164
+05ad8aba-09bf-4868-8c2e-09696b05bc8f,"МЧЖ ""DJA BEST KAPITAL""",dja-best-kapital,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.378615,69.399204
+7e10fb8e-412c-422b-b167-092573a777ea,"MCHJ "" CAPITAL GAS PLUS """,mchj-capital-gas-plus,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.378935,69.398365
+f38d540b-4c59-46c0-a343-26caad98d4ab,"MCHJ ""DIYDOR""",mchj-diydor,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.370904,69.397219
+6e011b73-2529-4800-9cb0-6437e9f1a613,"MCHJ ""DO'RMON BIZNES SAVDO""",mchj-dormon-biznes-savdo,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.369382,69.395438
+b516feb3-657e-4e7d-b1cc-2efa9d51ca7e,"MCHJ ""TURON FAYZLI KERAMIKA""",mchj-turon-fayzli-keramika,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.375233,69.39014
+cbf1a2e6-dd6a-44f8-9e99-8c9a3ea20f02,"MCHJ ""ISKANDAR MAFTUNA BUSINESS""",mchj-iskandar-maftuna-business,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.388568,69.365325
+c9049a99-8661-4449-b236-dbdd5d115df2,"MCHJ ""ZANGORI GAZ SERVIS""",mchj-zangori-gaz-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Bektemir tumani",41.2156,69.364876
+8eee89f1-238e-43d6-9ad4-0ceaf9dcfc94,"MCHJ ""OMADLI SHOXRUH""",mchj-omadli-shoxruh,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Bektemir tumani",41.248504,69.363566
+84f4a51a-5f16-4be5-8f67-e1f84a010b23,"MCHJ ""INTERMOBILGAZ",mchj-intermobilgaz,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yashnobod tumani",41.27259,69.363165
+842d9b31-9472-4151-9f7d-cff5013ae7e6,"МЧЖ "" SAIMIR""",saimir,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.394664,69.361069
+81a24e24-14b8-4c0c-be32-12eda451dabd,"MCHJ ""SERVIS SAIDA""",mchj-servis-saida,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Bektemir tumani",41.250403,69.355302
+e4119e6e-3b5f-4086-ae5e-b8678b9706c2,"MCHJ ""GOLDGAZ SERVIS""",mchj-goldgaz-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Bektemir tumani",41.25045,69.355214
+f1d4b428-d3f3-4d74-8a0f-9cef2f07ab0c,"MCHJ ""BEKTEMIR METAN""",mchj-bektemir-metan,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Bektemir tumani",41.250707,69.354924
+bcf23690-ba75-44c6-a352-2243a52fbab2,"МЧЖ "" ARENA INT PETRO AND CHEMICALS""",arena-int-petro-and-chemicals,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yashnobod tumani",41.313763,69.351712
+ed805f74-7e1c-42b5-89d3-449da2bf4fe9,"MCHJ ""RAHSHONA-H.H.""",mchj-rahshona-hh,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yashnobod tumani",41.307391,69.350778
+dc103c90-98f1-4373-80dd-c95d9d1018b9,"MCHJ ""GAZ TO'LDIRISH STANSIYASI""",mchj-gaz-toldirish-stansiyasi,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yashnobod tumani",41.256848,69.335733
+bea4a725-a438-48bf-9fd6-5377bbba468e,"""MAROTRANS"" MAS'ULIYATI CHEKLANGAN JAMIYAT",marotrans-masuliyati-cheklangan-jamiyat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Bektemir tumani",41.232751,69.333788
+59ab742b-7751-45d0-9bc0-8d217e5d216f,"МЧЖ ""DREAM GAS""",dream-gas,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.350838,69.333258
+a33c6fdc-209e-406b-8a96-85dacc9d5669,"MCHJ ""EDEM BOLALAR UYI""",mchj-edem-bolalar-uyi,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.351752,69.32818
+89477dfa-7ada-4a3e-bba8-2971bfd558fc,"СП АО ""UZKABEL""",uzkabeling2,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.34818,69.325583
+dab4c7da-03a0-4016-80aa-65f599ea9ac1,"МЧЖ ""JARQO'RG'ON GAZ METAN""",jarqorgon-gaz-metan,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yashnobod tumani",41.273716,69.325236
+3bd4b8f2-0459-4e38-b9e2-6f4d23794054,"""YUNUSOBOD METAN SERVIS"" MAS'ULIYATI CHEKLANGAN JAMIYAT",yunusobod-metan-servis-masuliyati-cheklangan-jamiyat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.3738,69.323233
+d4ad68ce-27ce-453a-9810-618802ea55ca,QOYLIQ EKO GAZ,qoyliq-eko-gaz,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.238951,69.319871
+adf72bd4-43d9-450d-b888-9b98d59ea249,"МЧЖ ""MEGA-GAZ-SERVIS""",mega-gaz-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Bektemir tumani",41.193049,69.31927
+7847109c-d509-42cc-9992-ebaaa5133614,"МЧЖ ""TRIUMPH ORIENTIR""",triumph-orientir,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, M. Ulug`bek tumani",41.334858,69.317844
+43608601-bffc-44d3-acd0-869ccb38f694,"MCHJ ""MIROBOD TABIIY GAZ""",mchj-mirobod-tabiiy-gaz,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Mirobod tumani",41.267779,69.310034
+a36dbe59-13ee-4398-b03c-85a07c5d040d,"МЧЖ ""LAZIZ SAVDO BIZNES""",laziz-savdo-biznes,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.397148,69.297773
+c2fc7a21-7896-457b-a65b-f1fcb6103113,"ООО ""POYTAXT GAZ SAVDO""",poytaxt-gaz-savdo,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.243324,69.285967
+c95fc6f5-0a0a-4ccc-a502-c0d30bc9f7d6,"""NAK ABSOLUTE"" MAS'ULIYATI CHEKLANGAN JAMIYAT",nak-absolute-masuliyati-cheklangan-jamiyat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Uchtepa tumani",41.384268,69.28153
+b872661a-cf2b-4fb1-ae99-68a29ab2b068,"МЧЖ ""BRO UNITED""",bro-united,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.384252,69.281215
+166a7542-eacd-4926-b099-6d8edc1869b1,"MCHJ ""DELUXE TRANS SERVIS""",mchj-deluxe-trans-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.384153,69.28078
+a9148588-edac-47ca-8bf1-5f3ad4d5070d,"""HONOBOD GAS SERVICE"" MAS`ULIYATI CHEKLANGAN JAMIYAT",honobod-gas-service-masuliyati-cheklangan-jamiyat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.244059,69.278668
+37b121a2-d651-4c26-8ef5-64ed6fdb9aab,"""ISHONCH BUNYODKOR NUR SERVIS"" MAS‘ULIYATI CHEKLANGAN JAMIYATI",ishonch-bunyodkor-nur-servis-masuliyati-cheklangan-jamiyati,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.164874,69.276239
+ee8af679-0ec5-4bd9-b703-41bef1fabce7,"МЧЖ""HUBLOT GAZ""",hublot-gaz,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.393071,69.270915
+ccdfdd45-9dea-4306-bc93-3785e9b44fdc,"MCHJ ""ALEKS PLYUS BIZNES""",mchj-aleks-plyus-biznes,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.391892,69.269925
+ac978822-3830-4c8a-98ee-77af6a66ec40,"СП ООО ""ТАШКЕНТСКИЙ ТРУБНЫЙ ЗАВОД ИМ. В.Л.ГАЛЬПЕРИНА""",i34g,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.206661,69.2691
+d763d321-6c2d-4d1f-a32d-2a1dbb655d74,"СП ООО  ""RAMIRUS GAS SERVIS""",ramirus-gas-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.24523,69.262769
+115ba818-05ba-4be7-b5fd-899d81629fc3,"МЧЖ ""GLOBAL EKO METAN""",global-eko-metan,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.243677,69.255782
+b6a86228-f327-4dba-933f-d835741a9cec,"ООО ""DELTA-BIZNES LTD""",delta-biznes-ltd,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.245617,69.246681
+0aa7c974-673f-47bf-a3fb-38138643507f,"МЧЖ ""DADANUR""",dadanur,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.243264,69.241484
+e3777cc1-4922-4521-9080-6976f431dadd,"MCHJ ""ENERGO MASH TRANS IMPEX""",mchj-energo-mash-trans-impex,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.263851,69.236488
+bd7e5ebd-9b40-48bc-8de9-c0565bcdefc2,"MCHJ ""TURON-TO'YONA""",mchj-turon-toyona,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yakkasaroy tumani",41.243642,69.23533
+14796c5f-48b9-4246-8cf1-24facbab5233,"MCHJ ""TURKISTON YULDUZI""",mchj-turkiston-yulduzi,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.243016,69.233389
+a8551bd0-247e-48ae-a5dc-2d57bc85ab99,"MCHJ ""GAZ NEFT-AVTO BENZIN""",mchj-gaz-neft-avto-benzin,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.244335,69.232707
+1a9228a3-be83-4d68-9f94-e54b5a3473ca,"ООО ""GAZ NEFT-AVTO BENZIN""",gaz-neft-avto-benzin,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.242497,69.230717
+2af8d35a-2c28-4c55-902a-49db4e10b34d,"МЧЖ ""CLEAN GAS SERVICE""",clean-gas-service,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.396553,69.230143
+94b5ce76-0e2a-4d82-aa32-cedcb731c73c,"ООО ""O`ZGARISH GAZ TRANS""",ozgarish-gaz-trans,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.235787,69.21476
+ae0ff1c0-3dac-4427-9a35-4bce938323e2,"MCHJ ""O'ZGARISH GAZ TRANS""",mchj-ozgarish-gaz-trans,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yakkasaroy tumani",41.254273,69.214972
+dc23ba0e-ada6-4475-9dea-30192a4e0fbe,"MCHJ ""ARTUS""",mchj-artus,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.237998,69.21461
+99add346-dadc-479e-966b-5cf9568f43da,OOO UNG PETRO,ooo-ung-petro,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Sergeli tumani",41.231437,69.207252
+6ac88cf3-a171-4780-87f7-bda51ca62795,"ООО ""EKO GAZ SERVIS""",eko-gaz-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Olmazor tumani",41.382032,69.20647
+f1c499a1-043e-4344-a41b-9288d11948ec,"MCHJ ""CHASHKA SERVIS""",mchj-chashka-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Olmazor tumani",41.38234,69.206308
+eda7d9fd-5d2c-48aa-8ac7-f497be13d35a,"МЧЖ ""GAZ OIL ORIENT""",gaz-oil-orient,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yunusobod tumani",41.429449,69.202943
+2f8f9b98-1148-4cc6-9c88-bba3da65c22d,"MCHJ ""NAMTOSH METANGAZ""",mchj-namtosh-metangaz,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.228065,69.201896
+63667518-d96e-42f0-9e73-1151b4b3a2a4,"МЧЖ ""FORTUNE GAZ SERVICE""",fortune-gaz-service,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.224957,69.198824
+cb5b4219-9040-45e0-8f96-9bfca367e13e,"МЧЖ ""RB-PETROL KLASSIK""",rb-petrol-klassik,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Olmazor tumani",41.37418,69.19488
+b530733d-ca77-4d89-ac5f-30928bd2ecda,"""MEGA OIL BIZNES"" MAS'ULIYATI CHEKLANGAN JAMIYAT",mega-oil-biznes-masuliyati-cheklangan-jamiyat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.187899,69.193245
+94403f8c-acec-4268-ac39-7fdef023dd7c,"MCHJ ""NATURAL GAZ AVTO""",mchj-natural-gaz-avto,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Olmazor tumani",41.373807,69.193063
+eb85b2a7-6fad-4470-9d10-4201b5a3df47,"""SPETSKOMPLEKTTORG"" MAS'ULIYATI CHEKLANGAN JAMIYAT",spetskomplekttorg-masuliyati-cheklangan-jamiyat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.226794,69.188967
+a99dc0ad-fd94-46ec-9a9b-a211bd955580,"""SHOXRUZ LAZIZ GAZ"" MAS'ULIYATI CHEKLANGAN JAMIYAT",shoxruz-laziz-gaz-masuliyati-cheklangan-jamiyat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.19682,69.187741
+322abc64-5bf0-4a38-9d94-3609c81fc54b,"МЧЖ ""TASHBUS GAZ XIZMAT""",tashbus-gaz-xizmat,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Chilonzor tumani",41.250819,69.185288
+a48c6f6b-7fd9-4069-94f2-15cfc6a24c8d,"ПИИ ООО ""GAZ INVEST PROJECT""",gaz-invest-project,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Chilonzor tumani",41.229112,69.178576
+c3b9ea03-540c-43be-8cad-cd7d201a552b,"MCHJ ""GAZKOMPRESSOR-SERVIS""",mchj-gazkompressor-servis,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Olmazor tumani",41.371461,69.175394
+add6c5d1-3376-4844-bf1c-b3bccaa6a131,"ООО "" GAS SNAB""",gas-snab,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Olmazor tumani",41.362481,69.17506
+d096f1c6-5968-47f7-9d1d-5772d31521ab,"ООО ""PREMIUM IDEAL GAZ""",premium-ideal-gaz3lik,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Uchtepa tumani",41.274361,69.172973
+5f0afa33-28f0-4f82-b3d3-d7641d508110,"OOO ""LARGE SAIL""",ooo-large-sail,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yangihayot tumani",41.239438,69.169433
+630c6c62-db69-451b-a723-5feabaffa982,"MCHJ ""MAR HAMKOR BEK""",mchj-mar-hamkor-bek,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Shayxontohur tumani",41.337921,69.165296
+36808c51-9dc6-4f82-8114-b7763e99ca8b,"MCHJ ""BUYUK BORIY VALIY""",mchj-buyuk-boriy-valiy,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Uchtepa tumani",41.318016,69.15467
+dc8b075a-4120-4a61-b834-ff771d4eb4f7,"MCHJ ""GENIAL INVEST""",mchj-genial-invest,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Yakkasaroy tumani",41.318114,69.154588
+10649d56-93ab-41ba-a245-b6ef796a9c21,"МЧЖ ""TASHBUS GAZOIL""",tashbus-gazoil,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Uchtepa tumani",41.314894,69.153765
+f3bac672-bf6d-4ddb-a605-7e03d7e48fe8,"МЧЖ ""EQUAL SUPER GAZ""",equal-super-gaz,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Chilonzor tumani",41.230476,69.151345
+cfd4b8f4-5f50-4e62-8525-fdb6cc5bf7b9,"MCHJ ""QUEST ROOMS""",mchj-quest-rooms,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Uchtepa tumani",41.297919,69.149901
+1c17aacf-13a8-40c0-bd77-68d9400b1bea,"МЧЖ "" LIDER GAZ BIZNES""",lider-gaz-biznes,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Shayxontohur tumani",41.363631,69.149087
+a16de1bc-529a-47c6-8259-e64c62621769,"MCHJ ""POWER AVTO GAZ""",mchj-power-avto-gaz,,d970d402-c47a-4e74-a3fe-b2bf30f435d8,,"Toshkent shahri, Uchtepa tumani",41.268162,69.147743

@@ -1,17 +1,12 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-
 import { getCurrentUser } from "@/lib/session";
 import { getAllStations } from "@/lib/stations";
 import { constructMetadata } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import {
@@ -31,12 +26,8 @@ export const metadata = constructMetadata({
 });
 
 export default async function StationsPage() {
-  const user = await getCurrentUser();
-
   const data = await getAllStations();
 
-
-  console.log(data)
   return (
     <>
       <DashboardHeader
@@ -68,32 +59,22 @@ export default async function StationsPage() {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead>Title</TableHead>
-                  <TableHead>Location Description</TableHead>
-                  <TableHead>Legal Name</TableHead>
+                  <TableHead>Name</TableHead>
+                  <TableHead>Adress</TableHead>
                   <TableHead>Price</TableHead>
-                  <TableHead>Created At</TableHead>
-                  <TableHead>Updated At</TableHead>
                   <TableHead className="text-right">Actions</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {data.map((station) => (
                   <TableRow key={station.id}>
-                    <TableCell>{station.title}</TableCell>
-                    <TableCell>{station.locationDescription}</TableCell>
-                    <TableCell>{station.legalName}</TableCell>
+                    <TableCell>{station.name}</TableCell>
+                    <TableCell>{station.address}</TableCell>
                     <TableCell>{station.price}</TableCell>
-                    <TableCell>{new Date(station.createdAt).toLocaleDateString()}</TableCell>
-                    <TableCell>
-                      {station.updatedAt
-                        ? new Date(station.updatedAt).toLocaleDateString()
-                        : "N/A"}
-                    </TableCell>
                     <TableCell className="text-right">
-                      <Link href={`/stations/${station.id}`} passHref>
+                      <Link href={`/dashboard/stations/${station.id}`} passHref>
                         <Button variant="outline" size="sm">
-                          View Details
+                           Edit
                         </Button>
                       </Link>
                     </TableCell>

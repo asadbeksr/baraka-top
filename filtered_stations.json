@@ -1,0 +1,3885 @@
+[
+  {
+    "id": "c66ff65d-ee6d-4783-9157-7e265267b679",
+    "name": "Arena Petrol & Cng",
+    "slug": "arena-petrol-cng",
+    "phone_number": "+998992000055",
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": "http://arenafuel.uz",
+    "address": "Ташкент, ул. Корасув, 9А",
+    "latitude": 41.300464,
+    "longitude": 69.342896,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      }
+    ]
+  },
+  {
+    "id": "a8028461-53bc-465d-9526-7665a0e00cbb",
+    "name": "АГНКС Интергаз",
+    "slug": "mssf",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": "http://intergaz.uz",
+    "address": "Ташкент, Сергелийский район, населённый пункт Бабур",
+    "latitude": 41.243332,
+    "longitude": 69.233054,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      }
+    ]
+  },
+  {
+    "id": "5c24f159-61ed-4e66-9f7c-aee476cbbac3",
+    "name": "АГЗС",
+    "slug": "ujnm",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "сход сельских жителей Чигатай-Актепа, Istiqlolning 5-yillik mahallasi, 467/2",
+    "latitude": 41.362738,
+    "longitude": 69.176103,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "2b97f937-86ce-4382-9626-8d94717dff14",
+    "name": "Пропан",
+    "slug": "ozy9",
+    "phone_number": "+998712158579",
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Ташкент, Сергелийский район, махалля Кумарик, улица Сайполина, 22",
+    "latitude": 41.24483,
+    "longitude": 69.245926,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "23:59:00"
+      }
+    ]
+  },
+  {
+    "id": "55a49fdc-6c43-4225-9d48-9be319d3c618",
+    "name": "ООО \"CARAT GAZ-OIL\"",
+    "slug": "carat-gaz-oil",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Olmazor tumani",
+    "latitude": 41.384233,
+    "longitude": 69.212272,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "138b33ee-c93b-4a06-9b92-6ea2e6e2f071",
+    "name": "МЧЖ \"TASHABUS RAUF SHAMS AAA\"",
+    "slug": "tashabus-rauf-shams-aaa",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.4221988201193,
+    "longitude": 69.449328915035,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "e9531f72-7138-4795-a93e-2ab972726a1e",
+    "name": "MCHJ \"QIBRAY METAN\"",
+    "slug": "mchj-qibray-metan",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.330884,
+    "longitude": 69.43164,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "05ad8aba-09bf-4868-8c2e-09696b05bc8f",
+    "name": "МЧЖ \"DJA BEST KAPITAL\"",
+    "slug": "dja-best-kapital",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.378615,
+    "longitude": 69.399204,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "7e10fb8e-412c-422b-b167-092573a777ea",
+    "name": "MCHJ \" CAPITAL GAS PLUS \"",
+    "slug": "mchj-capital-gas-plus",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.378935,
+    "longitude": 69.398365,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "f38d540b-4c59-46c0-a343-26caad98d4ab",
+    "name": "MCHJ \"DIYDOR\"",
+    "slug": "mchj-diydor",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.370904,
+    "longitude": 69.397219,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "6e011b73-2529-4800-9cb0-6437e9f1a613",
+    "name": "MCHJ \"DO'RMON BIZNES SAVDO\"",
+    "slug": "mchj-dormon-biznes-savdo",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.369382,
+    "longitude": 69.395438,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "b516feb3-657e-4e7d-b1cc-2efa9d51ca7e",
+    "name": "MCHJ \"TURON FAYZLI KERAMIKA\"",
+    "slug": "mchj-turon-fayzli-keramika",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.375233,
+    "longitude": 69.39014,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "cbf1a2e6-dd6a-44f8-9e99-8c9a3ea20f02",
+    "name": "MCHJ \"ISKANDAR MAFTUNA BUSINESS\"",
+    "slug": "mchj-iskandar-maftuna-business",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.388568,
+    "longitude": 69.365325,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "c9049a99-8661-4449-b236-dbdd5d115df2",
+    "name": "MCHJ \"ZANGORI GAZ SERVIS\"",
+    "slug": "mchj-zangori-gaz-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Bektemir tumani",
+    "latitude": 41.2156,
+    "longitude": 69.364876,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "8eee89f1-238e-43d6-9ad4-0ceaf9dcfc94",
+    "name": "MCHJ \"OMADLI SHOXRUH\"",
+    "slug": "mchj-omadli-shoxruh",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Bektemir tumani",
+    "latitude": 41.248504,
+    "longitude": 69.363566,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "84f4a51a-5f16-4be5-8f67-e1f84a010b23",
+    "name": "MCHJ \"INTERMOBILGAZ",
+    "slug": "mchj-intermobilgaz",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yashnobod tumani",
+    "latitude": 41.27259,
+    "longitude": 69.363165,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "842d9b31-9472-4151-9f7d-cff5013ae7e6",
+    "name": "МЧЖ \" SAIMIR\"",
+    "slug": "saimir",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.394664,
+    "longitude": 69.361069,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "81a24e24-14b8-4c0c-be32-12eda451dabd",
+    "name": "MCHJ \"SERVIS SAIDA\"",
+    "slug": "mchj-servis-saida",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Bektemir tumani",
+    "latitude": 41.250403,
+    "longitude": 69.355302,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "e4119e6e-3b5f-4086-ae5e-b8678b9706c2",
+    "name": "MCHJ \"GOLDGAZ SERVIS\"",
+    "slug": "mchj-goldgaz-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Bektemir tumani",
+    "latitude": 41.25045,
+    "longitude": 69.355214,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "f1d4b428-d3f3-4d74-8a0f-9cef2f07ab0c",
+    "name": "MCHJ \"BEKTEMIR METAN\"",
+    "slug": "mchj-bektemir-metan",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Bektemir tumani",
+    "latitude": 41.250707,
+    "longitude": 69.354924,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "bcf23690-ba75-44c6-a352-2243a52fbab2",
+    "name": "МЧЖ \" ARENA INT PETRO AND CHEMICALS\"",
+    "slug": "arena-int-petro-and-chemicals",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yashnobod tumani",
+    "latitude": 41.313763,
+    "longitude": 69.351712,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "ed805f74-7e1c-42b5-89d3-449da2bf4fe9",
+    "name": "MCHJ \"RAHSHONA-H.H.\"",
+    "slug": "mchj-rahshona-hh",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yashnobod tumani",
+    "latitude": 41.307391,
+    "longitude": 69.350778,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "dc103c90-98f1-4373-80dd-c95d9d1018b9",
+    "name": "MCHJ \"GAZ TO'LDIRISH STANSIYASI\"",
+    "slug": "mchj-gaz-toldirish-stansiyasi",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yashnobod tumani",
+    "latitude": 41.256848,
+    "longitude": 69.335733,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "bea4a725-a438-48bf-9fd6-5377bbba468e",
+    "name": "\"MAROTRANS\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
+    "slug": "marotrans-masuliyati-cheklangan-jamiyat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Bektemir tumani",
+    "latitude": 41.232751,
+    "longitude": 69.333788,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "59ab742b-7751-45d0-9bc0-8d217e5d216f",
+    "name": "МЧЖ \"DREAM GAS\"",
+    "slug": "dream-gas",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.350838,
+    "longitude": 69.333258,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a33c6fdc-209e-406b-8a96-85dacc9d5669",
+    "name": "MCHJ \"EDEM BOLALAR UYI\"",
+    "slug": "mchj-edem-bolalar-uyi",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.351752,
+    "longitude": 69.32818,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "89477dfa-7ada-4a3e-bba8-2971bfd558fc",
+    "name": "СП АО \"UZKABEL\"",
+    "slug": "uzkabeling2",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.34818,
+    "longitude": 69.325583,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "dab4c7da-03a0-4016-80aa-65f599ea9ac1",
+    "name": "МЧЖ \"JARQO'RG'ON GAZ METAN\"",
+    "slug": "jarqorgon-gaz-metan",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yashnobod tumani",
+    "latitude": 41.273716,
+    "longitude": 69.325236,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "3bd4b8f2-0459-4e38-b9e2-6f4d23794054",
+    "name": "\"YUNUSOBOD METAN SERVIS\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
+    "slug": "yunusobod-metan-servis-masuliyati-cheklangan-jamiyat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.3738,
+    "longitude": 69.323233,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "d4ad68ce-27ce-453a-9810-618802ea55ca",
+    "name": "QOYLIQ EKO GAZ",
+    "slug": "qoyliq-eko-gaz",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.238951,
+    "longitude": 69.319871,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "adf72bd4-43d9-450d-b888-9b98d59ea249",
+    "name": "МЧЖ \"MEGA-GAZ-SERVIS\"",
+    "slug": "mega-gaz-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Bektemir tumani",
+    "latitude": 41.193049,
+    "longitude": 69.31927,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "7847109c-d509-42cc-9992-ebaaa5133614",
+    "name": "МЧЖ \"TRIUMPH ORIENTIR\"",
+    "slug": "triumph-orientir",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, M. Ulug`bek tumani",
+    "latitude": 41.334858,
+    "longitude": 69.317844,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "43608601-bffc-44d3-acd0-869ccb38f694",
+    "name": "MCHJ \"MIROBOD TABIIY GAZ\"",
+    "slug": "mchj-mirobod-tabiiy-gaz",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Mirobod tumani",
+    "latitude": 41.267779,
+    "longitude": 69.310034,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a36dbe59-13ee-4398-b03c-85a07c5d040d",
+    "name": "МЧЖ \"LAZIZ SAVDO BIZNES\"",
+    "slug": "laziz-savdo-biznes",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.397148,
+    "longitude": 69.297773,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "c2fc7a21-7896-457b-a65b-f1fcb6103113",
+    "name": "ООО \"POYTAXT GAZ SAVDO\"",
+    "slug": "poytaxt-gaz-savdo",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.243324,
+    "longitude": 69.285967,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "c95fc6f5-0a0a-4ccc-a502-c0d30bc9f7d6",
+    "name": "\"NAK ABSOLUTE\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
+    "slug": "nak-absolute-masuliyati-cheklangan-jamiyat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Uchtepa tumani",
+    "latitude": 41.384268,
+    "longitude": 69.28153,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "b872661a-cf2b-4fb1-ae99-68a29ab2b068",
+    "name": "МЧЖ \"BRO UNITED\"",
+    "slug": "bro-united",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.384252,
+    "longitude": 69.281215,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "166a7542-eacd-4926-b099-6d8edc1869b1",
+    "name": "MCHJ \"DELUXE TRANS SERVIS\"",
+    "slug": "mchj-deluxe-trans-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.384153,
+    "longitude": 69.28078,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a9148588-edac-47ca-8bf1-5f3ad4d5070d",
+    "name": "\"HONOBOD GAS SERVICE\" MAS`ULIYATI CHEKLANGAN JAMIYAT",
+    "slug": "honobod-gas-service-masuliyati-cheklangan-jamiyat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.244059,
+    "longitude": 69.278668,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "37b121a2-d651-4c26-8ef5-64ed6fdb9aab",
+    "name": "\"ISHONCH BUNYODKOR NUR SERVIS\" MAS‘ULIYATI CHEKLANGAN JAMIYATI",
+    "slug": "ishonch-bunyodkor-nur-servis-masuliyati-cheklangan-jamiyati",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.164874,
+    "longitude": 69.276239,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "ee8af679-0ec5-4bd9-b703-41bef1fabce7",
+    "name": "МЧЖ\"HUBLOT GAZ\"",
+    "slug": "hublot-gaz",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.393071,
+    "longitude": 69.270915,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "ccdfdd45-9dea-4306-bc93-3785e9b44fdc",
+    "name": "MCHJ \"ALEKS PLYUS BIZNES\"",
+    "slug": "mchj-aleks-plyus-biznes",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.391892,
+    "longitude": 69.269925,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "ac978822-3830-4c8a-98ee-77af6a66ec40",
+    "name": "СП ООО \"ТАШКЕНТСКИЙ ТРУБНЫЙ ЗАВОД ИМ. В.Л.ГАЛЬПЕРИНА\"",
+    "slug": "i34g",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.206661,
+    "longitude": 69.2691,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "d763d321-6c2d-4d1f-a32d-2a1dbb655d74",
+    "name": "СП ООО  \"RAMIRUS GAS SERVIS\"",
+    "slug": "ramirus-gas-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.24523,
+    "longitude": 69.262769,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "115ba818-05ba-4be7-b5fd-899d81629fc3",
+    "name": "МЧЖ \"GLOBAL EKO METAN\"",
+    "slug": "global-eko-metan",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.243677,
+    "longitude": 69.255782,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "b6a86228-f327-4dba-933f-d835741a9cec",
+    "name": "ООО \"DELTA-BIZNES LTD\"",
+    "slug": "delta-biznes-ltd",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.245617,
+    "longitude": 69.246681,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "0aa7c974-673f-47bf-a3fb-38138643507f",
+    "name": "МЧЖ \"DADANUR\"",
+    "slug": "dadanur",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.243264,
+    "longitude": 69.241484,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "e3777cc1-4922-4521-9080-6976f431dadd",
+    "name": "MCHJ \"ENERGO MASH TRANS IMPEX\"",
+    "slug": "mchj-energo-mash-trans-impex",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.263851,
+    "longitude": 69.236488,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "bd7e5ebd-9b40-48bc-8de9-c0565bcdefc2",
+    "name": "MCHJ \"TURON-TO'YONA\"",
+    "slug": "mchj-turon-toyona",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yakkasaroy tumani",
+    "latitude": 41.243642,
+    "longitude": 69.23533,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "14796c5f-48b9-4246-8cf1-24facbab5233",
+    "name": "MCHJ \"TURKISTON YULDUZI\"",
+    "slug": "mchj-turkiston-yulduzi",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.243016,
+    "longitude": 69.233389,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a8551bd0-247e-48ae-a5dc-2d57bc85ab99",
+    "name": "MCHJ \"GAZ NEFT-AVTO BENZIN\"",
+    "slug": "mchj-gaz-neft-avto-benzin",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.244335,
+    "longitude": 69.232707,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "1a9228a3-be83-4d68-9f94-e54b5a3473ca",
+    "name": "ООО \"GAZ NEFT-AVTO BENZIN\"",
+    "slug": "gaz-neft-avto-benzin",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.242497,
+    "longitude": 69.230717,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "2af8d35a-2c28-4c55-902a-49db4e10b34d",
+    "name": "МЧЖ \"CLEAN GAS SERVICE\"",
+    "slug": "clean-gas-service",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.396553,
+    "longitude": 69.230143,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "94b5ce76-0e2a-4d82-aa32-cedcb731c73c",
+    "name": "ООО \"O`ZGARISH GAZ TRANS\"",
+    "slug": "ozgarish-gaz-trans",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.235787,
+    "longitude": 69.21476,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "ae0ff1c0-3dac-4427-9a35-4bce938323e2",
+    "name": "MCHJ \"O'ZGARISH GAZ TRANS\"",
+    "slug": "mchj-ozgarish-gaz-trans",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yakkasaroy tumani",
+    "latitude": 41.254273,
+    "longitude": 69.214972,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "dc23ba0e-ada6-4475-9dea-30192a4e0fbe",
+    "name": "MCHJ \"ARTUS\"",
+    "slug": "mchj-artus",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.237998,
+    "longitude": 69.21461,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "99add346-dadc-479e-966b-5cf9568f43da",
+    "name": "OOO UNG PETRO",
+    "slug": "ooo-ung-petro",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Sergeli tumani",
+    "latitude": 41.231437,
+    "longitude": 69.207252,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "6ac88cf3-a171-4780-87f7-bda51ca62795",
+    "name": "ООО \"EKO GAZ SERVIS\"",
+    "slug": "eko-gaz-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Olmazor tumani",
+    "latitude": 41.382032,
+    "longitude": 69.20647,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "f1c499a1-043e-4344-a41b-9288d11948ec",
+    "name": "MCHJ \"CHASHKA SERVIS\"",
+    "slug": "mchj-chashka-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Olmazor tumani",
+    "latitude": 41.38234,
+    "longitude": 69.206308,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "eda7d9fd-5d2c-48aa-8ac7-f497be13d35a",
+    "name": "МЧЖ \"GAZ OIL ORIENT\"",
+    "slug": "gaz-oil-orient",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yunusobod tumani",
+    "latitude": 41.429449,
+    "longitude": 69.202943,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "2f8f9b98-1148-4cc6-9c88-bba3da65c22d",
+    "name": "MCHJ \"NAMTOSH METANGAZ\"",
+    "slug": "mchj-namtosh-metangaz",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.228065,
+    "longitude": 69.201896,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "63667518-d96e-42f0-9e73-1151b4b3a2a4",
+    "name": "МЧЖ \"FORTUNE GAZ SERVICE\"",
+    "slug": "fortune-gaz-service",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.224957,
+    "longitude": 69.198824,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "cb5b4219-9040-45e0-8f96-9bfca367e13e",
+    "name": "МЧЖ \"RB-PETROL KLASSIK\"",
+    "slug": "rb-petrol-klassik",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Olmazor tumani",
+    "latitude": 41.37418,
+    "longitude": 69.19488,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "b530733d-ca77-4d89-ac5f-30928bd2ecda",
+    "name": "\"MEGA OIL BIZNES\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
+    "slug": "mega-oil-biznes-masuliyati-cheklangan-jamiyat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.187899,
+    "longitude": 69.193245,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "94403f8c-acec-4268-ac39-7fdef023dd7c",
+    "name": "MCHJ \"NATURAL GAZ AVTO\"",
+    "slug": "mchj-natural-gaz-avto",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Olmazor tumani",
+    "latitude": 41.373807,
+    "longitude": 69.193063,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "eb85b2a7-6fad-4470-9d10-4201b5a3df47",
+    "name": "\"SPETSKOMPLEKTTORG\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
+    "slug": "spetskomplekttorg-masuliyati-cheklangan-jamiyat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.226794,
+    "longitude": 69.188967,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a99dc0ad-fd94-46ec-9a9b-a211bd955580",
+    "name": "\"SHOXRUZ LAZIZ GAZ\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
+    "slug": "shoxruz-laziz-gaz-masuliyati-cheklangan-jamiyat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.19682,
+    "longitude": 69.187741,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "322abc64-5bf0-4a38-9d94-3609c81fc54b",
+    "name": "МЧЖ \"TASHBUS GAZ XIZMAT\"",
+    "slug": "tashbus-gaz-xizmat",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Chilonzor tumani",
+    "latitude": 41.250819,
+    "longitude": 69.185288,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a48c6f6b-7fd9-4069-94f2-15cfc6a24c8d",
+    "name": "ПИИ ООО \"GAZ INVEST PROJECT\"",
+    "slug": "gaz-invest-project",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Chilonzor tumani",
+    "latitude": 41.229112,
+    "longitude": 69.178576,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "c3b9ea03-540c-43be-8cad-cd7d201a552b",
+    "name": "MCHJ \"GAZKOMPRESSOR-SERVIS\"",
+    "slug": "mchj-gazkompressor-servis",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Olmazor tumani",
+    "latitude": 41.371461,
+    "longitude": 69.175394,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "add6c5d1-3376-4844-bf1c-b3bccaa6a131",
+    "name": "ООО \" GAS SNAB\"",
+    "slug": "gas-snab",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Olmazor tumani",
+    "latitude": 41.362481,
+    "longitude": 69.17506,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "d096f1c6-5968-47f7-9d1d-5772d31521ab",
+    "name": "ООО \"PREMIUM IDEAL GAZ\"",
+    "slug": "premium-ideal-gaz3lik",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Uchtepa tumani",
+    "latitude": 41.274361,
+    "longitude": 69.172973,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "5f0afa33-28f0-4f82-b3d3-d7641d508110",
+    "name": "OOO \"LARGE SAIL\"",
+    "slug": "ooo-large-sail",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yangihayot tumani",
+    "latitude": 41.239438,
+    "longitude": 69.169433,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "630c6c62-db69-451b-a723-5feabaffa982",
+    "name": "MCHJ \"MAR HAMKOR BEK\"",
+    "slug": "mchj-mar-hamkor-bek",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Shayxontohur tumani",
+    "latitude": 41.337921,
+    "longitude": 69.165296,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "36808c51-9dc6-4f82-8114-b7763e99ca8b",
+    "name": "MCHJ \"BUYUK BORIY VALIY\"",
+    "slug": "mchj-buyuk-boriy-valiy",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Uchtepa tumani",
+    "latitude": 41.318016,
+    "longitude": 69.15467,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "dc8b075a-4120-4a61-b834-ff771d4eb4f7",
+    "name": "MCHJ \"GENIAL INVEST\"",
+    "slug": "mchj-genial-invest",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Yakkasaroy tumani",
+    "latitude": 41.318114,
+    "longitude": 69.154588,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "10649d56-93ab-41ba-a245-b6ef796a9c21",
+    "name": "МЧЖ \"TASHBUS GAZOIL\"",
+    "slug": "tashbus-gazoil",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Uchtepa tumani",
+    "latitude": 41.314894,
+    "longitude": 69.153765,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "f3bac672-bf6d-4ddb-a605-7e03d7e48fe8",
+    "name": "МЧЖ \"EQUAL SUPER GAZ\"",
+    "slug": "equal-super-gaz",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Chilonzor tumani",
+    "latitude": 41.230476,
+    "longitude": 69.151345,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "cfd4b8f4-5f50-4e62-8525-fdb6cc5bf7b9",
+    "name": "MCHJ \"QUEST ROOMS\"",
+    "slug": "mchj-quest-rooms",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Uchtepa tumani",
+    "latitude": 41.297919,
+    "longitude": 69.149901,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "1c17aacf-13a8-40c0-bd77-68d9400b1bea",
+    "name": "МЧЖ \" LIDER GAZ BIZNES\"",
+    "slug": "lider-gaz-biznes",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Shayxontohur tumani",
+    "latitude": 41.363631,
+    "longitude": 69.149087,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  },
+  {
+    "id": "a16de1bc-529a-47c6-8259-e64c62621769",
+    "name": "MCHJ \"POWER AVTO GAZ\"",
+    "slug": "mchj-power-avto-gaz",
+    "phone_number": null,
+    "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+    "website": null,
+    "address": "Toshkent shahri, Uchtepa tumani",
+    "latitude": 41.268162,
+    "longitude": 69.147743,
+    "work_dates": [
+      {
+        "day": 0,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 1,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 2,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 3,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 4,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 5,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      },
+      {
+        "day": 6,
+        "start": "00:00:00",
+        "end": "24:00:00"
+      }
+    ]
+  }
+]
