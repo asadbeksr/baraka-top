@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/table";
 import { DashboardHeader } from "@/components/dashboard/header";
 import { EmptyPlaceholder } from "@/components/shared/empty-placeholder";
+import { ArrowUpRight, PlusIcon } from "lucide-react";
 
 export const metadata = constructMetadata({
   title: "Stations",
@@ -27,7 +28,7 @@ export const metadata = constructMetadata({
 
 export default async function StationsPage() {
   const data = await getAllStations();
-
+  
   return (
     <>
       <DashboardHeader
@@ -37,13 +38,17 @@ export default async function StationsPage() {
 
       <Card className="xl:col-span-2">
         <CardHeader className="flex flex-row items-center">
-          <div className="grid gap-2">
             <Input
               type="search"
               placeholder="Search ..."
-              className="h-8 w-full sm:w-64 sm:pr-12"
+              className="w-full sm:w-64"
             />
-          </div>
+          <Button size="sm" className="ml-auto shrink-0 gap-1 px-4">
+          <Link href="/dashboard/stations/new" className="flex items-center gap-2">
+            <PlusIcon className="hidden size-4 sm:block" />
+            <span>Add</span>
+          </Link>
+        </Button>
         </CardHeader>
         <CardContent>
           {data.length === 0 ? (
@@ -61,7 +66,7 @@ export default async function StationsPage() {
                 <TableRow>
                   <TableHead>Name</TableHead>
                   <TableHead>Adress</TableHead>
-                  <TableHead>Price</TableHead>
+                  <TableHead></TableHead>
                   <TableHead className="text-right">Actions</TableHead>
                 </TableRow>
               </TableHeader>

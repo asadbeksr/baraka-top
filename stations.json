@@ -1,12 +1,12 @@
 {
-  "count": 81,
+  "count": 65,
   "next": null,
   "previous": null,
   "results": [
     {
-      "id": "c66ff65d-ee6d-4783-9157-7e265267b679",
-      "name": "Arena Petrol & Cng",
-      "slug": "arena-petrol-cng",
+      "id": "c02e57d6-bfc9-4a7e-b023-37c8183c816d",
+      "name": "ООО \"ARNASAY AVTO SERVIS\"",
+      "slug": "arnasay-avto-servis",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -18,508 +18,19 @@
         }
       ],
       "chain": null,
-      "review_count": 2,
-      "old_review_rating": 3.6,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-01-24 13:13:18",
-      "cover_image": null,
-      "phone_number": "+998992000055",
-      "email": null,
-      "website": "http://arenafuel.uz",
-      "address": "Ташкент, ул. Корасув, 9А",
-      "latitude": 41.300464,
-      "longitude": 69.342896,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 0,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 1, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 2, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 3, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 4, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 5, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 6, "start": "00:00:00", "end": "23:59:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "a8028461-53bc-465d-9526-7665a0e00cbb",
-      "name": "АГНКС Интергаз",
-      "slug": "mssf",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 1,
-      "old_review_rating": 3.3,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-01-24 13:13:18",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": "http://intergaz.uz",
-      "address": "Ташкент, Сергелийский район, населённый пункт Бабур",
-      "latitude": 41.243332,
-      "longitude": 69.233054,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 0,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 2, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 3, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 4, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 5, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 6, "start": "00:00:00", "end": "23:59:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "5c24f159-61ed-4e66-9f7c-aee476cbbac3",
-      "name": "АГЗС",
-      "slug": "ujnm",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 1,
-      "old_review_rating": 3.3,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-01-24 13:13:18",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "сход сельских жителей Чигатай-Актепа, Istiqlolning 5-yillik mahallasi, 467/2",
-      "latitude": 41.362738,
-      "longitude": 69.176103,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "2b97f937-86ce-4382-9626-8d94717dff14",
-      "name": "Пропан",
-      "slug": "ozy9",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 1,
-      "old_review_rating": 3.3,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-01-24 13:13:18",
-      "cover_image": null,
-      "phone_number": "+998712158579",
-      "email": null,
-      "website": null,
-      "address": "Ташкент, Сергелийский район, махалля Кумарик, улица Сайполина, 22",
-      "latitude": 41.24483,
-      "longitude": 69.245926,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 0,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 1, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 2, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 3, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 4, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 5, "start": "00:00:00", "end": "23:59:00" },
-        { "day": 6, "start": "00:00:00", "end": "23:59:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "55a49fdc-6c43-4225-9d48-9be319d3c618",
-      "name": "ООО \"CARAT GAZ-OIL\"",
-      "slug": "carat-gaz-oil",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, Olmazor tumani",
-      "latitude": 41.384233,
-      "longitude": 69.212272,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "138b33ee-c93b-4a06-9b92-6ea2e6e2f071",
-      "name": "МЧЖ \"TASHABUS RAUF SHAMS AAA\"",
-      "slug": "tashabus-rauf-shams-aaa",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.4221988201193,
-      "longitude": 69.449328915035,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "e9531f72-7138-4795-a93e-2ab972726a1e",
-      "name": "MCHJ \"QIBRAY METAN\"",
-      "slug": "mchj-qibray-metan",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.330884,
-      "longitude": 69.43164,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "05ad8aba-09bf-4868-8c2e-09696b05bc8f",
-      "name": "МЧЖ \"DJA BEST KAPITAL\"",
-      "slug": "dja-best-kapital",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.378615,
-      "longitude": 69.399204,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "7e10fb8e-412c-422b-b167-092573a777ea",
-      "name": "MCHJ \" CAPITAL GAS PLUS \"",
-      "slug": "mchj-capital-gas-plus",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.378935,
-      "longitude": 69.398365,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "f38d540b-4c59-46c0-a343-26caad98d4ab",
-      "name": "MCHJ \"DIYDOR\"",
-      "slug": "mchj-diydor",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.370904,
-      "longitude": 69.397219,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "6e011b73-2529-4800-9cb0-6437e9f1a613",
-      "name": "MCHJ \"DO'RMON BIZNES SAVDO\"",
-      "slug": "mchj-dormon-biznes-savdo",
-      "legal_name": null,
-      "type": null,
-      "categories": [
-        {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
       "review_count": 0,
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
+      "register_date": "2024-10-30 14:33:36",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.369382,
-      "longitude": 69.395438,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Арнасой tumani",
+      "latitude": 40.511556,
+      "longitude": 67.904576,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -529,316 +40,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "b516feb3-657e-4e7d-b1cc-2efa9d51ca7e",
-      "name": "MCHJ \"TURON FAYZLI KERAMIKA\"",
-      "slug": "mchj-turon-fayzli-keramika",
-      "legal_name": null,
-      "type": null,
-      "categories": [
         {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.375233,
-      "longitude": 69.39014,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "cbf1a2e6-dd6a-44f8-9e99-8c9a3ea20f02",
-      "name": "MCHJ \"ISKANDAR MAFTUNA BUSINESS\"",
-      "slug": "mchj-iskandar-maftuna-business",
-      "legal_name": null,
-      "type": null,
-      "categories": [
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
         {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.388568,
-      "longitude": 69.365325,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "c9049a99-8661-4449-b236-dbdd5d115df2",
-      "name": "MCHJ \"ZANGORI GAZ SERVIS\"",
-      "slug": "mchj-zangori-gaz-servis",
-      "legal_name": null,
-      "type": null,
-      "categories": [
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
         {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, Bektemir tumani",
-      "latitude": 41.2156,
-      "longitude": 69.364876,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "8eee89f1-238e-43d6-9ad4-0ceaf9dcfc94",
-      "name": "MCHJ \"OMADLI SHOXRUH\"",
-      "slug": "mchj-omadli-shoxruh",
-      "legal_name": null,
-      "type": null,
-      "categories": [
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
         {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, Bektemir tumani",
-      "latitude": 41.248504,
-      "longitude": 69.363566,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "84f4a51a-5f16-4be5-8f67-e1f84a010b23",
-      "name": "MCHJ \"INTERMOBILGAZ",
-      "slug": "mchj-intermobilgaz",
-      "legal_name": null,
-      "type": null,
-      "categories": [
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
         {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, Yashnobod tumani",
-      "latitude": 41.27259,
-      "longitude": 69.363165,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
-      ],
-      "branch_count": 0,
-      "allowed_review_character": 10,
-      "max_editorial_rating": null
-    },
-    {
-      "id": "842d9b31-9472-4151-9f7d-cff5013ae7e6",
-      "name": "МЧЖ \" SAIMIR\"",
-      "slug": "saimir",
-      "legal_name": null,
-      "type": null,
-      "categories": [
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
         {
-          "id": "f3a9366c-e05c-4a73-a731-b583151630fa",
-          "title": "Gas stations",
-          "slug": "Gas-station",
-          "parent_id": "5068c7d7-287a-446f-99c1-7ca6d7e027fe"
-        }
-      ],
-      "chain": null,
-      "review_count": 0,
-      "old_review_rating": null,
-      "brand_logo": null,
-      "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
-      "cover_image": null,
-      "phone_number": null,
-      "email": null,
-      "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.394664,
-      "longitude": 69.361069,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
-      "district": null,
-      "verified": false,
-      "is_active": true,
-      "is_private": true,
-      "work_type": 1,
-      "is_registered": false,
-      "is_saved": false,
-      "editorial_ratings": [],
-      "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "81a24e24-14b8-4c0c-be32-12eda451dabd",
-      "name": "MCHJ \"SERVIS SAIDA\"",
-      "slug": "mchj-servis-saida",
+      "id": "57ed9b63-45f7-455d-9b72-389dd4896b83",
+      "name": "ООО \"Master Gas SM\" -1",
+      "slug": "master-gas-sm-1",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -854,15 +99,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
+      "register_date": "2024-10-30 14:33:36",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Bektemir tumani",
-      "latitude": 41.250403,
-      "longitude": 69.355302,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Ғаллаорол tumani",
+      "latitude": 40.01057,
+      "longitude": 67.598146,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -872,22 +117,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "e4119e6e-3b5f-4086-ae5e-b8678b9706c2",
-      "name": "MCHJ \"GOLDGAZ SERVIS\"",
-      "slug": "mchj-goldgaz-servis",
+      "id": "0c8de25d-4009-4ad0-8f92-fe8b8b5c9c74",
+      "name": "ООО \"Master Gas SM\" -2",
+      "slug": "master-gas-sm-2",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -903,15 +176,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:49",
+      "register_date": "2024-10-30 14:33:36",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Bektemir tumani",
-      "latitude": 41.25045,
-      "longitude": 69.355214,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Ғаллаорол tumani",
+      "latitude": 40.010569,
+      "longitude": 67.598148,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -921,22 +194,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "f1d4b428-d3f3-4d74-8a0f-9cef2f07ab0c",
-      "name": "MCHJ \"BEKTEMIR METAN\"",
-      "slug": "mchj-bektemir-metan",
+      "id": "f0c914fc-1ca8-4d0f-9640-e606f585f4cd",
+      "name": "\"Заргар Сангзор\" МЧЖ",
+      "slug": "gxc8",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -952,15 +253,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:36",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Bektemir tumani",
-      "latitude": 41.250707,
-      "longitude": 69.354924,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Ғаллаорол tumani",
+      "latitude": 40.007153,
+      "longitude": 67.619496,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -970,22 +271,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "bcf23690-ba75-44c6-a352-2243a52fbab2",
-      "name": "МЧЖ \" ARENA INT PETRO AND CHEMICALS\"",
-      "slug": "arena-int-petro-and-chemicals",
+      "id": "43fb0282-e020-476f-a3a3-426a5eae44ef",
+      "name": "\"Metane Gas\" МЧЖ",
+      "slug": "metane-gas",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1001,15 +330,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:36",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yashnobod tumani",
-      "latitude": 41.313763,
-      "longitude": 69.351712,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Бахмал tumani",
+      "latitude": 39.761919,
+      "longitude": 67.629952,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1019,22 +348,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "ed805f74-7e1c-42b5-89d3-449da2bf4fe9",
-      "name": "MCHJ \"RAHSHONA-H.H.\"",
-      "slug": "mchj-rahshona-hh",
+      "id": "7c658c70-eb38-4c45-a4cd-e44dffe6885a",
+      "name": "\"MIRZACHO'L METAN GAZ SERVICE\" МЧЖ",
+      "slug": "mirzachol-metan-gaz-service",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1050,15 +407,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:36",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yashnobod tumani",
-      "latitude": 41.307391,
-      "longitude": 69.350778,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.643269,
+      "longitude": 68.170958,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1068,22 +425,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "dc103c90-98f1-4373-80dd-c95d9d1018b9",
-      "name": "MCHJ \"GAZ TO'LDIRISH STANSIYASI\"",
-      "slug": "mchj-gaz-toldirish-stansiyasi",
+      "id": "461b0290-2026-4489-beba-2bda6d0201fb",
+      "name": "\"Хумоюнбек Безнис Инвест\"  МЧЖ",
+      "slug": "mfbt",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1099,15 +484,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:36",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yashnobod tumani",
-      "latitude": 41.256848,
-      "longitude": 69.335733,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Мирзачўл tumani",
+      "latitude": 40.614578,
+      "longitude": 68.204785,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1117,22 +502,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "bea4a725-a438-48bf-9fd6-5377bbba468e",
-      "name": "\"MAROTRANS\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
-      "slug": "marotrans-masuliyati-cheklangan-jamiyat",
+      "id": "6058f5bb-d977-4441-b1c0-51cffe123e02",
+      "name": "\"SARDOBA SERVIS\" МЧЖ",
+      "slug": "sardoba-servis",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1148,15 +561,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Bektemir tumani",
-      "latitude": 41.232751,
-      "longitude": 69.333788,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.612358,
+      "longitude": 68.115236,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1166,22 +579,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "59ab742b-7751-45d0-9bc0-8d217e5d216f",
-      "name": "МЧЖ \"DREAM GAS\"",
-      "slug": "dream-gas",
+      "id": "46de5e46-fc33-4aa0-be72-a2deb54cbca3",
+      "name": "\"BOG'DON-GAZ\" ХК",
+      "slug": "bogdon-gaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1197,15 +638,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.350838,
-      "longitude": 69.333258,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.502587,
+      "longitude": 67.223347,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1215,22 +656,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "a33c6fdc-209e-406b-8a96-85dacc9d5669",
-      "name": "MCHJ \"EDEM BOLALAR UYI\"",
-      "slug": "mchj-edem-bolalar-uyi",
+      "id": "66873dd9-171b-468f-8995-95bff987befb",
+      "name": "\"ESHIM OTA-AGQSH\" МЧЖ",
+      "slug": "eshim-ota-agqsh",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1246,15 +715,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.351752,
-      "longitude": 69.32818,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.443364,
+      "longitude": 67.214796,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1264,22 +733,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "89477dfa-7ada-4a3e-bba8-2971bfd558fc",
-      "name": "СП АО \"UZKABEL\"",
-      "slug": "uzkabeling2",
+      "id": "adaa6f73-522a-469e-954c-c0c2ae51b727",
+      "name": "\"ASIA-OIL\" МЧЖ",
+      "slug": "asia-oil",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1295,15 +792,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.34818,
-      "longitude": 69.325583,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.428563,
+      "longitude": 68.126585,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1313,22 +810,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "dab4c7da-03a0-4016-80aa-65f599ea9ac1",
-      "name": "МЧЖ \"JARQO'RG'ON GAZ METAN\"",
-      "slug": "jarqorgon-gaz-metan",
+      "id": "1ff5577e-977f-4dc5-b3f0-7f9556c602d9",
+      "name": "\"FORISH INVEST GAZ\" МЧЖ",
+      "slug": "forish-invest-gaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1344,15 +869,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yashnobod tumani",
-      "latitude": 41.273716,
-      "longitude": 69.325236,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.414578,
+      "longitude": 67.226541,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1362,22 +887,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "3bd4b8f2-0459-4e38-b9e2-6f4d23794054",
-      "name": "\"YUNUSOBOD METAN SERVIS\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
-      "slug": "yunusobod-metan-servis-masuliyati-cheklangan-jamiyat",
+      "id": "730a310f-f8e2-4fe3-af1e-8cecd2ae88a5",
+      "name": "\"ZOMIN EKO-GAZ\" МЧЖ",
+      "slug": "zomin-eko-gaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1393,15 +946,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.3738,
-      "longitude": 69.323233,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.402569,
+      "longitude": 68.125685,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1411,22 +964,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "d4ad68ce-27ce-453a-9810-618802ea55ca",
-      "name": "QOYLIQ EKO GAZ",
-      "slug": "qoyliq-eko-gaz",
+      "id": "0bdf388f-6561-4fde-a497-d1f5dd466188",
+      "name": "\"COMFORT SERVIS\" МЧЖ",
+      "slug": "comfort-servis",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1442,15 +1023,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.238951,
-      "longitude": 69.319871,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.335891,
+      "longitude": 67.516088,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1460,22 +1041,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "adf72bd4-43d9-450d-b888-9b98d59ea249",
-      "name": "МЧЖ \"MEGA-GAZ-SERVIS\"",
-      "slug": "mega-gaz-servis",
+      "id": "841544dd-7221-4a48-bdf1-bdbd102cfc2a",
+      "name": "\"PAXTAKOR MINGCHINOR\" МЧЖ",
+      "slug": "paxtakor-mingchinor",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1491,15 +1100,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Bektemir tumani",
-      "latitude": 41.193049,
-      "longitude": 69.31927,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.335874,
+      "longitude": 67.962514,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1509,22 +1118,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "7847109c-d509-42cc-9992-ebaaa5133614",
-      "name": "МЧЖ \"TRIUMPH ORIENTIR\"",
-      "slug": "triumph-orientir",
+      "id": "efefa740-b7f8-4047-9488-fc9a41377fb8",
+      "name": "\"YOSHLIK SAVDO TEKSTIL\" МЧЖ",
+      "slug": "yoshlik-savdo-tekstil",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1540,15 +1177,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, M. Ulug`bek tumani",
-      "latitude": 41.334858,
-      "longitude": 69.317844,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.335864,
+      "longitude": 67.962354,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1558,22 +1195,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "43608601-bffc-44d3-acd0-869ccb38f694",
-      "name": "MCHJ \"MIROBOD TABIIY GAZ\"",
-      "slug": "mchj-mirobod-tabiiy-gaz",
+      "id": "026ec3b9-bb7f-40d4-8dc9-0257adf952ae",
+      "name": "\"SHOHRUHXON\" МЧЖ",
+      "slug": "shohruhxon",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1589,15 +1254,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Mirobod tumani",
-      "latitude": 41.267779,
-      "longitude": 69.310034,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.334796,
+      "longitude": 67.940201,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1607,22 +1272,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "a36dbe59-13ee-4398-b03c-85a07c5d040d",
-      "name": "МЧЖ \"LAZIZ SAVDO BIZNES\"",
-      "slug": "laziz-savdo-biznes",
+      "id": "2a6f0e44-7684-4e60-838c-7ea950ba411e",
+      "name": "\"MAXFUZA-V\" МЧЖ",
+      "slug": "maxfuza-v",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1638,15 +1331,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.397148,
-      "longitude": 69.297773,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.325471,
+      "longitude": 67.814587,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1656,22 +1349,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "c2fc7a21-7896-457b-a65b-f1fcb6103113",
-      "name": "ООО \"POYTAXT GAZ SAVDO\"",
-      "slug": "poytaxt-gaz-savdo",
+      "id": "3fd57a04-e56e-42b5-b9a8-a8f39ea034dd",
+      "name": "\"METAN KOREA\" МЧЖ",
+      "slug": "metan-korea",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1687,15 +1408,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.243324,
-      "longitude": 69.285967,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Пахтакор tumani",
+      "latitude": 40.303612,
+      "longitude": 67.943658,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1705,22 +1426,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "c95fc6f5-0a0a-4ccc-a502-c0d30bc9f7d6",
-      "name": "\"NAK ABSOLUTE\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
-      "slug": "nak-absolute-masuliyati-cheklangan-jamiyat",
+      "id": "51a2f919-4dad-49e0-b03a-fd5efd20a7af",
+      "name": "\"FLAGMEN\" МЧЖ",
+      "slug": "flagmen",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1736,15 +1485,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Uchtepa tumani",
-      "latitude": 41.384268,
-      "longitude": 69.28153,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.225896,
+      "longitude": 68.523612,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1754,22 +1503,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "b872661a-cf2b-4fb1-ae99-68a29ab2b068",
-      "name": "МЧЖ \"BRO UNITED\"",
-      "slug": "bro-united",
+      "id": "037165fa-75bf-4099-9fe4-3589e2eca0d3",
+      "name": "\"JIZZAX BAXORI\" МЧЖ",
+      "slug": "jizzax-baxori",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1785,15 +1562,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.384252,
-      "longitude": 69.281215,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.281298,
+      "longitude": 67.102547,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1803,22 +1580,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "166a7542-eacd-4926-b099-6d8edc1869b1",
-      "name": "MCHJ \"DELUXE TRANS SERVIS\"",
-      "slug": "mchj-deluxe-trans-servis",
+      "id": "6219d9d2-d05b-4428-9102-7a948f216385",
+      "name": "\"OYBEKINA-BEKKINA\" МЧЖ",
+      "slug": "oybekina-bekkina",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1834,15 +1639,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.384153,
-      "longitude": 69.28078,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.254565,
+      "longitude": 68.234569,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1852,22 +1657,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "a9148588-edac-47ca-8bf1-5f3ad4d5070d",
-      "name": "\"HONOBOD GAS SERVICE\" MAS`ULIYATI CHEKLANGAN JAMIYAT",
-      "slug": "honobod-gas-service-masuliyati-cheklangan-jamiyat",
+      "id": "2f240221-6484-4abc-9980-c60d6e598c40",
+      "name": "\"TRANS ENERGO OIL\" МЧЖ",
+      "slug": "trans-energo-oil",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1883,15 +1716,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:48",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.244059,
-      "longitude": 69.278668,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.215285,
+      "longitude": 67.841236,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1901,22 +1734,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "37b121a2-d651-4c26-8ef5-64ed6fdb9aab",
-      "name": "\"ISHONCH BUNYODKOR NUR SERVIS\" MAS‘ULIYATI CHEKLANGAN JAMIYATI",
-      "slug": "ishonch-bunyodkor-nur-servis-masuliyati-cheklangan-jamiyati",
+      "id": "c9bef8a8-12ac-4815-b64f-891a55a00655",
+      "name": "\"TOSHKENT-TEMURBEK 777\" МЧЖ",
+      "slug": "toshkent-temurbek-777",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1932,15 +1793,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.164874,
-      "longitude": 69.276239,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.210302,
+      "longitude": 67.700204,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1950,22 +1811,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "ee8af679-0ec5-4bd9-b703-41bef1fabce7",
-      "name": "МЧЖ\"HUBLOT GAZ\"",
-      "slug": "hublot-gaz",
+      "id": "48ecf881-5057-4c65-a504-58cb275d91bb",
+      "name": "\"XABIBA ONA\" МЧЖ",
+      "slug": "xabiba-ona",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -1981,15 +1870,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.393071,
-      "longitude": 69.270915,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.207894,
+      "longitude": 67.832541,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -1999,22 +1888,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "ccdfdd45-9dea-4306-bc93-3785e9b44fdc",
-      "name": "MCHJ \"ALEKS PLYUS BIZNES\"",
-      "slug": "mchj-aleks-plyus-biznes",
+      "id": "c998d6f6-7f4b-4223-b915-720b0768b84d",
+      "name": "\"AZIZ\" МЧЖ",
+      "slug": "azizyise",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2030,15 +1947,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.391892,
-      "longitude": 69.269925,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.204585,
+      "longitude": 67.845212,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2048,22 +1965,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "ac978822-3830-4c8a-98ee-77af6a66ec40",
-      "name": "СП ООО \"ТАШКЕНТСКИЙ ТРУБНЫЙ ЗАВОД ИМ. В.Л.ГАЛЬПЕРИНА\"",
-      "slug": "i34g",
+      "id": "f02355a7-b6c7-4e38-93d4-95ebc810a81b",
+      "name": "\"AMUR-TEMUR YO'LLARI\" МЧЖ",
+      "slug": "amur-temur-yollari",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2079,15 +2024,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:35",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.206661,
-      "longitude": 69.2691,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.203615,
+      "longitude": 67.703647,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2097,22 +2042,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "d763d321-6c2d-4d1f-a32d-2a1dbb655d74",
-      "name": "СП ООО  \"RAMIRUS GAS SERVIS\"",
-      "slug": "ramirus-gas-servis",
+      "id": "31bde76b-6531-4ed9-b73d-cc4f8cc9c977",
+      "name": "\"SAMO REAL STAR\" МЧЖ",
+      "slug": "samo-real-star",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2128,15 +2101,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.24523,
-      "longitude": 69.262769,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.200571,
+      "longitude": 67.690201,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2146,22 +2119,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "115ba818-05ba-4be7-b5fd-899d81629fc3",
-      "name": "МЧЖ \"GLOBAL EKO METAN\"",
-      "slug": "global-eko-metan",
+      "id": "8270bab2-537c-4568-9a7f-441e646dced5",
+      "name": "\"East column\" МЧЖ",
+      "slug": "east-column",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2177,15 +2178,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.243677,
-      "longitude": 69.255782,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.178502,
+      "longitude": 67.680204,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2195,22 +2196,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "b6a86228-f327-4dba-933f-d835741a9cec",
-      "name": "ООО \"DELTA-BIZNES LTD\"",
-      "slug": "delta-biznes-ltd",
+      "id": "8e48665d-b029-49e8-828b-29c85fceaa0e",
+      "name": "\"ZERDA\" МЧЖ",
+      "slug": "zerda",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2226,15 +2255,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.245617,
-      "longitude": 69.246681,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.174589,
+      "longitude": 67.849235,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2244,22 +2273,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "0aa7c974-673f-47bf-a3fb-38138643507f",
-      "name": "МЧЖ \"DADANUR\"",
-      "slug": "dadanur",
+      "id": "7bdcf3f0-5be1-439f-a6ed-2c820d8d2bf7",
+      "name": "\"Oqtosh Everest Grand\" МЧЖ",
+      "slug": "oqtosh-everest-grand",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2275,15 +2332,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.243264,
-      "longitude": 69.241484,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.158525,
+      "longitude": 67.921432,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2293,22 +2350,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "e3777cc1-4922-4521-9080-6976f431dadd",
-      "name": "MCHJ \"ENERGO MASH TRANS IMPEX\"",
-      "slug": "mchj-energo-mash-trans-impex",
+      "id": "afa51fe7-eddf-4cf5-a69c-3c2fde129eaa",
+      "name": "\"GAZ PROPAN LYUKS\" МЧЖ",
+      "slug": "gaz-propan-lyuks",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2324,15 +2409,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.263851,
-      "longitude": 69.236488,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.154285,
+      "longitude": 67.835678,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2342,22 +2427,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "bd7e5ebd-9b40-48bc-8de9-c0565bcdefc2",
-      "name": "MCHJ \"TURON-TO'YONA\"",
-      "slug": "mchj-turon-toyona",
+      "id": "7e6dad60-5ef1-4d47-b942-9497d8011103",
+      "name": "\"MOHINUR QURILISH TA'MIR\" МЧЖ",
+      "slug": "mohinur-qurilish-tamir",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2373,15 +2486,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yakkasaroy tumani",
-      "latitude": 41.243642,
-      "longitude": 69.23533,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.122545,
+      "longitude": 68.081269,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2391,22 +2504,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "14796c5f-48b9-4246-8cf1-24facbab5233",
-      "name": "MCHJ \"TURKISTON YULDUZI\"",
-      "slug": "mchj-turkiston-yulduzi",
+      "id": "8f5109a9-d32b-4174-96de-18433379a83c",
+      "name": "\"LABIRNUM-PLUS\" XSICHK",
+      "slug": "labirnum-plus-xsichk",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2422,15 +2563,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.243016,
-      "longitude": 69.233389,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.115824,
+      "longitude": 67.824485,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2440,22 +2581,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "a8551bd0-247e-48ae-a5dc-2d57bc85ab99",
-      "name": "MCHJ \"GAZ NEFT-AVTO BENZIN\"",
-      "slug": "mchj-gaz-neft-avto-benzin",
+      "id": "c6e8db04-350a-45a2-8912-d0a2d3bf615c",
+      "name": "\"INVEST METAN GAZ\" МЧЖ",
+      "slug": "invest-metan-gaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2471,15 +2640,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.244335,
-      "longitude": 69.232707,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.113658,
+      "longitude": 67.861245,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2489,22 +2658,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "1a9228a3-be83-4d68-9f94-e54b5a3473ca",
-      "name": "ООО \"GAZ NEFT-AVTO BENZIN\"",
-      "slug": "gaz-neft-avto-benzin",
+      "id": "9f694796-458b-4300-b510-b47425d1a2a9",
+      "name": "\"GAS OIL SERVISE\" МЧЖ",
+      "slug": "gas-oil-servise",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2520,15 +2717,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.242497,
-      "longitude": 69.230717,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.112356,
+      "longitude": 67.612534,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2538,22 +2735,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "2af8d35a-2c28-4c55-902a-49db4e10b34d",
-      "name": "МЧЖ \"CLEAN GAS SERVICE\"",
-      "slug": "clean-gas-service",
+      "id": "9c8ddbad-266a-4e19-bb31-7b36edccaa7f",
+      "name": "\"OQTOSH OSIYO METAN\" МЧЖ",
+      "slug": "oqtosh-osiyo-metan",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2569,15 +2794,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.396553,
-      "longitude": 69.230143,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.107845,
+      "longitude": 67.930241,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2587,22 +2812,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "94b5ce76-0e2a-4d82-aa32-cedcb731c73c",
-      "name": "ООО \"O`ZGARISH GAZ TRANS\"",
-      "slug": "ozgarish-gaz-trans",
+      "id": "24063d3e-5c60-4de9-8fc3-4bcd924ed2b4",
+      "name": "\"Ойбекина Зомин\" МЧЖ",
+      "slug": "tssm",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2618,15 +2871,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.235787,
-      "longitude": 69.21476,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Зомин tumani",
+      "latitude": 40.107414,
+      "longitude": 68.456936,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2636,22 +2889,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "ae0ff1c0-3dac-4427-9a35-4bce938323e2",
-      "name": "MCHJ \"O'ZGARISH GAZ TRANS\"",
-      "slug": "mchj-ozgarish-gaz-trans",
+      "id": "dd3a5334-dd51-439b-92dd-bd6bbbde0762",
+      "name": "\"SATTOR-K\" МЧЖ",
+      "slug": "sattor-k",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2667,15 +2948,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yakkasaroy tumani",
-      "latitude": 41.254273,
-      "longitude": 69.214972,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.102536,
+      "longitude": 67.883645,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2685,22 +2966,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "dc23ba0e-ada6-4475-9dea-30192a4e0fbe",
-      "name": "MCHJ \"ARTUS\"",
-      "slug": "mchj-artus",
+      "id": "e6c80c2d-6246-40a3-87e0-2bf978d36fc9",
+      "name": "\"MIRKOMIL GAZ INVEST\" МЧЖ",
+      "slug": "mirkomil-gaz-invest",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2716,15 +3025,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.237998,
-      "longitude": 69.21461,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.102036,
+      "longitude": 68.213698,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2734,22 +3043,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "99add346-dadc-479e-966b-5cf9568f43da",
-      "name": "OOO UNG PETRO",
-      "slug": "ooo-ung-petro",
+      "id": "f315cad7-5b47-4812-93d0-b5b605a2016b",
+      "name": "\"BAHRIDDIN-O\" МЧЖ",
+      "slug": "bahriddin-o",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2765,15 +3102,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Sergeli tumani",
-      "latitude": 41.231437,
-      "longitude": 69.207252,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.100269,
+      "longitude": 67.813245,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2783,22 +3120,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "6ac88cf3-a171-4780-87f7-bda51ca62795",
-      "name": "ООО \"EKO GAZ SERVIS\"",
-      "slug": "eko-gaz-servis",
+      "id": "f792f273-6faa-40c6-8059-040a0f6b5c3f",
+      "name": "\"Чароғон Юлдузи\" МЧЖ",
+      "slug": "vucj",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2814,15 +3179,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:47",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Olmazor tumani",
-      "latitude": 41.382032,
-      "longitude": 69.20647,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Ш.Рашидов tumani",
+      "latitude": 40.096594,
+      "longitude": 67.885214,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2832,22 +3197,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "f1c499a1-043e-4344-a41b-9288d11948ec",
-      "name": "MCHJ \"CHASHKA SERVIS\"",
-      "slug": "mchj-chashka-servis",
+      "id": "9a9faa1e-d1e6-4c28-899a-5b618fce841d",
+      "name": "OOO \"Metan Oil Gaz\"",
+      "slug": "ooo-metan-oil-gaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2863,15 +3256,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Olmazor tumani",
-      "latitude": 41.38234,
-      "longitude": 69.206308,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Ш.Рашидов tumani",
+      "latitude": 40.093641,
+      "longitude": 67.912579,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2881,22 +3274,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "eda7d9fd-5d2c-48aa-8ac7-f497be13d35a",
-      "name": "МЧЖ \"GAZ OIL ORIENT\"",
-      "slug": "gaz-oil-orient",
+      "id": "0fc114df-2eb8-42f9-a935-4e57f19345dd",
+      "name": "\"MEGA AUTO LUXE\" МЧЖ",
+      "slug": "mega-auto-luxe",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2912,15 +3333,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yunusobod tumani",
-      "latitude": 41.429449,
-      "longitude": 69.202943,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.093021,
+      "longitude": 67.884796,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2930,22 +3351,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "2f8f9b98-1148-4cc6-9c88-bba3da65c22d",
-      "name": "MCHJ \"NAMTOSH METANGAZ\"",
-      "slug": "mchj-namtosh-metangaz",
+      "id": "9506d9b5-fe34-4aae-8472-eddba65ee10c",
+      "name": "\"JIZZAX AVTOGAZ\" МЧЖ",
+      "slug": "jizzax-avtogaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -2961,15 +3410,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.228065,
-      "longitude": 69.201896,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.086248,
+      "longitude": 67.820354,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -2979,22 +3428,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "63667518-d96e-42f0-9e73-1151b4b3a2a4",
-      "name": "МЧЖ \"FORTUNE GAZ SERVICE\"",
-      "slug": "fortune-gaz-service",
+      "id": "a50b613f-d8bd-40d8-8e4e-5b31cd085eb7",
+      "name": "\"REFUEL GAZ MASTER\" МЧЖ",
+      "slug": "refuel-gaz-master",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3010,15 +3487,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:34",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.224957,
-      "longitude": 69.198824,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.085468,
+      "longitude": 68.178562,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3028,22 +3505,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "cb5b4219-9040-45e0-8f96-9bfca367e13e",
-      "name": "МЧЖ \"RB-PETROL KLASSIK\"",
-      "slug": "rb-petrol-klassik",
+      "id": "48b2b3a2-27e3-421e-be6a-b27bc302c4fd",
+      "name": "\"AKMAL\" МЧЖ",
+      "slug": "akmal",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3059,15 +3564,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Olmazor tumani",
-      "latitude": 41.37418,
-      "longitude": 69.19488,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.085362,
+      "longitude": 68.178678,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3077,22 +3582,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "b530733d-ca77-4d89-ac5f-30928bd2ecda",
-      "name": "\"MEGA OIL BIZNES\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
-      "slug": "mega-oil-biznes-masuliyati-cheklangan-jamiyat",
+      "id": "b13aa089-6bad-4d8c-a90c-7934a993d90b",
+      "name": "\"BIZNES GAZ OIL KAPITAL\" МЧЖ",
+      "slug": "biznes-gaz-oil-kapital",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3108,15 +3641,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.187899,
-      "longitude": 69.193245,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.085285,
+      "longitude": 67.820259,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3126,22 +3659,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "94403f8c-acec-4268-ac39-7fdef023dd7c",
-      "name": "MCHJ \"NATURAL GAZ AVTO\"",
-      "slug": "mchj-natural-gaz-avto",
+      "id": "d4b44a84-9cab-44ce-9454-d4412b856124",
+      "name": "\"BARAKALI GAZ\" МЧЖ",
+      "slug": "barakali-gaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3157,15 +3718,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Olmazor tumani",
-      "latitude": 41.373807,
-      "longitude": 69.193063,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.084514,
+      "longitude": 67.950234,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3175,22 +3736,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "eb85b2a7-6fad-4470-9d10-4201b5a3df47",
-      "name": "\"SPETSKOMPLEKTTORG\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
-      "slug": "spetskomplekttorg-masuliyati-cheklangan-jamiyat",
+      "id": "18dafdd8-2f34-433b-88f4-b4c29f482f7e",
+      "name": "\"SAYXAN LUXE INVEST\" МЧЖ",
+      "slug": "sayxan-luxe-invest",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3206,15 +3795,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.226794,
-      "longitude": 69.188967,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.082356,
+      "longitude": 67.821456,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3224,22 +3813,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "a99dc0ad-fd94-46ec-9a9b-a211bd955580",
-      "name": "\"SHOXRUZ LAZIZ GAZ\" MAS'ULIYATI CHEKLANGAN JAMIYAT",
-      "slug": "shoxruz-laziz-gaz-masuliyati-cheklangan-jamiyat",
+      "id": "6907be83-72fe-4495-b249-382e8b4628a4",
+      "name": "ООО \"Gulida Kudratova\"",
+      "slug": "gulida-kudratova",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3255,15 +3872,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.19682,
-      "longitude": 69.187741,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Ш.Рашидов tumani",
+      "latitude": 40.072541,
+      "longitude": 67.835687,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3273,22 +3890,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "322abc64-5bf0-4a38-9d94-3609c81fc54b",
-      "name": "МЧЖ \"TASHBUS GAZ XIZMAT\"",
-      "slug": "tashbus-gaz-xizmat",
+      "id": "90ad804a-2a48-4dff-bf54-3a2a47a3fba4",
+      "name": "\"KAFOLAT GAZ INVEST\" МЧЖ",
+      "slug": "kafolat-gaz-invest",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3304,15 +3949,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Chilonzor tumani",
-      "latitude": 41.250819,
-      "longitude": 69.185288,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.072542,
+      "longitude": 67.452358,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3322,22 +3967,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "a48c6f6b-7fd9-4069-94f2-15cfc6a24c8d",
-      "name": "ПИИ ООО \"GAZ INVEST PROJECT\"",
-      "slug": "gaz-invest-project",
+      "id": "775448d7-4eef-4fab-87b7-336d78ac42d5",
+      "name": "\"TURBO KOMPRESSOR\" МЧЖ",
+      "slug": "turbo-kompressor",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3353,15 +4026,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Chilonzor tumani",
-      "latitude": 41.229112,
-      "longitude": 69.178576,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.067617,
+      "longitude": 67.681404,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3371,22 +4044,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "c3b9ea03-540c-43be-8cad-cd7d201a552b",
-      "name": "MCHJ \"GAZKOMPRESSOR-SERVIS\"",
-      "slug": "mchj-gazkompressor-servis",
+      "id": "b0867cbc-0785-476a-9f34-ce548f4a0bf0",
+      "name": "\"SIFAT-GAS-OIL\" МЧЖ",
+      "slug": "sifat-gas-oil",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3402,15 +4103,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Olmazor tumani",
-      "latitude": 41.371461,
-      "longitude": 69.175394,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.05224,
+      "longitude": 67.682703,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3420,22 +4121,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "add6c5d1-3376-4844-bf1c-b3bccaa6a131",
-      "name": "ООО \" GAS SNAB\"",
-      "slug": "gas-snab",
+      "id": "e0de5eb6-8608-4856-b967-e5d64cb67ad5",
+      "name": "\"SARDOR METAN-INVEST\" МЧЖ",
+      "slug": "sardor-metan-invest",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3451,15 +4180,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Olmazor tumani",
-      "latitude": 41.362481,
-      "longitude": 69.17506,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.038314,
+      "longitude": 68.438204,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3469,22 +4198,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "d096f1c6-5968-47f7-9d1d-5772d31521ab",
-      "name": "ООО \"PREMIUM IDEAL GAZ\"",
-      "slug": "premium-ideal-gaz3lik",
+      "id": "6c6be4c0-34ee-42b5-bd2c-0f45d2a6b317",
+      "name": "\"GRAIN ISLAND\" МЧЖ",
+      "slug": "grain-island",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3500,15 +4257,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Uchtepa tumani",
-      "latitude": 41.274361,
-      "longitude": 69.172973,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 40.025485,
+      "longitude": 67.611569,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3518,22 +4275,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "5f0afa33-28f0-4f82-b3d3-d7641d508110",
-      "name": "OOO \"LARGE SAIL\"",
-      "slug": "ooo-large-sail",
+      "id": "be48e3f4-12df-468c-9de3-6c8e35442c95",
+      "name": "\"NUR va TIB\" МЧЖ",
+      "slug": "nur-va-tib",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3549,15 +4334,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yangihayot tumani",
-      "latitude": 41.239438,
-      "longitude": 69.169433,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 39.991478,
+      "longitude": 68.015678,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3567,22 +4352,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "630c6c62-db69-451b-a723-5feabaffa982",
-      "name": "MCHJ \"MAR HAMKOR BEK\"",
-      "slug": "mchj-mar-hamkor-bek",
+      "id": "a10f8f9a-c609-4cc4-a43a-e387814e6023",
+      "name": "\"Янгиобод газ\" МЧЖ",
+      "slug": "268y",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3598,15 +4411,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Shayxontohur tumani",
-      "latitude": 41.337921,
-      "longitude": 69.165296,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Янгиобод tumani",
+      "latitude": 39.955634,
+      "longitude": 67.778512,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3616,22 +4429,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "36808c51-9dc6-4f82-8114-b7763e99ca8b",
-      "name": "MCHJ \"BUYUK BORIY VALIY\"",
-      "slug": "mchj-buyuk-boriy-valiy",
+      "id": "de8b896b-d044-451e-9c92-43e5151a8e7b",
+      "name": "\"Мухиддин Аҳмедов газ сервис\" МЧЖ",
+      "slug": "mdsc",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3647,15 +4488,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Uchtepa tumani",
-      "latitude": 41.318016,
-      "longitude": 69.15467,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, Ғаллаорол tumani",
+      "latitude": 39.924574,
+      "longitude": 67.521471,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3665,22 +4506,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "dc8b075a-4120-4a61-b834-ff771d4eb4f7",
-      "name": "MCHJ \"GENIAL INVEST\"",
-      "slug": "mchj-genial-invest",
+      "id": "08ba414d-5927-41cf-b2d1-d2de60cfed53",
+      "name": "\"GAZ-BEST-SERVIS\" МЧЖ",
+      "slug": "gaz-best-servis",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3696,15 +4565,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Yakkasaroy tumani",
-      "latitude": 41.318114,
-      "longitude": 69.154588,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 39.814578,
+      "longitude": 67.613674,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3714,22 +4583,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "10649d56-93ab-41ba-a245-b6ef796a9c21",
-      "name": "МЧЖ \"TASHBUS GAZOIL\"",
-      "slug": "tashbus-gazoil",
+      "id": "446b0cf2-a06a-45b5-9d8b-80c776b0d683",
+      "name": "\"G'ALLAOROL METAN INVEST\" МЧЖ",
+      "slug": "gallaorol-metan-invest",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3745,15 +4642,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Uchtepa tumani",
-      "latitude": 41.314894,
-      "longitude": 69.153765,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 39.812358,
+      "longitude": 67.625643,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3763,22 +4660,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "f3bac672-bf6d-4ddb-a605-7e03d7e48fe8",
-      "name": "МЧЖ \"EQUAL SUPER GAZ\"",
-      "slug": "equal-super-gaz",
+      "id": "6a2e5a9d-bebd-49ff-abf5-ad23eb888f99",
+      "name": "\"G'ALLAOROL-METAN GAZ\" МЧЖ",
+      "slug": "gallaorol-metan-gaz",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3794,15 +4719,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:46",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Chilonzor tumani",
-      "latitude": 41.230476,
-      "longitude": 69.151345,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 39.125698,
+      "longitude": 67.412536,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3812,22 +4737,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "cfd4b8f4-5f50-4e62-8525-fdb6cc5bf7b9",
-      "name": "MCHJ \"QUEST ROOMS\"",
-      "slug": "mchj-quest-rooms",
+      "id": "41d40ec7-cb83-4575-a3b3-0041195fa912",
+      "name": "\"BEST ART LINE\" МЧЖ",
+      "slug": "best-art-line",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3843,15 +4796,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:45",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Uchtepa tumani",
-      "latitude": 41.297919,
-      "longitude": 69.149901,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 39.102531,
+      "longitude": 67.401325,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3861,22 +4814,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "1c17aacf-13a8-40c0-bd77-68d9400b1bea",
-      "name": "МЧЖ \" LIDER GAZ BIZNES\"",
-      "slug": "lider-gaz-biznes",
+      "id": "a5961807-27c7-4911-bf25-97e8ef4e8511",
+      "name": "\"DAVLATBEK ZIYO-NUR\" МЧЖ",
+      "slug": "davlatbek-ziyo-nur",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3892,15 +4873,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:45",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Shayxontohur tumani",
-      "latitude": 41.363631,
-      "longitude": 69.149087,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 39.101236,
+      "longitude": 67.617896,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3910,22 +4891,50 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,
       "max_editorial_rating": null
     },
     {
-      "id": "a16de1bc-529a-47c6-8259-e64c62621769",
-      "name": "MCHJ \"POWER AVTO GAZ\"",
-      "slug": "mchj-power-avto-gaz",
+      "id": "9f80d426-c836-475f-96ca-68f302af4bd4",
+      "name": "\"AAA EEMAN TRADE\" МЧЖ",
+      "slug": "aaa-eeman-trade",
       "legal_name": null,
       "type": null,
       "categories": [
@@ -3941,15 +4950,15 @@
       "old_review_rating": null,
       "brand_logo": null,
       "parent_id": null,
-      "register_date": "2024-10-30 14:33:45",
+      "register_date": "2024-10-30 14:33:33",
       "cover_image": null,
       "phone_number": null,
       "email": null,
       "website": null,
-      "address": "Toshkent shahri, Uchtepa tumani",
-      "latitude": 41.268162,
-      "longitude": 69.147743,
-      "region": "d970d402-c47a-4e74-a3fe-b2bf30f435d8",
+      "address": "Jizzax viloyati, None",
+      "latitude": 39.08231,
+      "longitude": 67.601223,
+      "region": "2e75b48d-7561-4d80-955e-1fac46d3b3a9",
       "district": null,
       "verified": false,
       "is_active": true,
@@ -3959,13 +4968,41 @@
       "is_saved": false,
       "editorial_ratings": [],
       "work_dates": [
-        { "day": 0, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 1, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 2, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 3, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 4, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 5, "start": "00:00:00", "end": "24:00:00" },
-        { "day": 6, "start": "00:00:00", "end": "24:00:00" }
+        {
+          "day": 0,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 1,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 2,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 3,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 4,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 5,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        },
+        {
+          "day": 6,
+          "start": "00:00:00",
+          "end": "24:00:00"
+        }
       ],
       "branch_count": 0,
       "allowed_review_character": 10,

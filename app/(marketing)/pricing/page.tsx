@@ -30,7 +30,7 @@ export default async function PricingPage() {
         <p className="text-balance px-4 text-center text-2xl font-medium">
           You are an {user.role}. Back to{" "}
           <Link
-            href="/admin"
+            href="/dashboard/stations"
             className="text-muted-foreground underline underline-offset-4 hover:text-purple-500"
           >
             Dashboard
