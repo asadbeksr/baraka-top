@@ -27,6 +27,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: "www.gazeta.uz"
+      },
+      {
+        protocol: 'https',
+        hostname: 'metanchi.uz'
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.metanchi.uz'
       }
     ],
   },

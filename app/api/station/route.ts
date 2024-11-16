@@ -28,6 +28,8 @@ export async function PUT(req: NextRequest) {
       return new NextResponse("Station ID is required", { status: 400 });
     }
 
+    console.log(updateData, 'U P D A T E D')
+
     // Update an existing station in the database
     const updatedStation = await prisma.station.update({
       where: { id },

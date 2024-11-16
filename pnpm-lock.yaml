@@ -109,13 +109,16 @@ dependencies:
     version: 0.0.8(react@18.3.1)
   '@supabase/ssr':
     specifier: latest
-    version: 0.5.1(@supabase/supabase-js@2.46.1)
+    version: 0.5.2(@supabase/supabase-js@2.46.1)
   '@supabase/supabase-js':
     specifier: latest
     version: 2.46.1
   '@t3-oss/env-nextjs':
     specifier: ^0.11.0
     version: 0.11.0(typescript@5.5.3)(zod@3.23.8)
+  '@tanstack/react-table':
+    specifier: ^8.20.5
+    version: 8.20.5(react-dom@18.3.1)(react@18.3.1)
   '@twa-dev/sdk':
     specifier: ^7.10.1
     version: 7.10.1(react@18.3.1)
@@ -4616,13 +4619,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@supabase/ssr@0.5.1(@supabase/supabase-js@2.46.1):
-    resolution: {integrity: sha512-+G94H/GZG0nErZ3FQV9yJmsC5Rj7dmcfCAwOt37hxeR1La+QTl8cE9whzYwPUrTJjMLGNXoO+1BMvVxwBAbz4g==}
+  /@supabase/ssr@0.5.2(@supabase/supabase-js@2.46.1):
+    resolution: {integrity: sha512-n3plRhr2Bs8Xun1o4S3k1CDv17iH5QY9YcoEvXX3bxV1/5XSasA0mNXYycFmADIdtdE6BG9MRjP5CGIs8qxC8A==}
     peerDependencies:
       '@supabase/supabase-js': ^2.43.4
     dependencies:
       '@supabase/supabase-js': 2.46.1
-      cookie: 0.6.0
+      '@types/cookie': 0.6.0
+      cookie: 0.7.2
     dev: false
 
   /@supabase/storage-js@2.7.1:
@@ -4829,6 +4833,23 @@ packages:
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.6
     dev: true
+
+  /@tanstack/react-table@8.20.5(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-WEHopKw3znbUZ61s9i0+i9g8drmDo6asTWbrQh8Us63DAk/M0FkmIqERew6P71HI75ksZ2Pxyuf4vvKh9rAkiA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@tanstack/table-core': 8.20.5
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
+
+  /@tanstack/table-core@8.20.5:
+    resolution: {integrity: sha512-P9dF7XbibHph2PFRz8gfBKEXEY/HJPOhym8CHmjF8y3q5mWpKx9xtZapXQUWCgkqvsK0R46Azuz+VaxD4Xl+Tg==}
+    engines: {node: '>=12'}
+    dev: false
 
   /@twa-dev/sdk@7.10.1(react@18.3.1):
     resolution: {integrity: sha512-mY9JaBPspYfLdzoaARVmr0GKXUO3X4hi1vuP+04UUFWST2lB50xGSxExOFz5I3vBaxnrdLregBGiaitvvWaX6w==}
@@ -5990,6 +6011,11 @@ packages:
 
   /cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
+    engines: {node: '>= 0.6'}
+    dev: false
+
+  /cookie@0.7.2:
+    resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
     dev: false
 
