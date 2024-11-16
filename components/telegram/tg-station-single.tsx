@@ -135,27 +135,45 @@ export default function TgStationSingle({ station }) {
   }, []);
 
   const shareOnTelegram = () => {
-    if (WebApp) {
-      WebApp.showPopup(
-        {
-          title: "Forward to",
-          message: "Share this content with your contacts in Telegram.",
-          buttons: [
-            { id: "share", type: "ok" }, // No 'text' property here
-            { id: "cancel", type: "close" },
-          ],
-        },
-        (buttonId) => {
-          if (buttonId === "share") {
-            WebApp.sendData("Check out this station! 🚀");
-          } else {
-            console.log("Share canceled.");
-          }
-        }
-      );
-    } else {
-      console.error("Telegram WebApp SDK is not initialized.");
-    }
+    const url = `https://t.me/metanchiuz_bot/app?startapp=p_1`;
+    const text =`
+    
+    Заправляйтесь удобно и быстро с Metanchi.uz
+
+    @metanchiuz_bot
+
+    Мини-приложение Metanchi.uz в Telegram — это ваш надежный помощник для заправки метановым газом в Узбекистане. Теперь вы всегда будете в курсе ситуации на любой АЗС. Узнавайте наличие газа, качество заправки, текущее давление и просматривайте онлайн камеры, чтобы понять, есть ли очередь.
+    
+    www.metanchi.uz
+    `; // Replace with your custom text
+  
+    // Construct the Telegram share URL
+    const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+  
+    // Open the share URL in a new tab
+    window.open(shareUrl, "_blank");
+
+    // if (WebApp) {
+    //   WebApp.showPopup(
+    //     {
+    //       title: "Forward to",
+    //       message: "Share this content with your contacts in Telegram.",
+    //       buttons: [
+    //         { id: "share", type: "ok" }, // No 'text' property here
+    //         { id: "cancel", type: "close" },
+    //       ],
+    //     },
+    //     (buttonId) => {
+    //       if (buttonId === "share") {
+    //         WebApp.sendData("Check out this station! 🚀");
+    //       } else {
+    //         console.log("Share canceled.");
+    //       }
+    //     }
+    //   );
+    // } else {
+    //   console.error("Telegram WebApp SDK is not initialized.");
+    // }
   };
   
 
@@ -192,13 +210,14 @@ export default function TgStationSingle({ station }) {
             <span>Saqlash</span>
           </Button>
           <Button
-          onClick={shareOnTelegram}
-            variant="outline"
-            className="flex h-auto flex-col items-center gap-2 bg-card py-4"
-          >
-            <Share2 className="h-6 w-6" />
-            <span>Ulashish</span>
-          </Button>
+  onClick={shareOnTelegram}
+  variant="outline"
+  className="flex h-auto flex-col items-center gap-2 bg-card py-4"
+>
+  <Share2 className="h-6 w-6" />
+  <span>Ulashish</span>
+</Button>
+
           <Button
             variant="outline"
             className="flex h-auto flex-col items-center gap-2 bg-card py-4"
