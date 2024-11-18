@@ -13,14 +13,21 @@ export const getAllStations = async () => {
 };
 
 // Fetch station by ID
-export const getStationById = async (id) => {
+export const getStationById = async (id: string) => {
+  console.log('Fetching station with ID:', id);
+  if (!id) {
+    console.log('No ID provided');
+    return null;
+  }
+  
   try {
     const station = await prisma.station.findUnique({
-      where: { id },
+      where: { id: String(id) },
     });
+    console.log('Found station:', station);
     return station;
   } catch (error) {
-    console.error(error);
+    console.error('Error fetching station:', error);
     return null;
   }
 };

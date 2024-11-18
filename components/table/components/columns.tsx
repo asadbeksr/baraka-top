@@ -1,6 +1,7 @@
 "use client"
 
 import { ColumnDef } from "@tanstack/react-table"
+import Link from "next/link"
 
 import { labels, priorities, statuses } from "../data/data"
 import { Task } from "../data/schema"
@@ -39,7 +40,14 @@ export const columns: ColumnDef<Task>[] = [
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Name" />
     ),
-    cell: ({ row }) => <div className="">{row.getValue("name")}</div>,
+    cell: ({ row }) => (
+      <Link 
+        href={`/dashboard/stations/${row.original.id}`}
+        className="hover:underline font-medium"
+      >
+        {row.getValue("name")}
+      </Link>
+    ),
   },
   {
     accessorKey: "address",

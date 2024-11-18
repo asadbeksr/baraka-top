@@ -34,7 +34,14 @@ export default async function StationsPage() {
       <DashboardHeader
         heading="Zapravkalar"
         text={`Gaz quyish shahobchalar ro‘yxati`}
-      />
+      >
+        <Link href="/dashboard/stations/new">
+          <Button>
+            <PlusIcon className="mr-2 h-4 w-4" />
+            Create
+          </Button>
+        </Link>
+      </DashboardHeader>
 
       {/* @ts-ignore */}
       <DataTable data={data} columns={columns} />

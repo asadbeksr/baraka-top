@@ -1,20 +1,27 @@
 import Link from "next/link";
-import { ArrowLeftIcon, SaveIcon } from "lucide-react";
+import { ArrowLeftIcon } from "lucide-react";
+import { notFound } from "next/navigation";
 
 import { getStationById } from "@/lib/stations";
 import { Button } from "@/components/ui/button";
 import { DashboardHeader } from "@/components/dashboard/header";
 import StationForm from "@/components/forms/station-form";
 
-export default async function StationsSinglePage({ params }) {
+// Server component for the page
+export default async function StationsSinglePage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const isNewStation = params.id === "new";
-  const station = isNewStation ? null : await getStationById(params.id);
-
-  // Handle the case where a non-existent ID is provided for edit mode
-  if (!isNewStation && !station) {
+  
+  if (isNewStation) {
     return (
       <>
-        <DashboardHeader heading={"Not Found"}>
+        <DashboardHeader
+          heading="Create New Station"
+          text="Add a new gas station to the system"
+        >
           <div className="flex items-center gap-2">
             <Link
               href="/dashboard/stations"
@@ -28,15 +35,24 @@ export default async function StationsSinglePage({ params }) {
             </Link>
           </div>
         </DashboardHeader>
+        <div className="grid gap-10">
+          <StationForm station={null} />
+        </div>
       </>
     );
+  }
+
+  const station = await getStationById(params.id);
+
+  if (!station) {
+    notFound();
   }
 
   return (
     <>
       <DashboardHeader
-        heading={station?.name || "Create New Station"}
-        text={station?.address || ""}
+        heading={station.name || "Unnamed Station"}
+        text={station.address || "No address provided"}
       >
         <div className="flex items-center gap-2">
           <Link
@@ -51,8 +67,9 @@ export default async function StationsSinglePage({ params }) {
           </Link>
         </div>
       </DashboardHeader>
-
-      <StationForm station={station} />
+      <div className="grid gap-10">
+        <StationForm station={station} />
+      </div>
     </>
   );
 }

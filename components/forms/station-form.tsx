@@ -4,6 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
+import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -15,6 +16,16 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
 
@@ -37,9 +48,9 @@ const stationSchema = z.object({
   longitude: z.number().optional().nullable(),
 });
 
-
 export default function StationForm({ station }) {
   const router = useRouter();
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false);
 
   const isEditMode = Boolean(station);
   const form = useForm({
@@ -100,30 +111,49 @@ export default function StationForm({ station }) {
       }
     } catch (error) {
       console.error("Failed to delete station:", error);
-      toast.error("Something went wrong.", {
-        description: "The station was not deleted. Please try again.",
+      toast.error("Failed to delete station", {
+        description: error.message,
       });
     }
   }
 
   return (
     <Card>
-      <CardHeader>
-        <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold">
-            {isEditMode ? "Edit Station" : "Create New Station"}
+      <CardHeader className="flex flex-row items-center justify-between">
+        <div className="space-y-1.5">
+          <h2 className="text-2xl font-semibold leading-none tracking-tight">
+            {isEditMode ? "Edit Station" : "Create Station"}
           </h2>
-
-          <div className="flex gap-2">
-            {isEditMode && (
-              <Button variant="destructive" onClick={onDelete}>
-                Delete
-              </Button>
-            )}
-            <Button onClick={form.handleSubmit(onSubmit)}>
-              {isEditMode ? "Save" : "Create"}
-            </Button>
-          </div>
+        </div>
+        <div className="flex items-center gap-2">
+          {isEditMode && (
+            <>
+              <AlertDialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
+                <Button 
+                  variant="destructive" 
+                  onClick={() => setShowDeleteDialog(true)}
+                >
+                  Delete
+                </Button>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                    <AlertDialogDescription>
+                      This action cannot be undone. This will permanently delete the station
+                      and remove all of its data from our servers.
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    <AlertDialogAction onClick={onDelete}>Delete</AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+            </>
+          )}
+          <Button onClick={form.handleSubmit(onSubmit)}>
+            Save
+          </Button>
         </div>
       </CardHeader>
       <CardContent>
@@ -220,7 +250,13 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Latitude</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Latitude" type="number"/>
+                    <Input 
+                      {...field} 
+                      type="number" 
+                      step="any"
+                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                      placeholder="Enter Latitude" 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -234,7 +270,13 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Longitude</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Longitude"  type="number"/>
+                    <Input 
+                      {...field} 
+                      type="number" 
+                      step="any"
+                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                      placeholder="Enter Longitude" 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -248,7 +290,12 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Price</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Price"  type="number"/>
+                    <Input 
+                      {...field} 
+                      type="number"
+                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                      placeholder="Enter Price" 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -262,7 +309,12 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Pressure</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Pressure"  type="number"/>
+                    <Input 
+                      {...field} 
+                      type="number"
+                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                      placeholder="Enter Pressure" 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -276,7 +328,12 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Columns Count</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Columns Count"  type="number"/>
+                    <Input 
+                      {...field} 
+                      type="number"
+                      onChange={e => field.onChange(e.target.value ? parseInt(e.target.value, 10) : null)}
+                      placeholder="Enter Columns Count" 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -290,7 +347,12 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Gas Temperature</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Gas Temperature"  type="number"/>
+                    <Input 
+                      {...field} 
+                      type="number"
+                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                      placeholder="Enter Gas Temperature" 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -304,7 +366,12 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Methane Density</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Methane Density"  type="number"/>
+                    <Input 
+                      {...field} 
+                      type="number"
+                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                      placeholder="Enter Methane Density" 
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
