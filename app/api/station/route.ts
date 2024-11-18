@@ -6,6 +6,9 @@ export async function POST(req: NextRequest) {
   try {
     const data = await req.json(); // Parse the request body
 
+    // Remove any id field if present
+    delete data.id;
+
     // Create a new station in the database
     const newStation = await prisma.station.create({
       data,
@@ -14,7 +17,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(newStation, { status: 200 });
   } catch (error) {
     console.error("Failed to create station:", error);
-    return new NextResponse("Failed to create station", { status: 500 });
+    return new NextResponse(
+      error instanceof Error ? error.message : "Failed to create station", 
+      { status: 500 }
+    );
   }
 }
 
@@ -28,8 +34,6 @@ export async function PUT(req: NextRequest) {
       return new NextResponse("Station ID is required", { status: 400 });
     }
 
-    console.log(updateData, 'U P D A T E D')
-
     // Update an existing station in the database
     const updatedStation = await prisma.station.update({
       where: { id },
@@ -39,7 +43,10 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json(updatedStation, { status: 200 });
   } catch (error) {
     console.error("Failed to update station:", error);
-    return new NextResponse("Failed to update station", { status: 500 });
+    return new NextResponse(
+      error instanceof Error ? error.message : "Failed to update station",
+      { status: 500 }
+    );
   }
 }
 
@@ -60,6 +67,9 @@ export async function DELETE(req: NextRequest) {
     return NextResponse.json(deletedStation, { status: 200 });
   } catch (error) {
     console.error("Failed to delete station:", error);
-    return new NextResponse("Failed to delete station", { status: 500 });
+    return new NextResponse(
+      error instanceof Error ? error.message : "Failed to delete station",
+      { status: 500 }
+    );
   }
 }

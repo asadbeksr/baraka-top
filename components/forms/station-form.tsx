@@ -30,22 +30,21 @@ import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
 
 const stationSchema = z.object({
-  id: z.string(),
   name: z.string().min(1, "Station name is required"),
   address: z.string().min(1, "Address is required"),
   legalName: z.string().optional().nullable(),
   region: z.string().optional().nullable(),
-  website: z.string().url().optional().nullable(),
+  website: z.string().url().optional().nullable().or(z.literal("")),
   phoneNumber: z.string().optional().nullable(),
   cameraIP: z.string().optional().nullable(),
   landmark: z.string().optional().nullable(),
-  methaneDensity: z.number().optional().nullable(),
-  columnsCount: z.number().optional().nullable(),
-  gasTemperature: z.number().optional().nullable(),
-  pressure: z.number().optional().nullable(),
-  price: z.number().optional().nullable(),
-  latitude: z.number().optional().nullable(),
-  longitude: z.number().optional().nullable(),
+  methaneDensity: z.coerce.number().optional().nullable(),
+  columnsCount: z.coerce.number().optional().nullable(),
+  gasTemperature: z.coerce.number().optional().nullable(),
+  pressure: z.coerce.number().optional().nullable(),
+  price: z.coerce.number().optional().nullable(),
+  latitude: z.coerce.number().optional().nullable(),
+  longitude: z.coerce.number().optional().nullable(),
 });
 
 export default function StationForm({ station }) {
@@ -56,12 +55,25 @@ export default function StationForm({ station }) {
   const form = useForm({
     resolver: zodResolver(stationSchema),
     defaultValues: {
-      ...station,
+      name: station?.name || "",
+      address: station?.address || "",
+      legalName: station?.legalName || "",
+      region: station?.region || "",
+      website: station?.website || "",
+      phoneNumber: station?.phoneNumber || "",
+      cameraIP: station?.cameraIP || "",
+      landmark: station?.landmark || "",
+      methaneDensity: station?.methaneDensity || null,
+      columnsCount: station?.columnsCount || null,
+      gasTemperature: station?.gasTemperature || null,
+      pressure: station?.pressure || null,
+      price: station?.price || null,
+      latitude: station?.latitude || null,
+      longitude: station?.longitude || null,
     },
   });
 
   const onSubmit = async (data) => {
-    console.log(data, 'O N S U B M I T')
     try {
       const response = await fetch("/api/station", {
         method: isEditMode ? "PUT" : "POST",
@@ -72,21 +84,25 @@ export default function StationForm({ station }) {
       });
 
       if (!response.ok) {
-        toast.error("Something went wrong.", {
-          description: isEditMode
-            ? "The station was not updated. Please try again."
-            : "The station could not be created. Please try again.",
-        });
-      } else {
-        toast.success(
-          isEditMode
-            ? "Station details have been updated."
-            : "New station has been created."
-        );
-        if(!isEditMode) router.push('/dashboard/stations')
+        const error = await response.text();
+        throw new Error(error);
       }
+
+      toast.success(
+        isEditMode
+          ? "Station details have been updated."
+          : "New station has been created."
+      );
+      
+      if(!isEditMode) {
+        router.push('/dashboard/stations');
+      }
+      router.refresh();
     } catch (error) {
-      toast.error("An error occurred.");
+      console.error("Failed to save station:", error);
+      toast.error("Failed to save station", {
+        description: error.message,
+      });
     }
   };
 
@@ -151,14 +167,18 @@ export default function StationForm({ station }) {
               </AlertDialog>
             </>
           )}
-          <Button onClick={form.handleSubmit(onSubmit)}>
-            Save
+          <Button type="submit" form="station-form">
+            {isEditMode ? "Save" : "Create"}
           </Button>
         </div>
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <form 
+            id="station-form"
+            onSubmit={form.handleSubmit(onSubmit)} 
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+          >
             <FormField
               control={form.control}
               name="name"

@@ -5,6 +5,7 @@ import { MoreHorizontal } from "lucide-react"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
+import Link from "next/link"
 
 import {
   AlertDialog,
@@ -26,8 +27,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-import { taskSchema } from "../data/schema"
-import Link from "next/link"
+import { type Station } from "../data/schema"
 
 interface DataTableRowActionsProps<TData> {
   row: Row<TData>
@@ -37,7 +37,7 @@ export function DataTableRowActions<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
   const router = useRouter()
-  const task = taskSchema.parse(row.original)
+  const station = row.original as Station
   const [showDeleteDialog, setShowDeleteDialog] = useState(false)
 
   const handleDelete = async () => {
@@ -47,7 +47,7 @@ export function DataTableRowActions<TData>({
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ id: task.id }),
+        body: JSON.stringify({ id: station.id }),
       });
 
       if (response.ok) {
@@ -60,7 +60,7 @@ export function DataTableRowActions<TData>({
     } catch (error) {
       console.error("Failed to delete station:", error);
       toast.error("Failed to delete station", {
-        description: error.message,
+        description: error instanceof Error ? error.message : "Unknown error",
       });
     }
   };
@@ -94,7 +94,7 @@ export function DataTableRowActions<TData>({
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="w-[160px]">
-          <Link href={`/dashboard/stations/${task.id}`} className="w-full">
+          <Link href={`/dashboard/stations/${station.id}`} className="w-full">
             <DropdownMenuItem>Edit</DropdownMenuItem>
           </Link>
           <DropdownMenuSeparator />

@@ -27,17 +27,17 @@ import {
 
 import { DataTablePagination } from "./data-table-pagination"
 import { DataTableToolbar } from "./data-table-toolbar"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { type Station } from "../data/schema"
 
-interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[]
-  data: TData[]
+interface DataTableProps {
+  columns: ColumnDef<Station>[]
+  data: Station[]
 }
 
-export function DataTable<TData, TValue>({
+export function DataTable({
   columns,
   data,
-}: DataTableProps<TData, TValue>) {
+}: DataTableProps) {
   const [rowSelection, setRowSelection] = React.useState({})
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({})
@@ -69,11 +69,10 @@ export function DataTable<TData, TValue>({
   })
 
   return (
-    <Card  className="space-y-4">
-      <CardHeader className="pb-0">
+    <div className="space-y-4">
       <DataTableToolbar table={table} />
-      </CardHeader>
-        <Table className="min-h-[50vh]">
+      <div className="rounded-md border">
+        <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
@@ -92,7 +91,7 @@ export function DataTable<TData, TValue>({
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody  >
+          <TableBody>
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
@@ -110,7 +109,7 @@ export function DataTable<TData, TValue>({
                 </TableRow>
               ))
             ) : (
-              <TableRow >
+              <TableRow>
                 <TableCell
                   colSpan={columns.length}
                   className="h-24 text-center"
@@ -121,9 +120,8 @@ export function DataTable<TData, TValue>({
             )}
           </TableBody>
         </Table>
-      <CardContent>
+      </div>
       <DataTablePagination table={table} />
-      </CardContent>
-    </Card>
+    </div>
   )
 }
