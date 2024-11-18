@@ -1,11 +1,21 @@
-import { prisma } from "@/lib/db";
+import {  prisma } from "@/lib/db";
 
 // Fetch all stations
 export const getAllStations = async () => {
   try {
     const stations = await prisma.station.findMany();
-    console.log(stations, 'S T A T I O N S');
     return stations;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+};
+
+// Fetch all amenities
+export const getAllAmenities = async () => {
+  try {
+    const amenities = await prisma.amenity.findMany();
+    return amenities;
   } catch (error) {
     console.error(error);
     return [];
@@ -14,17 +24,21 @@ export const getAllStations = async () => {
 
 // Fetch station by ID
 export const getStationById = async (id: string) => {
-  console.log('Fetching station with ID:', id);
   if (!id) {
-    console.log('No ID provided');
     return null;
   }
   
   try {
     const station = await prisma.station.findUnique({
       where: { id: String(id) },
+      include: {
+        amenities: {
+          include: {
+            amenity: true
+          }
+        }
+      }
     });
-    console.log('Found station:', station);
     return station;
   } catch (error) {
     console.error('Error fetching station:', error);
@@ -34,12 +48,29 @@ export const getStationById = async (id: string) => {
 
 // Update station by ID
 export const updateStation = async (id, data) => {
+  const { amenities, ...stationData } = data;
+  
   try {
     const updatedStation = await prisma.station.update({
       where: { id },
-      data,
+      data: {
+        ...stationData,
+        amenities: {
+          deleteMany: {},
+          create: amenities.map(amenity => ({
+            amenityId: amenity.amenityId,
+            enabled: amenity.enabled
+          }))
+        }
+      },
+      include: {
+        amenities: {
+          include: {
+            amenity: true
+          }
+        }
+      }
     });
-    console.log(updatedStation, 'Updated Station');
     return updatedStation;
   } catch (error) {
     console.error("Failed to update station:", error);
@@ -49,12 +80,28 @@ export const updateStation = async (id, data) => {
 
 // Create a new station
 export const createStation = async (data) => {
+  const { amenities, ...stationData } = data;
+  
   try {
-    const newStation = await prisma.station.create({
-      data,
+    const station = await prisma.station.create({
+      data: {
+        ...stationData,
+        amenities: {
+          create: amenities.map(amenity => ({
+            amenityId: amenity.amenityId,
+            enabled: amenity.enabled
+          }))
+        }
+      },
+      include: {
+        amenities: {
+          include: {
+            amenity: true
+          }
+        }
+      }
     });
-    console.log(newStation, 'New Station Created');
-    return newStation;
+    return station;
   } catch (error) {
     console.error("Failed to create station:", error);
     return null;
@@ -67,7 +114,6 @@ export const deleteStation = async (id) => {
     const deletedStation = await prisma.station.delete({
       where: { id },
     });
-    console.log(deletedStation, 'Deleted Station');
     return deletedStation;
   } catch (error) {
     console.error("Failed to delete station:", error);

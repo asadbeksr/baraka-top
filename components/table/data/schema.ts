@@ -1,5 +1,13 @@
 import { z } from "zod";
 
+const amenitySchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  slug: z.string(),
+  enabled: z.boolean(),
+  stationId: z.string(),
+});
+
 // We're keeping a simple non-relational schema here.
 // IRL, you will have a schema for your data models.
 export const stationSchema = z.object({
@@ -19,9 +27,11 @@ export const stationSchema = z.object({
   price: z.coerce.number().optional().nullable(),
   latitude: z.coerce.number().optional().nullable(),
   longitude: z.coerce.number().optional().nullable(),
+  amenities: z.array(amenitySchema).optional(),
 });
 
 export type Station = z.infer<typeof stationSchema>;
+export type Amenity = z.infer<typeof amenitySchema>;
 
 // Schema for new station creation (without id)
 export const createStationSchema = stationSchema.omit({ id: true });

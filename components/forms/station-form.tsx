@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import { z } from "zod";
+import { stationSchema, type StationFormData } from "@/lib/validations/schemas";
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -28,31 +28,20 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
+import { StationAmenities } from "./station-amenities";
+import { AMENITIES } from "@/config/amenities";
 
-const stationSchema = z.object({
-  name: z.string().min(1, "Station name is required"),
-  address: z.string().min(1, "Address is required"),
-  legalName: z.string().optional().nullable(),
-  region: z.string().optional().nullable(),
-  website: z.string().url().optional().nullable().or(z.literal("")),
-  phoneNumber: z.string().optional().nullable(),
-  cameraIP: z.string().optional().nullable(),
-  landmark: z.string().optional().nullable(),
-  methaneDensity: z.coerce.number().optional().nullable(),
-  columnsCount: z.coerce.number().optional().nullable(),
-  gasTemperature: z.coerce.number().optional().nullable(),
-  pressure: z.coerce.number().optional().nullable(),
-  price: z.coerce.number().optional().nullable(),
-  latitude: z.coerce.number().optional().nullable(),
-  longitude: z.coerce.number().optional().nullable(),
-});
-
-export default function StationForm({ station }) {
+export default function StationForm({ station, amenities }) {
   const router = useRouter();
-  const [showDeleteDialog, setShowDeleteDialog] = useState(false);
-
   const isEditMode = Boolean(station);
-  const form = useForm({
+  const [selectedAmenities, setSelectedAmenities] = useState(
+    station?.amenities?.map(amenity => ({
+      amenityId: amenity.amenity.id,
+      enabled: amenity.enabled
+    })) || []
+  );
+
+  const form = useForm<StationFormData>({
     resolver: zodResolver(stationSchema),
     defaultValues: {
       name: station?.name || "",
@@ -73,19 +62,39 @@ export default function StationForm({ station }) {
     },
   });
 
-  const onSubmit = async (data) => {
+  const handleAmenityChange = (amenity) => {
+    setSelectedAmenities(prev => {
+      const existing = prev.find(a => a.amenityId === amenity.amenityId);
+      if (existing) {
+        return prev.map(a => 
+          a.amenityId === amenity.amenityId 
+            ? { ...a, enabled: amenity.enabled }
+            : a
+        );
+      }
+      return [...prev, amenity];
+    });
+  };
+
+  const onSubmit = async (data: StationFormData) => {
     try {
-      const response = await fetch("/api/station", {
-        method: isEditMode ? "PUT" : "POST",
+      const url = isEditMode ? `/api/stations/${station.id}` : '/api/stations';
+      const method = isEditMode ? 'PATCH' : 'POST';
+
+      const response = await fetch(url, {
+        method,
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(isEditMode ? { id: station.id, ...data } : data),
+        body: JSON.stringify({
+          ...data,
+          amenities: selectedAmenities
+        }),
       });
 
       if (!response.ok) {
-        const error = await response.text();
-        throw new Error(error);
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Failed to save station");
       }
 
       toast.success(
@@ -144,10 +153,10 @@ export default function StationForm({ station }) {
         <div className="flex items-center gap-2">
           {isEditMode && (
             <>
-              <AlertDialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
+              <AlertDialog open={false} onOpenChange={() => {}}>
                 <Button 
                   variant="destructive" 
-                  onClick={() => setShowDeleteDialog(true)}
+                  onClick={() => {}}
                 >
                   Delete
                 </Button>
@@ -177,7 +186,7 @@ export default function StationForm({ station }) {
           <form 
             id="station-form"
             onSubmit={form.handleSubmit(onSubmit)} 
-            className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+            className="space-y-4"
           >
             <FormField
               control={form.control}
@@ -200,7 +209,11 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Legal Name</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Legal Name" />
+                    <Input 
+                      placeholder="Legal name"
+                      {...field}
+                      value={form.getValues("legalName") || ""}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -228,7 +241,11 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Phone Number" />
+                    <Input 
+                      placeholder="Phone number"
+                      {...field}
+                      value={form.getValues("phoneNumber") || ""}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -242,7 +259,11 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Website</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Website URL" />
+                    <Input 
+                      placeholder="Website"
+                      {...field}
+                      value={form.getValues("website") || ""}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -256,7 +277,11 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Region</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Region" />
+                    <Input 
+                      placeholder="Region"
+                      {...field}
+                      value={form.getValues("region") || ""}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -271,11 +296,10 @@ export default function StationForm({ station }) {
                   <FormLabel>Latitude</FormLabel>
                   <FormControl>
                     <Input 
-                      {...field} 
-                      type="number" 
-                      step="any"
-                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
-                      placeholder="Enter Latitude" 
+                      type="number"
+                      placeholder="Latitude"
+                      {...field}
+                      value={form.getValues("latitude") ?? ""}
                     />
                   </FormControl>
                   <FormMessage />
@@ -291,11 +315,10 @@ export default function StationForm({ station }) {
                   <FormLabel>Longitude</FormLabel>
                   <FormControl>
                     <Input 
-                      {...field} 
-                      type="number" 
-                      step="any"
-                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
-                      placeholder="Enter Longitude" 
+                      type="number"
+                      placeholder="Longitude"
+                      {...field}
+                      value={form.getValues("longitude") ?? ""}
                     />
                   </FormControl>
                   <FormMessage />
@@ -311,10 +334,10 @@ export default function StationForm({ station }) {
                   <FormLabel>Price</FormLabel>
                   <FormControl>
                     <Input 
-                      {...field} 
                       type="number"
-                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
-                      placeholder="Enter Price" 
+                      placeholder="Price"
+                      {...field}
+                      value={form.getValues("price") ?? ""}
                     />
                   </FormControl>
                   <FormMessage />
@@ -330,10 +353,10 @@ export default function StationForm({ station }) {
                   <FormLabel>Pressure</FormLabel>
                   <FormControl>
                     <Input 
-                      {...field} 
                       type="number"
-                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
-                      placeholder="Enter Pressure" 
+                      placeholder="Pressure"
+                      {...field}
+                      value={form.getValues("pressure") ?? ""}
                     />
                   </FormControl>
                   <FormMessage />
@@ -349,10 +372,10 @@ export default function StationForm({ station }) {
                   <FormLabel>Columns Count</FormLabel>
                   <FormControl>
                     <Input 
-                      {...field} 
                       type="number"
-                      onChange={e => field.onChange(e.target.value ? parseInt(e.target.value, 10) : null)}
-                      placeholder="Enter Columns Count" 
+                      placeholder="Columns count"
+                      {...field}
+                      value={form.getValues("columnsCount") ?? ""}
                     />
                   </FormControl>
                   <FormMessage />
@@ -368,10 +391,10 @@ export default function StationForm({ station }) {
                   <FormLabel>Gas Temperature</FormLabel>
                   <FormControl>
                     <Input 
-                      {...field} 
                       type="number"
-                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
-                      placeholder="Enter Gas Temperature" 
+                      placeholder="Gas temperature"
+                      {...field}
+                      value={form.getValues("gasTemperature") ?? ""}
                     />
                   </FormControl>
                   <FormMessage />
@@ -387,10 +410,10 @@ export default function StationForm({ station }) {
                   <FormLabel>Methane Density</FormLabel>
                   <FormControl>
                     <Input 
-                      {...field} 
                       type="number"
-                      onChange={e => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
-                      placeholder="Enter Methane Density" 
+                      placeholder="Methane density"
+                      {...field}
+                      value={form.getValues("methaneDensity") ?? ""}
                     />
                   </FormControl>
                   <FormMessage />
@@ -405,7 +428,11 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Camera IP</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Camera IP" />
+                    <Input 
+                      placeholder="Camera IP"
+                      {...field}
+                      value={form.getValues("cameraIP") || ""}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -419,11 +446,21 @@ export default function StationForm({ station }) {
                 <FormItem>
                   <FormLabel>Landmark</FormLabel>
                   <FormControl>
-                    <Input {...field} placeholder="Enter Landmark" />
+                    <Input 
+                      placeholder="Landmark"
+                      {...field}
+                      value={form.getValues("landmark") || ""}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
+            />
+
+            <StationAmenities
+              amenities={amenities}
+              selectedAmenities={selectedAmenities}
+              onAmenityChange={handleAmenityChange}
             />
           </form>
         </Form>

@@ -97,25 +97,41 @@ model Station {
   longitude           Float?
 
   // Relations
-  amenities           Amenity[] 
-  photos              Photo[] 
-  primaryRelations    RelatedStation[] @relation("StationAsPrimary")
-  relatedRelations    RelatedStation[] @relation("StationAsRelated")
-  reviews             Review[] 
-  workDates           WorkDate[] // Relation to WorkDate model
+  amenities          StationToAmenity[]
+  photos             Photo[] 
+  primaryRelations   RelatedStation[] @relation("StationAsPrimary")
+  relatedRelations   RelatedStation[] @relation("StationAsRelated")
+  reviews            Review[] 
+  workDates          WorkDate[]
 
   @@map("stations")
 }
 
 model Amenity {
-  id        String  @id @default(cuid())
-  name      String
-  slug      String
-  enabled   Boolean @default(true)
-  stationId String  @map("station_id")
-  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  icon        String?
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime? @updatedAt @map("updated_at")
+  
+  // Relations
+  stations    StationToAmenity[]
 
   @@map("amenities")
+}
+
+model StationToAmenity {
+  stationId String
+  amenityId String
+  enabled   Boolean  @default(true)
+  
+  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+  amenity   Amenity @relation(fields: [amenityId], references: [id], onDelete: Cascade)
+
+  @@id([stationId, amenityId])
+  @@map("station_to_amenities")
 }
 
 model Photo {

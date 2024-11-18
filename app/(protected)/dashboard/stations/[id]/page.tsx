@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowLeftIcon } from "lucide-react";
 import { notFound } from "next/navigation";
 
-import { getStationById } from "@/lib/stations";
+import { getStationById, getAllAmenities } from "@/lib/stations";
 import { Button } from "@/components/ui/button";
 import { DashboardHeader } from "@/components/dashboard/header";
 import StationForm from "@/components/forms/station-form";
@@ -14,6 +14,7 @@ export default async function StationsSinglePage({
   params: { id: string };
 }) {
   const isNewStation = params.id === "new";
+  const amenities = await getAllAmenities();
   
   if (isNewStation) {
     return (
@@ -36,7 +37,7 @@ export default async function StationsSinglePage({
           </div>
         </DashboardHeader>
         <div className="grid gap-10">
-          <StationForm station={null} />
+          <StationForm station={null} amenities={amenities} />
         </div>
       </>
     );
@@ -44,6 +45,7 @@ export default async function StationsSinglePage({
 
   const station = await getStationById(params.id);
 
+  console.log('station', station)
   if (!station) {
     notFound();
   }
@@ -68,7 +70,7 @@ export default async function StationsSinglePage({
         </div>
       </DashboardHeader>
       <div className="grid gap-10">
-        <StationForm station={station} />
+        <StationForm station={station} amenities={amenities} />
       </div>
     </>
   );
