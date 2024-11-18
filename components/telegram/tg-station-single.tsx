@@ -15,7 +15,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { openGMaps } from "@/lib/utils";
+import { openMaps } from "@/lib/utils";
 import { useEffect } from "react";
 
 const nearbyStations = [
@@ -137,52 +137,17 @@ export default function TgStationSingle({ station }) {
   const shareOnTelegram = () => {
     const url = `https://t.me/metanchiuz_bot/app?startapp=p_1`;
     const text =`
-    
-    Заправляйтесь удобно и быстро с Metanchi.uz
-
-    @metanchiuz_bot
-
-    Мини-приложение Metanchi.uz в Telegram — это ваш надежный помощник для заправки метановым газом в Узбекистане. Теперь вы всегда будете в курсе ситуации на любой АЗС. Узнавайте наличие газа, качество заправки, текущее давление и просматривайте онлайн камеры, чтобы понять, есть ли очередь.
-    
-    www.metanchi.uz
-    `; // Replace with your custom text
-  
-    // Construct the Telegram share URL
+Заправляйтесь удобно и быстро с Metanchi.uz`;
     const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
-  
-    // Open the share URL in a new tab
     window.open(shareUrl, "_blank");
-
-    // if (WebApp) {
-    //   WebApp.showPopup(
-    //     {
-    //       title: "Forward to",
-    //       message: "Share this content with your contacts in Telegram.",
-    //       buttons: [
-    //         { id: "share", type: "ok" }, // No 'text' property here
-    //         { id: "cancel", type: "close" },
-    //       ],
-    //     },
-    //     (buttonId) => {
-    //       if (buttonId === "share") {
-    //         WebApp.sendData("Check out this station! 🚀");
-    //       } else {
-    //         console.log("Share canceled.");
-    //       }
-    //     }
-    //   );
-    // } else {
-    //   console.error("Telegram WebApp SDK is not initialized.");
-    // }
   };
-  
 
   return (
     <div className="min-h-screen bg-black pb-20 text-white">
-      {/* <div className="relative aspect-video">
+      <div className="relative aspect-video">
    <img src="http://97.68.104.34:80/mjpg/video.mjpg" alt="Live Camera Feed" width="100%" height="auto" />
-   </div> */}
-      <Carousel className="w-full">
+   </div>
+      {/* <Carousel className="w-full">
         <CarouselContent>
           {[1, 2, 3, 4].map((_, index) => (
             <CarouselItem key={index}>
@@ -196,7 +161,7 @@ export default function TgStationSingle({ station }) {
             </CarouselItem>
           ))}
         </CarouselContent>
-      </Carousel>
+      </Carousel> */}
 
       <div className="space-y-3 p-6">
         <h1 className="text-2xl font-bold text-primary">{station?.name}</h1>
@@ -222,7 +187,7 @@ export default function TgStationSingle({ station }) {
             variant="outline"
             className="flex h-auto flex-col items-center gap-2 bg-card py-4"
             onClick={() =>
-              openGMaps(station.longitude, station.latitude)
+              openMaps(station.longitude, station.latitude)
             }
           >
             <Navigation className="h-6 w-6" />
