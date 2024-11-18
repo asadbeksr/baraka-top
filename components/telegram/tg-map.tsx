@@ -1,8 +1,19 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import Script from "next/script";
 import { type Station } from "@/types/station";
+import { openMaps, cn } from "@/lib/utils";
+import { X } from "lucide-react";
+import { useRouter } from "next/navigation";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "../ui/button";
 
 interface TgMapProps {
   stations?: Station[];
@@ -18,11 +29,48 @@ declare global {
   }
 }
 
+const isValidStation = (station: Station): boolean => {
+  return Boolean(
+    station &&
+    typeof station.latitude === 'number' &&
+    typeof station.longitude === 'number' &&
+    station.name &&
+    station.id
+  );
+};
+
+const formatPrice = (price: number | null | undefined): string => {
+  if (!price) return 'No price';
+  return new Intl.NumberFormat('ru-RU').format(price) + ' сум';
+};
+
 export default function TgMapComponent({ stations = [], initialLocation }: TgMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
+  const [selectedStation, setSelectedStation] = useState<Station | null>(null);
   const scriptId = 'yandex-maps-script';
+  const router = useRouter();
+
+  const handleStationClick = (station: Station) => {
+    setSelectedStation(station);
+  };
+
+  const handleCloseCard = () => {
+    setSelectedStation(null);
+  };
+
+  const handleNavigateClick = () => {
+    if (selectedStation) {
+      openMaps(selectedStation.longitude, selectedStation.latitude);
+    }
+  };
+
+  const handleDetailsClick = () => {
+    if (selectedStation) {
+      router.push(`/telegram/stations/${selectedStation.id}`);
+    }
+  };
 
   const initMap = () => {
     if (!mapRef.current || !window.ymaps || mapInstance) return;
@@ -39,38 +87,37 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
           controls: ['zoomControl', 'geolocationControl']
         });
 
-        stations.forEach((station) => {
-          const placemark = new window.ymaps.Placemark(
-            [station.location.latitude, station.location.longitude],
-            {
-              balloonContentHeader: station.name,
-              balloonContentBody: `
-                <div style="padding: 16px;">
-                  ${station.address ? `<p style="color: #666;">${station.address}</p>` : ''}
-                  ${station.description ? `<p>${station.description}</p>` : ''}
-                  ${station.amenities?.length ? `
-                    <div class="mt-2">
-                      <p style="font-weight: 600;">Amenities:</p>
-                      <ul style="list-style-type: disc; padding-left: 20px;">
-                        ${station.amenities.map(a => `<li>${a}</li>`).join('')}
-                      </ul>
-                    </div>
-                  ` : ''}
-                </div>
-              `,
-              hintContent: station.name
-            },
-            {
-              preset: 'islands#blueDotIconWithCaption',
-              iconCaption: station.name
-            }
-          );
-          map.geoObjects.add(placemark);
+        // Filter out invalid stations and add markers
+        const validStations = stations.filter(isValidStation);
+        
+        if (validStations.length !== stations.length) {
+          console.warn(`Filtered out ${stations.length - validStations.length} invalid stations`);
+        }
+
+        validStations.forEach((station) => {
+          try {
+            const placemark = new window.ymaps.Placemark(
+              [station.latitude, station.longitude],
+              {
+                hintContent: station.name
+              },
+              {
+                preset: 'islands#blueDotIconWithCaption',
+                iconCaption: station.name
+              }
+            );
+
+            placemark.events.add('click', () => handleStationClick(station));
+            map.geoObjects.add(placemark);
+          } catch (err) {
+            console.error(`Error adding marker for station ${station.id}:`, err);
+          }
         });
 
         setMapInstance(map);
       });
     } catch (error) {
+      console.error('Map initialization error:', error);
       setError('Failed to initialize map');
     }
   };
@@ -82,13 +129,19 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
     if (!existingScript) {
       const script = document.createElement('script');
       const apiKey = process.env.NEXT_PUBLIC_YMAPS_API_KEY;
+      if (!apiKey) {
+        setError('Map API key not configured');
+        return;
+      }
       script.id = scriptId;
       script.src = `https://api-maps.yandex.ru/2.1/?apikey=${apiKey}&lang=ru_RU`;
       script.async = true;
       script.onload = initMap;
+      script.onerror = () => {
+        setError('Failed to load map service');
+      };
       document.body.appendChild(script);
     } else {
-      // If script exists, just initialize the map
       initMap();
     }
 
@@ -108,13 +161,55 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
   }, [initialLocation, stations]);
 
   if (!process.env.NEXT_PUBLIC_YMAPS_API_KEY) return null;
-  if (error) return <div className="p-4 text-red-500">{error}</div>;
+  if (error) return <div className={cn("p-4", "text-red-500")}>{error}</div>;
 
   return (
-    <div className="w-full h-full relative">
+    <div className={cn("w-full", "h-full", "relative")}>
+      {selectedStation && (
+        <Card className={cn("absolute", "bottom-24", "left-4", "right-4", "z-10")}>
+          <CardHeader className={cn("pb-2", "relative")}>
+            <button
+              onClick={handleCloseCard}
+              className={cn(
+                "absolute",
+                "right-4",
+                "top-4",
+                "p-1",
+                "hover:bg-accent",
+                "rounded-full",
+                "transition-colors"
+              )}
+              aria-label="Close"
+            >
+              <X className={cn("h-4", "w-4", "text-muted-foreground")} />
+            </button>
+            <CardTitle>{selectedStation.name}</CardTitle>
+            <CardDescription className={cn("text-sm", "text-muted-foreground")}>
+              {selectedStation.address}
+            </CardDescription>
+          </CardHeader>
+          <CardFooter className={cn("flex", "justify-between", "items-center", "pt-2")}>
+            <p className={cn(
+              "font-medium",
+              selectedStation.price ? "text-green-600" : "text-muted-foreground"
+            )}>
+              {formatPrice(selectedStation.price)}
+            </p>
+            <div className="flex gap-2">
+            
+              <Button
+                size="sm"
+                onClick={handleDetailsClick}
+              >
+                Batafsil
+              </Button>
+            </div>
+          </CardFooter>
+        </Card>
+      )}
       <div 
         ref={mapRef} 
-        className="absolute inset-0"
+        className={cn("absolute", "inset-0")}
         style={{ minHeight: '400px' }}
       />
     </div>
