@@ -180,4 +180,80 @@ export function openYandexNavigator(longitude, latitude) {
     const googleUrl = `https://www.google.com/maps?q=${latitude},${longitude}`
     window.open(googleUrl, "_blank"); // Opens the URL in a new tab or app
   }
+
+export function openMaps(longitude: number, latitude: number) {
+  // Check if the device supports the Web Share API with specific URL schemes
+  const mapLinks = [
+    {
+      name: 'Google Maps',
+      url: `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}&travelmode=driving`
+    },
+    {
+      name: 'Apple Maps',
+      url: `maps://maps.apple.com/?daddr=${latitude},${longitude}&dirflg=d`
+    },
+    {
+      name: 'Yandex Maps',
+      url: `yandexnavi://build_route_on_map?lat_to=${latitude}&lon_to=${longitude}`
+    }
+  ];
+
+  // If it's an iOS device, we can try to open Apple Maps directly
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
   
+  if (navigator.share && navigator.canShare({ url: mapLinks[0].url })) {
+    navigator.share({
+      url: mapLinks[0].url // Default to Google Maps URL
+    }).catch((error) => {
+      // If sharing fails, fall back to opening a new window/tab
+      window.open(mapLinks[0].url, '_blank');
+    });
+  } else {
+    // Create a simple UI for selecting the map application
+    const mapSelect = document.createElement('div');
+    mapSelect.style.position = 'fixed';
+    mapSelect.style.top = '50%';
+    mapSelect.style.left = '50%';
+    mapSelect.style.transform = 'translate(-50%, -50%)';
+    mapSelect.style.background = 'white';
+    mapSelect.style.padding = '20px';
+    mapSelect.style.borderRadius = '10px';
+    mapSelect.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+    mapSelect.style.zIndex = '1000';
+
+    mapLinks.forEach(map => {
+      const button = document.createElement('button');
+      button.textContent = map.name;
+      button.style.display = 'block';
+      button.style.width = '100%';
+      button.style.padding = '10px';
+      button.style.margin = '5px 0';
+      button.style.border = '1px solid #ddd';
+      button.style.borderRadius = '5px';
+      button.style.background = '#f8f8f8';
+      button.style.cursor = 'pointer';
+
+      button.onclick = () => {
+        window.open(map.url, '_blank');
+        document.body.removeChild(mapSelect);
+      };
+
+      mapSelect.appendChild(button);
+    });
+
+    // Add close button
+    const closeButton = document.createElement('button');
+    closeButton.textContent = '✕';
+    closeButton.style.position = 'absolute';
+    closeButton.style.top = '5px';
+    closeButton.style.right = '5px';
+    closeButton.style.border = 'none';
+    closeButton.style.background = 'none';
+    closeButton.style.fontSize = '20px';
+    closeButton.style.cursor = 'pointer';
+    closeButton.onclick = () => document.body.removeChild(mapSelect);
+    mapSelect.appendChild(closeButton);
+
+    document.body.appendChild(mapSelect);
+  }
+}
