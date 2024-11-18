@@ -9,6 +9,7 @@ import { UserAvatar } from "../shared/user-avatar";
 import { Card, CardContent } from "../ui/card";
 import { Skeleton } from "../ui/skeleton";
 import { TgCard, TgCardContent } from "./tg-card";
+import TgDebugInfo from "./tg-debug-info";
 
 const defaultUser: TelegramUser = {
   id: 1,
@@ -57,9 +58,7 @@ export default function TgUser() {
       </TgCard>
 
       <TgCard className="min-h-svh">
-        <ul>
-         {JSON.stringify(user)}
-        </ul>
+        <TgDebugInfo />
       </TgCard>
     </div>
   );

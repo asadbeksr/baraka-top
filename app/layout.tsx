@@ -8,7 +8,6 @@ import { cn, constructMetadata } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@/components/analytics";
 import ModalProvider from "@/components/modals/providers";
-// import { TailwindIndicator } from "@/components/tailwind-indicator";
 import Script from "next/script";
 
 interface RootLayoutProps {
@@ -21,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <Script src='https://telegram.org/js/telegram-web-api.js' strategy="beforeInteractive" />
+        <Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" />
       </head>
       <body
         className={cn(
@@ -30,6 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontUrban.variable,
           fontHeading.variable,
           fontGeist.variable,
+          fontHeading.variable
         )}
       >
         <SessionProvider>
@@ -42,7 +42,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <ModalProvider>{children}</ModalProvider>
             <Analytics />
             <Toaster richColors closeButton />
-            {/* <TailwindIndicator /> */}
           </ThemeProvider>
         </SessionProvider>
       </body>
