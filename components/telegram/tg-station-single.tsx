@@ -7,6 +7,7 @@ import WebApp from "@twa-dev/sdk";
 import { Bookmark, Navigation, Share2, StarIcon } from "lucide-react";
 
 import { openMaps } from "@/lib/utils";
+import { shareOnTelegram } from "@/lib/telegram";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
@@ -15,49 +16,75 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { getAmenityIcon } from "@/components/icons/amenity-icons";
+import { StationCard } from "../cards/station-card";
 
 const nearbyStations = [
   {
-    id: 3,
+    id: "3",
     pressure: 220,
-    title: "Samarkand Methane Station",
-    description:
-      "Conveniently located near Samarkand's main highway, offering fast refueling services.",
-    price: "3,750",
-    rating: 4.7,
-    image: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
+    price: 4500,
+    rating: 4.5,
+    name: "Shayxontohur Gas Station",
+    address: "Shayxontohur District, Tashkent",
+    imageUrl: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
+    landmark: "Near Central Market",
+    legalName: "Shayxontohur Gas LLC",
+    columnsCount: 4,
+    gasTemperature: 15,
+    methaneDensity: 0.668,
+    cameraIP: null,
+    phoneNumber: "+998901234567",
+    region: "Tashkent",
+    website: null,
+    latitude: 41.311081,
+    longitude: 69.240562,
+    amenities: []
   },
   {
-    id: 4,
-    pressure: 200,
-    title: "Bukhara Methane Gas Station",
-    description:
-      "A well-maintained station in Bukhara with modern facilities and quick service.",
-    price: "4,000",
-    rating: 4.3,
-    image: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
-  },
-  {
-    id: 6,
+    id: "4",
     pressure: 210,
-    title: "Bukhara Methane Gas Station",
-    description:
-      "A well-maintained station in Bukhara with modern facilities and quick service.",
-    price: "4,000",
-    rating: 4.3,
-    image: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
+    price: 4600,
+    rating: 4.8,
+    name: "Yunusabad Gas Station",
+    address: "Yunusabad District, Tashkent",
+    imageUrl: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
+    landmark: "Near Metro Station",
+    legalName: "Yunusabad Gas LLC",
+    columnsCount: 6,
+    gasTemperature: 16,
+    methaneDensity: 0.671,
+    cameraIP: null,
+    phoneNumber: "+998901234568",
+    region: "Tashkent",
+    website: null,
+    latitude: 41.325095,
+    longitude: 69.268642,
+    amenities: []
   },
+  {
+    id: "5",
+    pressure: 215,
+    price: 4550,
+    rating: 4.6,
+    name: "Chilonzor Gas Station",
+    address: "Chilonzor District, Tashkent",
+    imageUrl: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
+    landmark: "Near Shopping Mall",
+    legalName: "Chilonzor Gas LLC",
+    columnsCount: 5,
+    gasTemperature: 15.5,
+    methaneDensity: 0.669,
+    cameraIP: null,
+    phoneNumber: "+998901234569",
+    region: "Tashkent",
+    website: null,
+    latitude: 41.285698,
+    longitude: 69.204229,
+    amenities: []
+  }
 ];
 
 export default function TgStationSingle({ station }) {
-  const shareOnTelegram = () => {
-    const url = `https://t.me/metanchiuz_bot/app?startapp=p_1`;
-    const text = `
-Заправляйтесь удобно и быстро с Metanchi.uz`;
-    const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
-    window.open(shareUrl, "_blank");
-  };
-
   return (
     <div className="min-h-screen bg-black pb-20 text-white">
       {/* <div className="relative aspect-video">
@@ -148,35 +175,13 @@ export default function TgStationSingle({ station }) {
         <h2 className="text-2xl font-bold">Yaqin shahobchalar</h2>
         <div className="no-scrollbar flex gap-4 overflow-scroll pb-4">
           {nearbyStations.map((station) => (
-            <Card key={station.id} className="w-[280px] flex-none">
-              <CardContent className="p-0">
-                <div className="relative aspect-video">
-                  <Image
-                    src={station.image}
-                    alt={station.title}
-                    fill
-                    className="rounded-t-lg object-cover"
-                  />
-                  <div className="absolute bottom-2 right-2 flex items-center gap-1 rounded-full bg-green-500 px-3 py-1 text-white">
-                    <StarIcon className="h-4 w-4 fill-current" />
-                    <span>{station.rating}</span>
-                  </div>
-                </div>
-              </CardContent>
-              <CardFooter className="flex flex-col items-start gap-2 p-4">
-                <h3 className="text-lg font-bold">{station.title}</h3>
-                <p className="text-sm text-gray-400">{station.description}</p>
-                <div className="mt-2 flex w-full items-center justify-between">
-                  <span className="font-semibold">
-                    {station.price} so&apos;m / m³
-                  </span>
-
-                  <Link href={`/telegram/stations/${station.id}`}>
-                    <Button className="ml-2 bg-primary">Batafsil</Button>
-                  </Link>
-                </div>
-              </CardFooter>
-            </Card>
+            <StationCard
+              key={station.id}
+              station={station}
+              variant="default"
+              showAmenities={false}
+              className="w-[280px] flex-none"
+            />
           ))}
         </div>
       </div>

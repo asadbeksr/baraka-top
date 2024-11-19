@@ -186,276 +186,278 @@ export default function StationForm({ station, amenities }) {
           <form 
             id="station-form"
             onSubmit={form.handleSubmit(onSubmit)} 
-            className="space-y-4"
+            className="space-y-6"
           >
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Station Name</FormLabel>
-                  <FormControl>
-                    <Input {...field} placeholder="Enter Station Name" />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Station Name</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="Enter Station Name" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="legalName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Legal Name</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Legal name"
-                      {...field}
-                      value={form.getValues("legalName") || ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="legalName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Legal Name</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="Legal name"
+                        {...field}
+                        value={form.getValues("legalName") || ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="address"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Address</FormLabel>
-                  <FormControl>
-                    <Input {...field} placeholder="Enter Address" />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="address"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Address</FormLabel>
+                    <FormControl>
+                      <Input {...field} placeholder="Enter Address" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="phoneNumber"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Phone Number</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Phone number"
-                      {...field}
-                      value={form.getValues("phoneNumber") || ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="phoneNumber"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Phone Number</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="Phone number"
+                        {...field}
+                        value={form.getValues("phoneNumber") || ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="website"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Website</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Website"
-                      {...field}
-                      value={form.getValues("website") || ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="website"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Website</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="Website"
+                        {...field}
+                        value={form.getValues("website") || ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="region"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Region</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Region"
-                      {...field}
-                      value={form.getValues("region") || ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="region"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Region</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="Region"
+                        {...field}
+                        value={form.getValues("region") || ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="latitude"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Latitude</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="number"
-                      placeholder="Latitude"
-                      {...field}
-                      value={form.getValues("latitude") ?? ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="latitude"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Latitude</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="number"
+                        placeholder="Latitude"
+                        {...field}
+                        value={form.getValues("latitude") ?? ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="longitude"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Longitude</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="number"
-                      placeholder="Longitude"
-                      {...field}
-                      value={form.getValues("longitude") ?? ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="longitude"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Longitude</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="number"
+                        placeholder="Longitude"
+                        {...field}
+                        value={form.getValues("longitude") ?? ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="price"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Price</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="number"
-                      placeholder="Price"
-                      {...field}
-                      value={form.getValues("price") ?? ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="price"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Price</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="number"
+                        placeholder="Price"
+                        {...field}
+                        value={form.getValues("price") ?? ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="pressure"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Pressure</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="number"
-                      placeholder="Pressure"
-                      {...field}
-                      value={form.getValues("pressure") ?? ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="pressure"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Pressure</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="number"
+                        placeholder="Pressure"
+                        {...field}
+                        value={form.getValues("pressure") ?? ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="columnsCount"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Columns Count</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="number"
-                      placeholder="Columns count"
-                      {...field}
-                      value={form.getValues("columnsCount") ?? ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="columnsCount"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Columns Count</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="number"
+                        placeholder="Columns count"
+                        {...field}
+                        value={form.getValues("columnsCount") ?? ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="gasTemperature"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Gas Temperature</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="number"
-                      placeholder="Gas temperature"
-                      {...field}
-                      value={form.getValues("gasTemperature") ?? ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="gasTemperature"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Gas Temperature</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="number"
+                        placeholder="Gas temperature"
+                        {...field}
+                        value={form.getValues("gasTemperature") ?? ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="methaneDensity"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Methane Density</FormLabel>
-                  <FormControl>
-                    <Input 
-                      type="number"
-                      placeholder="Methane density"
-                      {...field}
-                      value={form.getValues("methaneDensity") ?? ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="methaneDensity"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Methane Density</FormLabel>
+                    <FormControl>
+                      <Input 
+                        type="number"
+                        placeholder="Methane density"
+                        {...field}
+                        value={form.getValues("methaneDensity") ?? ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="cameraIP"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Camera IP</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Camera IP"
-                      {...field}
-                      value={form.getValues("cameraIP") || ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="cameraIP"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Camera IP</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="Camera IP"
+                        {...field}
+                        value={form.getValues("cameraIP") || ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
-            <FormField
-              control={form.control}
-              name="landmark"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Landmark</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Landmark"
-                      {...field}
-                      value={form.getValues("landmark") || ""}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="landmark"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Landmark</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="Landmark"
+                        {...field}
+                        value={form.getValues("landmark") || ""}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
 
             <StationAmenities
               amenities={amenities}

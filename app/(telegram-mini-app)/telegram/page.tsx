@@ -81,7 +81,7 @@ export default function TgHome() {
       </div>
 
 
-      {/* <TgStations userLocation={userLocation} /> */}
+      <TgStations />
     </div>
   );
 }

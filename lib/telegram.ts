@@ -219,3 +219,10 @@ export const disableClosingConfirmation = () => {
   const webApp = getTelegramWebApp();
   webApp?.disableClosingConfirmation();
 };
+
+export const shareOnTelegram = () => {
+  const url = `https://t.me/metanchiuz_bot/app?startapp=p_1`;
+  const text = `Заправляйтесь удобно и быстро с Metanchi.uz`;
+  const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+  window.open(shareUrl, "_blank");
+};

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { stationUpdateSchema } from "@/lib/validations/schemas";
+import { z } from "zod";
 
 export async function PATCH(
   req: Request,
