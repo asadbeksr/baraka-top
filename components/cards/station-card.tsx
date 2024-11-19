@@ -1,22 +1,31 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
   ClockIcon,
   GaugeIcon,
   HeartIcon,
+  MapPin,
   ParkingCircleIcon,
   Share2Icon,
   ShoppingCartIcon,
   StarIcon,
   WifiIcon,
-  MapPin,
 } from "lucide-react";
 
-import { Button } from "../ui/button";
-import { Badge } from "../ui/badge";
-import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { cn, formatPricePerM3 } from "@/lib/utils";
+
+import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselDots,
+  CarouselItem,
+} from "../ui/carousel";
 
 interface Amenity {
   id: string;
@@ -74,13 +83,38 @@ export function StationCard({
   showAmenities = true,
   showActions = true,
   className = "",
-  distance = 2.8,
+  distance,
 }: StationCardProps) {
+  const [liked, setLiked] = useState(false);
+
+  const toggleLike = () => {
+    setLiked((prev) => !prev);
+    console.log(`Heart button is now ${!liked ? "liked" : "unliked"}`);
+    // Add additional logic (e.g., API call) here
+  };
+
   return (
     <Card className={`bg-card shadow-xl ${className}`}>
       <CardHeader className="p-0">
         <div className="relative aspect-video">
-          <Image
+          <Carousel className="w-full">
+            <CarouselContent>
+              {[1, 2, 3, 4].map((_, index) => (
+                <CarouselItem key={index}>
+                  <Image
+                    src="https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg"
+                    alt={`Football field ${index + 1}`}
+                    width={800}
+                    height={400}
+                    className="aspect-video w-full rounded-t-md object-cover"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselDots />
+          </Carousel>
+
+          {/* <Image
             src={
               station.imageUrl ||
               "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg"
@@ -88,16 +122,19 @@ export function StationCard({
             alt={station.name || "Station image"}
             fill
             className="rounded-t-lg object-cover"
-          />
+          /> */}
           <div className="absolute bottom-2 right-2 flex items-center gap-2">
-            {typeof distance === 'number' && (
-              <Badge  className="flex items-center text-sm gap-1">
+            {typeof distance === "number" && (
+              <Badge className="flex items-center gap-1 text-sm">
                 <MapPin className="h-3 w-3" />
                 {formatDistance(distance)}
               </Badge>
             )}
             {station.rating && (
-              <Badge variant="default" className="flex text-sm items-center gap-1 bg-green-600 text-white">
+              <Badge
+                variant="default"
+                className="flex items-center gap-1 bg-green-600 text-sm text-white"
+              >
                 <StarIcon className="h-4 w-4 fill-white" />
                 {station.rating}
               </Badge>
@@ -107,46 +144,61 @@ export function StationCard({
       </CardHeader>
 
       <CardContent className="p-4">
-        <h3 className="mb-2 text-xl font-bold">{station.name || "No name"}</h3>
-        {station.address && <p className="text-gray-400">{station.address}</p>}
+        <Link href={`/telegram/stations/${station.id}`}>
+          <h3 className="mb-1 max-w-full truncate text-xl font-bold">
+            {station.name || "No name"}
+          </h3>
+
+          {station.address && (
+            <p className="max-w-full truncate text-gray-400">
+              {station.address || "No name"}
+            </p>
+          )}
+        </Link>
       </CardContent>
 
       {variant === "default" && (
         <>
-          <CardFooter className="just flex w-full flex-wrap items-center justify-between gap-2 p-4 pt-0 pb-3">
-          <p className={cn(
-              "font-medium",
-              station.price ? "text-green-600" : "text-muted-foreground"
-            )}>
+          <CardFooter className="just flex w-full flex-wrap items-center justify-between gap-2 p-4 pb-3 pt-0">
+            <p
+              className={cn(
+                "font-medium",
+                station.price ? "text-green-600" : "text-muted-foreground",
+              )}
+            >
               {formatPricePerM3(station.price)}
             </p>
 
             {showActions && (
-              <div className="flex justify-between">
+              <div className="flex justify-between gap-2">
                 {onSave && (
                   <Button
-                    variant="ghost"
+                    variant="secondary"
                     size="icon"
-                    className="rounded-full"
-                    onClick={onSave}
+                    onClick={toggleLike}
+                    className="border"
                   >
-                    <HeartIcon className="h-5 w-5" />
+                    <HeartIcon
+                      className={`h-5 w-5 ${
+                        liked ? "fill-current text-red-500" : ""
+                      }`}
+                    />
                   </Button>
                 )}
 
                 {onShare && (
                   <Button
-                    variant="ghost"
+                    variant="secondary"
                     size="icon"
-                    className="rounded-full"
                     onClick={onShare}
+                    className="border"
                   >
                     <Share2Icon className="h-5 w-5" />
                   </Button>
                 )}
 
                 <Link href={`/telegram/stations/${station.id}`}>
-                  <Button className="ml-2 bg-primary">Batafsil</Button>
+                  <Button className="bg-primary">Batafsil</Button>
                 </Link>
               </div>
             )}

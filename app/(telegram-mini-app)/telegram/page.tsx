@@ -40,7 +40,7 @@ export default function TgHome() {
       label: "Eng yaqini", 
       icon: MapPinIcon,
       onClick: handleLocationRequest,
-      isActive: !!userLocation // true when userLocation is set
+      isActive: !!userLocation
     },
     { id: "map", label: "Xarita", icon: Map, href: "/telegram/map" },
   ];

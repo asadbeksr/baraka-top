@@ -3,48 +3,49 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import WebApp from "@twa-dev/sdk";
 import { Bookmark, Navigation, Share2, StarIcon } from "lucide-react";
 
-import { openMaps } from "@/lib/utils";
+import { nearbyStations } from "@/lib/mock";
 import { getTelegramWebApp, shareOnTelegram } from "@/lib/telegram";
+import { openMaps } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
+  CarouselDots,
   CarouselItem,
 } from "@/components/ui/carousel";
 import { getAmenityIcon } from "@/components/icons/amenity-icons";
-import { StationCard } from "../cards/station-card";
-import { useRouter } from "next/navigation";
-import { nearbyStations } from "@/lib/mock";
 
+import { StationCard } from "../cards/station-card";
 
 export default function TgStationSingle({ station }) {
-  const router = useRouter()
-    // Set up back button
-    useEffect(() => {
-      const tg = getTelegramWebApp();
-      console.log('tg', tg.BackButton);
-      if (!tg?.BackButton) return;
-  
-      // Show back button
-      tg.BackButton.show();
-  
-      // Set up click handler
-      tg.BackButton.onClick(() => {
-        router.back();
-      });
-  
-      // Cleanup when component unmounts
-      return () => {
-        tg.BackButton.hide();
-      };
-    }, [router]);
+  const router = useRouter();
+  // Set up back button
+  useEffect(() => {
+    const tg = getTelegramWebApp();
+    console.log("tg", tg.BackButton);
+    if (!tg?.BackButton) return;
+
+    // Show back button
+    tg.BackButton.show();
+
+    // Set up click handler
+    tg.BackButton.onClick(() => {
+      router.back();
+    });
+
+    // Cleanup when component unmounts
+    return () => {
+      tg.BackButton.hide();
+    };
+  }, [router]);
 
   return (
-    <div >
+    <div>
       {/* <div className="relative aspect-video">
    <img src="http://97.68.104.34:80/mjpg/video.mjpg" alt="Live Camera Feed" width="100%" height="auto" />
    </div> */}
@@ -58,11 +59,12 @@ export default function TgStationSingle({ station }) {
                 alt={`Football field ${index + 1}`}
                 width={800}
                 height={400}
-                className="aspect-video w-full rounded-b-xl object-cover"
+                className="aspect-video w-full rounded-b-md object-cover"
               />
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselDots />
       </Carousel>
 
       <div className="space-y-3 p-6">
@@ -96,27 +98,27 @@ export default function TgStationSingle({ station }) {
         </div>
       </div>
 
-        {station.amenities.some(amenity => amenity.enabled) && (
-          <div className="space-y-3 p-6">
-            <h2 className="text-2xl font-bold">Qulayliklar</h2>
-            <Card className="grid grid-cols-2 gap-x-4 gap-y-6 p-4">
-              {station.amenities.map((amenity) => {
-                const icon = getAmenityIcon(amenity.icon);
-                if (!amenity.enabled) return null;
+      {station.amenities.some((amenity) => amenity.enabled) && (
+        <div className="space-y-3 p-6">
+          <h2 className="text-2xl font-bold">Qulayliklar</h2>
+          <Card className="grid grid-cols-2 gap-x-4 gap-y-6 p-4">
+            {station.amenities.map((amenity) => {
+              const icon = getAmenityIcon(amenity.icon);
+              if (!amenity.enabled) return null;
 
-                return (
-                  <div
-                    key={amenity.amenityId}
-                    className="flex items-center gap-2"
-                  >
-                    <div className="w-6 flex-shrink-0">{icon}</div>
-                    <span className="text-lg">{amenity.name}</span>
-                  </div>
-                );
-              })}
-            </Card>
-          </div>
-        )}
+              return (
+                <div
+                  key={amenity.amenityId}
+                  className="flex items-center gap-2"
+                >
+                  <div className="w-6 flex-shrink-0">{icon}</div>
+                  <span className="text-lg">{amenity.name}</span>
+                </div>
+              );
+            })}
+          </Card>
+        </div>
+      )}
 
       <div className="space-y-3 p-6">
         <h2 className="text-2xl font-bold"> Xaritada joylashuvi</h2>
@@ -140,6 +142,8 @@ export default function TgStationSingle({ station }) {
               variant="default"
               showAmenities={false}
               className="w-[280px] flex-none"
+              onShare={shareOnTelegram}
+              onSave={() => {}}
             />
           ))}
         </div>

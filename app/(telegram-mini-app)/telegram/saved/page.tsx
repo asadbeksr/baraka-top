@@ -1,7 +1,9 @@
+"use client";
+
+import { nearbyStations } from "@/lib/mock";
 import { shareOnTelegram } from "@/lib/telegram";
 import { CardHeader } from "@/components/ui/card";
 import { StationCard } from "@/components/cards/station-card";
-import { nearbyStations } from "@/lib/mock";
 
 export default function TgHome() {
   return (
@@ -12,12 +14,14 @@ export default function TgHome() {
 
       <div className="flex-1 space-y-4 overflow-auto p-4">
         {nearbyStations.map((station) => (
-           <StationCard
-           key={station.id}
-           station={station}
-           variant="default"
-           showAmenities={false}
-         />
+          <StationCard
+            key={station.id}
+            station={station}
+            variant="default"
+            showAmenities={false}
+            onShare={shareOnTelegram}
+            onSave={() => {}}
+          />
         ))}
       </div>
     </div>
