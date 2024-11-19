@@ -103,19 +103,33 @@ export const getStationById = async (id: string) => {
   if (!id) {
     return null;
   }
-  
+
   try {
     const station = await prisma.station.findUnique({
       where: { id: String(id) },
       include: {
         amenities: {
           include: {
-            amenity: true
-          }
-        }
-      }
+            amenity: true,
+          },
+        },
+      },
     });
-    return station;
+
+    if (!station) return null;
+
+    // Flatten the amenities structure
+    const amenities = station.amenities.map((amenityRelation) => ({
+      amenityId: amenityRelation.amenityId,
+      enabled: amenityRelation.enabled,
+      stationId: amenityRelation.stationId,
+      ...amenityRelation.amenity, // Spread the amenity data here
+    }));
+
+    return {
+      ...station,
+      amenities, // Replace nested amenities with flattened ones
+    };
   } catch (error) {
     console.error('Error fetching station:', error);
     return null;
@@ -131,6 +145,7 @@ export const updateStation = async (id, data) => {
       where: { id },
       data: {
         ...stationData,
+        updatedAt: Prisma.sql`NOW()`,
         amenities: {
           deleteMany: {},
           create: amenities.map(amenity => ({

@@ -7,7 +7,7 @@ import WebApp from "@twa-dev/sdk";
 import { Bookmark, Navigation, Share2, StarIcon } from "lucide-react";
 
 import { openMaps } from "@/lib/utils";
-import { shareOnTelegram } from "@/lib/telegram";
+import { getTelegramWebApp, shareOnTelegram } from "@/lib/telegram";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
@@ -17,76 +17,34 @@ import {
 } from "@/components/ui/carousel";
 import { getAmenityIcon } from "@/components/icons/amenity-icons";
 import { StationCard } from "../cards/station-card";
+import { useRouter } from "next/navigation";
+import { nearbyStations } from "@/lib/mock";
 
-const nearbyStations = [
-  {
-    id: "3",
-    pressure: 220,
-    price: 4500,
-    rating: 4.5,
-    name: "Shayxontohur Gas Station",
-    address: "Shayxontohur District, Tashkent",
-    imageUrl: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
-    landmark: "Near Central Market",
-    legalName: "Shayxontohur Gas LLC",
-    columnsCount: 4,
-    gasTemperature: 15,
-    methaneDensity: 0.668,
-    cameraIP: null,
-    phoneNumber: "+998901234567",
-    region: "Tashkent",
-    website: null,
-    latitude: 41.311081,
-    longitude: 69.240562,
-    amenities: []
-  },
-  {
-    id: "4",
-    pressure: 210,
-    price: 4600,
-    rating: 4.8,
-    name: "Yunusabad Gas Station",
-    address: "Yunusabad District, Tashkent",
-    imageUrl: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
-    landmark: "Near Metro Station",
-    legalName: "Yunusabad Gas LLC",
-    columnsCount: 6,
-    gasTemperature: 16,
-    methaneDensity: 0.671,
-    cameraIP: null,
-    phoneNumber: "+998901234568",
-    region: "Tashkent",
-    website: null,
-    latitude: 41.325095,
-    longitude: 69.268642,
-    amenities: []
-  },
-  {
-    id: "5",
-    pressure: 215,
-    price: 4550,
-    rating: 4.6,
-    name: "Chilonzor Gas Station",
-    address: "Chilonzor District, Tashkent",
-    imageUrl: "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg",
-    landmark: "Near Shopping Mall",
-    legalName: "Chilonzor Gas LLC",
-    columnsCount: 5,
-    gasTemperature: 15.5,
-    methaneDensity: 0.669,
-    cameraIP: null,
-    phoneNumber: "+998901234569",
-    region: "Tashkent",
-    website: null,
-    latitude: 41.285698,
-    longitude: 69.204229,
-    amenities: []
-  }
-];
 
 export default function TgStationSingle({ station }) {
+  const router = useRouter()
+    // Set up back button
+    useEffect(() => {
+      const tg = getTelegramWebApp();
+      console.log('tg', tg.BackButton);
+      if (!tg?.BackButton) return;
+  
+      // Show back button
+      tg.BackButton.show();
+  
+      // Set up click handler
+      tg.BackButton.onClick(() => {
+        router.back();
+      });
+  
+      // Cleanup when component unmounts
+      return () => {
+        tg.BackButton.hide();
+      };
+    }, [router]);
+
   return (
-    <div className="min-h-screen bg-black pb-20 text-white">
+    <div >
       {/* <div className="relative aspect-video">
    <img src="http://97.68.104.34:80/mjpg/video.mjpg" alt="Live Camera Feed" width="100%" height="auto" />
    </div> */}
@@ -138,26 +96,27 @@ export default function TgStationSingle({ station }) {
         </div>
       </div>
 
-      {!!station.amenities.length && (
-        <div className="space-y-3 p-6">
-          <h2 className="text-2xl font-bold">Qulayliklar</h2>
-          <Card className="grid grid-cols-2 gap-x-4 gap-y-6 p-4">
-            {station.amenities.map((amenity) => {
-              const icon = getAmenityIcon(amenity.amenity.icon);
+        {station.amenities.some(amenity => amenity.enabled) && (
+          <div className="space-y-3 p-6">
+            <h2 className="text-2xl font-bold">Qulayliklar</h2>
+            <Card className="grid grid-cols-2 gap-x-4 gap-y-6 p-4">
+              {station.amenities.map((amenity) => {
+                const icon = getAmenityIcon(amenity.icon);
+                if (!amenity.enabled) return null;
 
-              return (
-                <div
-                  key={amenity.amenityId}
-                  className="flex items-center gap-2"
-                >
-                  <div className="w-6 flex-shrink-0">{icon}</div>
-                  <span className="text-lg">{amenity.amenity.name}</span>
-                </div>
-              );
-            })}
-          </Card>
-        </div>
-      )}
+                return (
+                  <div
+                    key={amenity.amenityId}
+                    className="flex items-center gap-2"
+                  >
+                    <div className="w-6 flex-shrink-0">{icon}</div>
+                    <span className="text-lg">{amenity.name}</span>
+                  </div>
+                );
+              })}
+            </Card>
+          </div>
+        )}
 
       <div className="space-y-3 p-6">
         <h2 className="text-2xl font-bold"> Xaritada joylashuvi</h2>

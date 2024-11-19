@@ -94,7 +94,7 @@ export default function TgStations({ userLocation, filterByLocation }: TgStation
   }
 
   return (
-    <div className="mb-20 flex-1 space-y-4 overflow-auto p-4">
+    <div className="flex-1 space-y-4 overflow-auto p-4">
       {stations.map((station) => (
         <StationCard
           key={station.id}
@@ -102,6 +102,7 @@ export default function TgStations({ userLocation, filterByLocation }: TgStation
           onShare={shareOnTelegram}
           onSave={() => {}}
           distance={station.distance}
+          showAmenities={false}
         />
       ))}
     </div>

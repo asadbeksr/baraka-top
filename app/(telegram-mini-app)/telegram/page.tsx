@@ -6,7 +6,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import TgStations from "@/components/telegram/tg-stations";
 import { requestLocation, type Location } from "@/lib/telegram";
 
-import { Globe, LocateIcon, Map } from "lucide-react";
+import { Globe, LocateIcon, Map, MapPinIcon } from "lucide-react";
 import Link from "next/link";
 
 declare global {
@@ -38,7 +38,7 @@ export default function TgHome() {
     { 
       id: "location", 
       label: "Eng yaqini", 
-      icon: LocateIcon,
+      icon: MapPinIcon,
       onClick: handleLocationRequest,
       isActive: !!userLocation // true when userLocation is set
     },
@@ -53,7 +53,7 @@ export default function TgHome() {
             filter.href ? (
               <Link key={filter.id} href={filter.href} passHref>
                 <Button
-                  variant="ghost"
+                  variant="secondary"
                   className="flex items-center gap-1 whitespace-nowrap rounded-full px-4 py-2"
                 >
                   <filter.icon className="h-5 w-5" />
@@ -63,7 +63,7 @@ export default function TgHome() {
             ) : (
               <Button
                 key={filter.id}
-                variant={filter.isActive ? "default" : "ghost"}
+                variant={filter.isActive ? "default" : "secondary"}
                 className="flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2"
                 onClick={filter.onClick}
               >

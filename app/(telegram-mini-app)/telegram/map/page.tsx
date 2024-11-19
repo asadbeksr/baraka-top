@@ -3,6 +3,8 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { type Station } from "@/types/station";
+import { useRouter } from "next/navigation";
+import { getTelegramWebApp } from "@/lib/telegram";
 
 const TgMapComponent = dynamic(
   () => import('@/components/telegram/tg-map'),
@@ -22,6 +24,8 @@ const TASHKENT_LOCATION = {
 };
 
 export default function TgMap() {
+  const router = useRouter()
+
   const [stations, setStations] = useState<Station[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -52,6 +56,27 @@ export default function TgMap() {
 
     fetchStations();
   }, []);
+
+
+  // Set up back button
+  useEffect(() => {
+    const tg = getTelegramWebApp();
+    console.log('tg', tg.BackButton);
+    if (!tg?.BackButton) return;
+
+    // Show back button
+    tg.BackButton.show();
+
+    // Set up click handler
+    tg.BackButton.onClick(() => {
+      router.back();
+    });
+
+    // Cleanup when component unmounts
+    return () => {
+      tg.BackButton.hide();
+    };
+  }, [router]);
 
   if (error) {
     return (

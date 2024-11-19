@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import { type Station } from "@/types/station";
-import { openMaps, cn } from "@/lib/utils";
+import { openMaps, cn, formatPricePerM3 } from "@/lib/utils";
 import { X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import {
@@ -39,10 +39,7 @@ const isValidStation = (station: Station): boolean => {
   );
 };
 
-const formatPrice = (price: number | null | undefined): string => {
-  if (!price) return 'No price';
-  return new Intl.NumberFormat('ru-RU').format(price) + ' сум';
-};
+
 
 export default function TgMapComponent({ stations = [], initialLocation }: TgMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
@@ -166,7 +163,7 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
   return (
     <div className={cn("w-full", "h-full", "relative")}>
       {selectedStation && (
-        <Card className={cn("absolute", "bottom-24", "left-4", "right-4", "z-10")}>
+        <Card className={cn(`absolute bottom-24 left-4 right-4 z-10 shadow-2xl border`)}>
           <CardHeader className={cn("pb-2", "relative")}>
             <button
               onClick={handleCloseCard}
@@ -193,7 +190,7 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
               "font-medium",
               selectedStation.price ? "text-green-600" : "text-muted-foreground"
             )}>
-              {formatPrice(selectedStation.price)}
+              {formatPricePerM3(selectedStation.price)}
             </p>
             <div className="flex gap-2">
             

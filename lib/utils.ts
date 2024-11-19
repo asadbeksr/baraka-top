@@ -196,3 +196,21 @@ export function openMaps(longitude: number, latitude: number) {
     });
   }
 }
+
+
+export const formatPricePerM3 = (
+  price: number | null | undefined,
+  lang: 'uz' | 'en' | 'ru' = 'uz' // Default to 'uz'
+): string => {
+  const suffix = {
+    uz: "so'm / м³",
+    en: "so'm / m³",
+    ru: "сум / м³",
+  };
+
+  const formattedPrice = price
+    ? new Intl.NumberFormat(lang === 'ru' ? 'ru-RU' : 'uz-UZ').format(price)
+    : '0';
+
+  return `${formattedPrice} ${suffix[lang]}`;
+};

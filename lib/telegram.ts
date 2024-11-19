@@ -41,12 +41,34 @@ export interface TelegramInfo {
   };
 }
 
+export interface TelegramUser {
+  id: number;
+  is_bot: boolean;
+  is_premium: boolean;
+  first_name: string;
+  last_name: string;
+  username: string;
+  language_code: string;
+  photo_url: string;
+}
+
 export interface Location {
   latitude: string;
   longitude: string;
 }
 
 const NOT_IN_TELEGRAM_MESSAGE = "Please open it using Telegram.";
+
+// Safe alert function that works in both browser and Telegram
+const safeAlert = (message: string) => {
+  const webApp = getTelegramWebApp();
+  try {
+    webApp?.showAlert(message);
+  } catch (error) {
+    // Fallback to console.log if showAlert is not supported
+    console.log('Alert:', message);
+  }
+};
 
 export const isTelegramWebApp = () => {
   if (typeof window === 'undefined') return false;
@@ -91,6 +113,24 @@ export const getTelegramInfo = (): TelegramInfo => {
       isSupported: webApp.CloudStorage?.isSupported,
     },
   };
+};
+
+export const defaultTelegramUser: TelegramUser = {
+  id: 1,
+  is_bot: false,
+  is_premium: false,
+  first_name: "Mehmon",
+  last_name: "Mehmon",
+  username: "mehmon",
+  language_code: "en",
+  photo_url: "",
+};
+
+export const getTelegramUser = (): TelegramUser => {
+  if (typeof window === "undefined") return defaultTelegramUser;
+  
+  const tg = getTelegramWebApp();
+  return (tg?.initDataUnsafe?.user as TelegramUser) ?? defaultTelegramUser;
 };
 
 export const showAlert = (message: string) => {
@@ -221,7 +261,7 @@ export const disableClosingConfirmation = () => {
 };
 
 export const shareOnTelegram = () => {
-  const url = `https://t.me/metanchiuz_bot/app?startapp=p_1`;
+  const url = `https://t.me/barakatopuz_bot?profile`;
   const text = `Заправляйтесь удобно и быстро с Metanchi.uz`;
   const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
   window.open(shareUrl, "_blank");

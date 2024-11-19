@@ -36,7 +36,7 @@ export default function StationForm({ station, amenities }) {
   const isEditMode = Boolean(station);
   const [selectedAmenities, setSelectedAmenities] = useState(
     station?.amenities?.map(amenity => ({
-      amenityId: amenity.amenity.id,
+      amenityId: amenity.id,
       enabled: amenity.enabled
     })) || []
   );

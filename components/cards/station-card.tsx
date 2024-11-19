@@ -16,6 +16,7 @@ import {
 import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { cn, formatPricePerM3 } from "@/lib/utils";
 
 interface Amenity {
   id: string;
@@ -73,10 +74,10 @@ export function StationCard({
   showAmenities = true,
   showActions = true,
   className = "",
-  distance,
+  distance = 2.8,
 }: StationCardProps) {
   return (
-    <Card className={`bg-card ${className}`}>
+    <Card className={`bg-card shadow-xl ${className}`}>
       <CardHeader className="p-0">
         <div className="relative aspect-video">
           <Image
@@ -96,8 +97,8 @@ export function StationCard({
               </Badge>
             )}
             {station.rating && (
-              <Badge variant="secondary" className="flex items-center gap-1">
-                <StarIcon className="h-3 w-3" />
+              <Badge variant="default" className="flex text-sm items-center gap-1 bg-green-600 text-white">
+                <StarIcon className="h-4 w-4 fill-white" />
                 {station.rating}
               </Badge>
             )}
@@ -106,16 +107,19 @@ export function StationCard({
       </CardHeader>
 
       <CardContent className="p-4">
-        <h3 className="mb-2 text-xl font-bold">{station.name || station.landmark || "Unnamed Station"}</h3>
+        <h3 className="mb-2 text-xl font-bold">{station.name || "No name"}</h3>
         {station.address && <p className="text-gray-400">{station.address}</p>}
       </CardContent>
 
       {variant === "default" && (
         <>
           <CardFooter className="just flex w-full flex-wrap items-center justify-between gap-2 p-4 pt-0 pb-3">
-              <span className="font-semibold text-primary">
-                {station.price || 3950} so&apos;m / m³
-              </span>
+          <p className={cn(
+              "font-medium",
+              station.price ? "text-green-600" : "text-muted-foreground"
+            )}>
+              {formatPricePerM3(station.price)}
+            </p>
 
             {showActions && (
               <div className="flex justify-between">
@@ -148,7 +152,7 @@ export function StationCard({
             )}
           </CardFooter>
 
-          {!showAmenities && (
+          {showAmenities && (
             <CardFooter className="flex flex-wrap items-center gap-2 p-4 text-sm">
               {station.pressure && (
                 <div className="flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1">
