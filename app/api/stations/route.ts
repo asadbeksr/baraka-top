@@ -4,12 +4,43 @@ import { prisma } from "@/lib/db";
 
 export const dynamic = 'force-dynamic';
 
-export async function GET() {
+const parseCoordinate = (coord: string): number => {
+  // Replace comma with dot and remove any whitespace
+  const parsed = parseFloat(coord.replace(',', '.').trim());
+  console.log('Parsing coordinate:', { input: coord, parsed });
+  return parsed;
+};
+
+export async function GET(request: Request) {
   try {
-    const stations = await getAllStations();
+    // Get location from query parameters
+    const { searchParams } = new URL(request.url);
+    const lat = searchParams.get('latitude');
+    const lng = searchParams.get('longitude');
+
+    console.log('API received coordinates:', { lat, lng });
+
+    let userLocation: { latitude: number; longitude: number; } | null = null;
+    if (lat && lng) {
+      // Parse coordinates, replacing comma with dot for decimal
+      const latitude = parseFloat(lat.replace(',', '.'));
+      const longitude = parseFloat(lng.replace(',', '.'));
+
+      console.log('Parsed coordinates:', { latitude, longitude });
+
+      if (!isNaN(latitude) && !isNaN(longitude)) {
+        userLocation = { latitude, longitude };
+      } else {
+        console.error('Invalid coordinates:', { lat, lng });
+      }
+    }
+
+    const stations = await getAllStations(userLocation);
+    console.log('Found stations:', stations.length);
+    
     return NextResponse.json({ stations });
   } catch (error) {
-    console.error('Error fetching stations:', error);
+    console.error('Error in stations API:', error);
     return NextResponse.json(
       { error: 'Failed to fetch stations' },
       { status: 500 }

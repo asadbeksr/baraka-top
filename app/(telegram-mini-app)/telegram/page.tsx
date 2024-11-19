@@ -6,7 +6,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import TgStations from "@/components/telegram/tg-stations";
 import { requestLocation, type Location } from "@/lib/telegram";
 
-import { Globe, LocateIcon, Map, SlidersHorizontalIcon } from "lucide-react";
+import { Globe, LocateIcon, Map } from "lucide-react";
 import Link from "next/link";
 
 declare global {
@@ -34,15 +34,15 @@ export default function TgHome() {
   };
 
   const filters = [
-    { id: "all", label: "Hudud", icon: Globe },
+    // { id: "all", label: "Hudud", icon: Globe },
     { 
       id: "location", 
       label: "Eng yaqini", 
       icon: LocateIcon,
-      onClick: handleLocationRequest 
+      onClick: handleLocationRequest,
+      isActive: !!userLocation // true when userLocation is set
     },
     { id: "map", label: "Xarita", icon: Map, href: "/telegram/map" },
-    // { id: "station", label: "Filtr", icon: SlidersHorizontalIcon },
   ];
 
   return (
@@ -63,7 +63,7 @@ export default function TgHome() {
             ) : (
               <Button
                 key={filter.id}
-                variant="ghost"
+                variant={filter.isActive ? "default" : "ghost"}
                 className="flex items-center gap-2 whitespace-nowrap rounded-full px-4 py-2"
                 onClick={filter.onClick}
               >
@@ -76,12 +76,9 @@ export default function TgHome() {
         <ScrollBar orientation="horizontal" />
       </ScrollArea>
 
-      <div className="px-4 py-2 bg-secondary rounded-lg mx-4 mt-4">
-        <p className="text-sm">Your location: {userLocation?.latitude.toFixed(6)}, {userLocation?.longitude.toFixed(6)}</p>
-      </div>
-
-
-      <TgStations />
+      <TgStations userLocation={userLocation}
+      filterByLocation={true}
+      />
     </div>
   );
 }

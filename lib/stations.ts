@@ -1,12 +1,88 @@
-import {  prisma } from "@/lib/db";
+import { prisma } from "@/lib/db";
+import { Prisma } from "@prisma/client";
+import { calculateDistance } from "./utils/distance";
 
-// Fetch all stations
-export const getAllStations = async () => {
+interface Location {
+  latitude: number;
+  longitude: number;
+}
+
+// Maximum radius in kilometers to search for nearby stations
+const MAX_RADIUS_KM = 99999; // Changed from 50km to 10km - adjust this value to change the search radius
+
+// Fetch all stations with optional location filtering
+export const getAllStations = async (userLocation?: Location | null) => {
   try {
-    const stations = await prisma.station.findMany();
+    // First, let's check all stations in the database
+    const allStations = await prisma.station.findMany();
+    console.log('Total stations in database:', allStations.length);
+
+    // Check stations with any coordinates
+    const stationsWithAnyCoords = await prisma.station.findMany({
+      where: {
+        OR: [
+          { latitude: { not: null } },
+          { longitude: { not: null } }
+        ]
+      }
+    });
+    console.log('Stations with any coordinates:', stationsWithAnyCoords.length);
+    console.log('Sample stations with coordinates:', 
+      stationsWithAnyCoords.slice(0, 3).map(s => ({
+        id: s.id,
+        name: s.name,
+        latitude: s.latitude,
+        longitude: s.longitude
+      }))
+    );
+
+    let stations;
+    if (userLocation?.latitude && userLocation?.longitude) {
+      const lat = parseFloat(userLocation.latitude.toString().replace(',', '.'));
+      const lng = parseFloat(userLocation.longitude.toString().replace(',', '.'));
+      
+      console.log('Searching near coordinates:', { lat, lng });
+
+      // Simple distance calculation for debugging
+      stations = await prisma.station.findMany({
+        where: {
+          AND: [
+            { latitude: { not: null } },
+            { longitude: { not: null } }
+          ]
+        }
+      });
+
+      // Calculate distances manually for debugging
+      stations = stations.map(station => {
+        const distance = calculateDistance(
+          lat,
+          lng,
+          Number(station.latitude),
+          Number(station.longitude)
+        );
+        return { ...station, distance };
+      }).filter(station => station.distance <= MAX_RADIUS_KM) // Using MAX_RADIUS_KM constant here
+        .sort((a, b) => a.distance - b.distance);
+
+      console.log('Found stations:', stations.length);
+      if (stations.length > 0) {
+        console.log('First 3 stations with distances:', 
+          stations.slice(0, 3).map(s => ({
+            name: s.name,
+            latitude: s.latitude,
+            longitude: s.longitude,
+            distance: s.distance
+          }))
+        );
+      }
+    } else {
+      stations = allStations;
+    }
+
     return stations;
   } catch (error) {
-    console.error(error);
+    console.error('Error in getAllStations:', error);
     return [];
   }
 };

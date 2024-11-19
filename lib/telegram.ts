@@ -42,8 +42,8 @@ export interface TelegramInfo {
 }
 
 export interface Location {
-  latitude: number;
-  longitude: number;
+  latitude: string;
+  longitude: string;
 }
 
 const NOT_IN_TELEGRAM_MESSAGE = "Please open it using Telegram.";

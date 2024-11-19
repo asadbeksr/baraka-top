@@ -10,9 +10,11 @@ import {
   ShoppingCartIcon,
   StarIcon,
   WifiIcon,
+  MapPin,
 } from "lucide-react";
 
 import { Button } from "../ui/button";
+import { Badge } from "../ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 
 interface Amenity {
@@ -51,7 +53,17 @@ interface StationCardProps {
   showAmenities?: boolean;
   showActions?: boolean;
   className?: string;
+  distance?: number;
 }
+
+const formatDistance = (distance: number): string => {
+  if (distance < 1) {
+    // If less than 1 km, show in meters
+    return `${Math.round(distance * 1000)}m`;
+  }
+  // If 1 km or more, show in kilometers with one decimal
+  return `${distance.toFixed(1)}km`;
+};
 
 export function StationCard({
   station,
@@ -61,6 +73,7 @@ export function StationCard({
   showAmenities = true,
   showActions = true,
   className = "",
+  distance,
 }: StationCardProps) {
   return (
     <Card className={`bg-card ${className}`}>
@@ -75,12 +88,20 @@ export function StationCard({
             fill
             className="rounded-t-lg object-cover"
           />
-          {station.rating && (
-            <div className="absolute bottom-2 right-2 flex items-center gap-1 rounded-full bg-green-600 px-3 py-1 text-white">
-              <StarIcon className="h-4 w-4 fill-current" />
-              <span>{station.rating}</span>
-            </div>
-          )}
+          <div className="absolute bottom-2 right-2 flex items-center gap-2">
+            {typeof distance === 'number' && (
+              <Badge  className="flex items-center text-sm gap-1">
+                <MapPin className="h-3 w-3" />
+                {formatDistance(distance)}
+              </Badge>
+            )}
+            {station.rating && (
+              <Badge variant="secondary" className="flex items-center gap-1">
+                <StarIcon className="h-3 w-3" />
+                {station.rating}
+              </Badge>
+            )}
+          </div>
         </div>
       </CardHeader>
 
@@ -91,12 +112,10 @@ export function StationCard({
 
       {variant === "default" && (
         <>
-          <CardFooter className="just flex w-full flex-wrap items-center justify-between gap-2 p-4 py-0">
-            {station.price && (
+          <CardFooter className="just flex w-full flex-wrap items-center justify-between gap-2 p-4 pt-0 pb-3">
               <span className="font-semibold text-primary">
-                {station.price} so&apos;m / m³
+                {station.price || 3950} so&apos;m / m³
               </span>
-            )}
 
             {showActions && (
               <div className="flex justify-between">
@@ -129,7 +148,7 @@ export function StationCard({
             )}
           </CardFooter>
 
-          {showAmenities && (
+          {!showAmenities && (
             <CardFooter className="flex flex-wrap items-center gap-2 p-4 text-sm">
               {station.pressure && (
                 <div className="flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1">
