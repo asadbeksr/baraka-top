@@ -133,7 +133,7 @@ dependencies:
     version: 0.6.2
   '@yandex/ymaps3-types':
     specifier: latest
-    version: 1.0.15214209(@types/react-dom@18.3.0)(@types/react@18.3.3)
+    version: 1.0.15285770(@types/react-dom@18.3.0)(@types/react@18.3.3)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -5351,8 +5351,8 @@ packages:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
     dev: false
 
-  /@yandex/ymaps3-types@1.0.15214209(@types/react-dom@18.3.0)(@types/react@18.3.3):
-    resolution: {integrity: sha512-qQgeyT1Al5ZS3zCa+VochP2i9JSqDuLQXiO3lu6fgUXv+3xDWC6thAQzH0et9bW7YbgZZlRW5xaEFZL5+fztrw==}
+  /@yandex/ymaps3-types@1.0.15285770(@types/react-dom@18.3.0)(@types/react@18.3.3):
+    resolution: {integrity: sha512-K+3RY/0QOl6E/0NEuRkMGEQORphcZ/Ym1YA5Cy8v0oAJLbXoM55Au1R2x3lB3GzflS0LQcGcLFaMSYh3ekl5uA==}
     peerDependencies:
       '@types/react': 16-18
       '@types/react-dom': 16-18

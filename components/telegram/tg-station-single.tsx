@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -21,6 +22,10 @@ import {
 import { getAmenityIcon } from "@/components/icons/amenity-icons";
 
 import { StationCard } from "../cards/station-card";
+
+const TgMapComponent = dynamic(() => import("@/components/telegram/tg-map"), {
+  ssr: false,
+});
 
 export default function TgStationSingle({ station }) {
   const router = useRouter();
@@ -120,14 +125,17 @@ export default function TgStationSingle({ station }) {
         </div>
       )}
 
-      <div className="space-y-3 p-6">
-        <h2 className="text-2xl font-bold"> Xaritada joylashuvi</h2>
-        <div className="relative aspect-video">
-          <Image
-            src="/_static/map.png"
-            alt="map image"
-            fill
-            className="rounded-md object-cover"
+      <div className="mb-8 space-y-3 p-6">
+        <h2 className="text-2xl font-bold">Xaritada</h2>
+        <div className="relative h-[220px]">
+          <TgMapComponent
+            stations={[station]}
+            initialLocation={{
+              latitude: station.latitude,
+              longitude: station.longitude,
+            }}
+            height="250px"
+            disablePopup
           />
         </div>
       </div>
@@ -141,7 +149,7 @@ export default function TgStationSingle({ station }) {
               station={station}
               variant="default"
               showAmenities={false}
-              className="w-[280px] flex-none"
+              className="w-[300px] flex-none"
               onShare={shareOnTelegram}
               onSave={() => {}}
             />

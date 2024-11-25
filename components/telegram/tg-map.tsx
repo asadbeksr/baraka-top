@@ -18,10 +18,12 @@ import { Button } from "../ui/button";
 interface TgMapProps {
   stations?: Station[];
   initialLocation?: { latitude: number; longitude: number };
+  height?: string;
+  disablePopup?: boolean;
 }
 
 const DEFAULT_CENTER: [number, number] = [41.311081, 69.240562];
-const DEFAULT_ZOOM = 12;
+const DEFAULT_ZOOM = 15;
 
 declare global {
   interface Window {
@@ -41,7 +43,7 @@ const isValidStation = (station: Station): boolean => {
 
 
 
-export default function TgMapComponent({ stations = [], initialLocation }: TgMapProps) {
+export default function TgMapComponent({ stations = [], initialLocation, height = '400px', disablePopup = false }: TgMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
@@ -104,7 +106,11 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
               }
             );
 
-            placemark.events.add('click', () => handleStationClick(station));
+            placemark.events.add('click', () => {
+              if (!disablePopup) {
+                handleStationClick(station);
+              }
+            });
             map.geoObjects.add(placemark);
           } catch (err) {
             console.error(`Error adding marker for station ${station.id}:`, err);
@@ -162,7 +168,7 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
 
   return (
     <div className={cn("w-full", "h-full", "relative")}>
-      {selectedStation && (
+      {selectedStation && !disablePopup && (
         <Card className={cn(`absolute bottom-24 left-4 right-4 z-10 shadow-2xl border`)}>
           <CardHeader className={cn("pb-2", "relative")}>
             <button
@@ -206,8 +212,8 @@ export default function TgMapComponent({ stations = [], initialLocation }: TgMap
       )}
       <div 
         ref={mapRef} 
-        className={cn("absolute", "inset-0")}
-        style={{ minHeight: '400px' }}
+        className={cn("absolute", "inset-0", "rounded-md", "overflow-hidden")}
+        style={{ minHeight: height }}
       />
     </div>
   );

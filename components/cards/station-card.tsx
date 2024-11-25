@@ -4,11 +4,13 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
+  BookmarkIcon,
   ClockIcon,
   GaugeIcon,
   HeartIcon,
   MapPin,
   ParkingCircleIcon,
+  SaveIcon,
   Share2Icon,
   ShoppingCartIcon,
   StarIcon,
@@ -178,7 +180,7 @@ export function StationCard({
                     onClick={toggleLike}
                     className="border"
                   >
-                    <HeartIcon
+                    <BookmarkIcon
                       className={`h-5 w-5 ${
                         liked ? "fill-current text-red-500" : ""
                       }`}
