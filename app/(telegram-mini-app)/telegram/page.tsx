@@ -37,7 +37,7 @@ export default function TgHome() {
     // { id: "all", label: "Hudud", icon: Globe },
     { 
       id: "location", 
-      label: "Eng yaqini", 
+      label: "Eng yaqin", 
       icon: MapPinIcon,
       onClick: handleLocationRequest,
       isActive: !!userLocation

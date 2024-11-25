@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { type Station } from "@/types/station";
+import { type Station } from "@/types";
 import { useRouter } from "next/navigation";
 import { getTelegramWebApp } from "@/lib/telegram";
 

@@ -107,3 +107,42 @@ export interface TelegramUser {
   is_premium?: boolean;
   photo_url?: string;
 }
+
+export interface Amenity {
+  id: string;
+  name: string;
+  icon?: string;
+}
+
+export interface Photo {
+  id: string;
+  url: string;
+}
+
+export interface Station {
+  id: string;
+  landmark?: string | null;
+  legalName?: string | null;
+  price?: number | null;
+  pressure?: number | null;
+  columnsCount?: number | null;
+  gasTemperature?: number | null;
+  methaneDensity?: number | null;
+  cameraIP?: string | null;
+  createdAt?: Date | null;
+  updatedAt?: Date | null;
+  
+  // Location and contact info
+  name: string;
+  slug?: string | null;
+  phoneNumber?: string | null;
+  region?: string | null;
+  website?: string | null;
+  address?: string | undefined;
+  latitude: number;
+  longitude: number;
+
+  // Relations
+  amenities?: { amenity: Amenity }[];
+  photos?: Photo[];
+}

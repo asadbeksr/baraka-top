@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { type Station } from "@/types/station";
+import { type Station } from "@/types";
 import { openMaps, cn, formatPricePerM3 } from "@/lib/utils";
 import { X } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -17,13 +17,15 @@ import { Button } from "../ui/button";
 
 interface TgMapProps {
   stations?: Station[];
-  initialLocation?: { latitude: number; longitude: number };
+  initialLocation: { latitude: number; longitude: number };
   height?: string;
   disablePopup?: boolean;
+  zoom?: number;
+  controls?: string[];
 }
 
 const DEFAULT_CENTER: [number, number] = [41.311081, 69.240562];
-const DEFAULT_ZOOM = 15;
+const DEFAULT_ZOOM = 11;
 
 declare global {
   interface Window {
@@ -41,9 +43,14 @@ const isValidStation = (station: Station): boolean => {
   );
 };
 
-
-
-export default function TgMapComponent({ stations = [], initialLocation, height = '400px', disablePopup = false }: TgMapProps) {
+export default function TgMapComponent({
+  stations = [],
+  initialLocation,
+  height = '400px',
+  disablePopup = false,
+  zoom = DEFAULT_ZOOM,
+  controls = ['zoomControl', 'geolocationControl'],
+}: TgMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
@@ -75,20 +82,20 @@ export default function TgMapComponent({ stations = [], initialLocation, height 
     if (!mapRef.current || !window.ymaps || mapInstance) return;
 
     try {
-      const center = initialLocation 
+      const center = initialLocation
         ? [initialLocation.latitude, initialLocation.longitude]
         : DEFAULT_CENTER;
 
       window.ymaps.ready(() => {
         const map = new window.ymaps.Map(mapRef.current!, {
           center,
-          zoom: DEFAULT_ZOOM,
-          controls: ['zoomControl', 'geolocationControl']
+          zoom,
+          controls,
         });
 
         // Filter out invalid stations and add markers
         const validStations = stations.filter(isValidStation);
-        
+
         if (validStations.length !== stations.length) {
           console.warn(`Filtered out ${stations.length - validStations.length} invalid stations`);
         }
@@ -98,11 +105,11 @@ export default function TgMapComponent({ stations = [], initialLocation, height 
             const placemark = new window.ymaps.Placemark(
               [station.latitude, station.longitude],
               {
-                hintContent: station.name
+                hintContent: station.name,
               },
               {
                 preset: 'islands#blueDotIconWithCaption',
-                iconCaption: station.name
+                iconCaption: station.name,
               }
             );
 
@@ -210,8 +217,8 @@ export default function TgMapComponent({ stations = [], initialLocation, height 
           </CardFooter>
         </Card>
       )}
-      <div 
-        ref={mapRef} 
+      <div
+        ref={mapRef}
         className={cn("absolute", "inset-0", "rounded-md", "overflow-hidden")}
         style={{ minHeight: height }}
       />

@@ -19,13 +19,31 @@ import {
   CarouselDots,
   CarouselItem,
 } from "@/components/ui/carousel";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import { getAmenityIcon } from "@/components/icons/amenity-icons";
-import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 
 import { StationCard } from "../cards/station-card";
 
+function MapSkeleton({
+  height = "250px",
+  ...props
+}: { height?: string } & { [key: string]: any }) {
+  return (
+    <div className="animate-pulse" style={{ height }}>
+      <div className="h-full w-full rounded-lg bg-muted" />
+    </div>
+  );
+}
+
 const TgMapComponent = dynamic(() => import("@/components/telegram/tg-map"), {
   ssr: false,
+  loading: MapSkeleton,
 });
 
 export default function TgStationSingle({ station }) {
@@ -74,7 +92,7 @@ export default function TgStationSingle({ station }) {
       </Carousel>
 
       <div className="space-y-3 p-6">
-        <h1 className="text-2xl font-bold text-primary">{station?.name}</h1>
+        <h1 className="text-xl font-bold text-primary">{station?.name}</h1>
 
         <div className="grid grid-cols-3 gap-4">
           <Button
@@ -105,11 +123,15 @@ export default function TgStationSingle({ station }) {
             </DrawerTrigger>
             <DrawerContent>
               <div className="flex flex-col divide-y">
-                <div className="py-2 px-4">
-                  <Button 
+                <div className="px-4 py-2">
+                  <Button
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => window.open(`yandexnavi://build_route_on_map?lat_to=${station.latitude}&lon_to=${station.longitude}`)}
+                    onClick={() =>
+                      window.open(
+                        `yandexnavi://build_route_on_map?lat_to=${station.latitude}&lon_to=${station.longitude}`,
+                      )
+                    }
                   >
                     <Image
                       src="/maps/navigator.webp"
@@ -121,11 +143,15 @@ export default function TgStationSingle({ station }) {
                     <span>Yandex Navigator</span>
                   </Button>
                 </div>
-                <div className="py-2 px-4">
-                  <Button 
+                <div className="px-4 py-2">
+                  <Button
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => window.open(`https://yandex.ru/maps/?rtext=~${station.latitude},${station.longitude}&rtt=auto`)}
+                    onClick={() =>
+                      window.open(
+                        `https://yandex.ru/maps/?rtext=~${station.latitude},${station.longitude}&rtt=auto`,
+                      )
+                    }
                   >
                     <Image
                       src="/maps/yandex.webp"
@@ -137,11 +163,15 @@ export default function TgStationSingle({ station }) {
                     <span>Yandex Maps</span>
                   </Button>
                 </div>
-                <div className="py-2 px-4">
-                  <Button 
+                <div className="px-4 py-2">
+                  <Button
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => window.open(`google://?daddr=${station.latitude},${station.longitude}&directionsmode=driving`)}
+                    onClick={() =>
+                      window.open(
+                        `https://www.google.com/maps?daddr=${station.latitude},${station.longitude}&directionsmode=driving`,
+                      )
+                    }
                   >
                     <Image
                       src="/maps/google.webp"
@@ -153,11 +183,15 @@ export default function TgStationSingle({ station }) {
                     <span>Google Maps</span>
                   </Button>
                 </div>
-                <div className="py-2 px-4">
-                  <Button 
+                <div className="px-4 py-2">
+                  <Button
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => window.open(`maps://?daddr=${station.latitude},${station.longitude}&dirflg=d`)}
+                    onClick={() =>
+                      window.open(
+                        `maps://?daddr=${station.latitude},${station.longitude}&dirflg=d`,
+                      )
+                    }
                   >
                     <Image
                       src="/maps/apple.webp"
@@ -197,23 +231,24 @@ export default function TgStationSingle({ station }) {
         </div>
       )}
 
-      <div className="mb-8 space-y-3 p-6">
-        <h2 className="text-2xl font-bold">Xaritada</h2>
+      <div className="space-y-3 p-6">
+        <h2 className="text-xl font-bold">Xaritada joylashuvi</h2>
         <div className="relative h-[220px]">
           <TgMapComponent
+            zoom={15}
             stations={[station]}
+            height="220px"
+            disablePopup
             initialLocation={{
               latitude: station.latitude,
               longitude: station.longitude,
             }}
-            height="250px"
-            disablePopup
           />
         </div>
       </div>
 
       <div className="space-y-3 p-6">
-        <h2 className="text-2xl font-bold">Yaqin shahobchalar</h2>
+        <h2 className="text-xl font-bold">Yaqin shahobchalar</h2>
         <div className="no-scrollbar flex gap-4 overflow-scroll pb-4">
           {nearbyStations.map((station) => (
             <StationCard
