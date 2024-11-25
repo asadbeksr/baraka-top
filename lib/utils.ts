@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 
 // At the top of the file
 import WebApp from '@twa-dev/sdk';
-
+import { getTelegramWebApp } from './telegram';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -197,6 +197,16 @@ export function openMaps(longitude: number, latitude: number) {
   }
 }
 
+export function openTgLink(url: string) {
+  const tg = getTelegramWebApp();
+  console.log(tg)
+  if (tg?.openLink) {
+    tg.openTelegramLink(url);
+  } else {
+    // Fallback for non-Telegram environments
+    window.open(url, '_blank');
+  }
+}
 
 export const formatPricePerM3 = (
   price: number | null | undefined,

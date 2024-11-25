@@ -10,7 +10,7 @@ import { Bookmark, Navigation, Share2, StarIcon } from "lucide-react";
 
 import { nearbyStations } from "@/lib/mock";
 import { getTelegramWebApp, shareOnTelegram } from "@/lib/telegram";
-import { openMaps } from "@/lib/utils";
+import { openTgLink } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
@@ -20,6 +20,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { getAmenityIcon } from "@/components/icons/amenity-icons";
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 
 import { StationCard } from "../cards/station-card";
 
@@ -63,7 +64,7 @@ export default function TgStationSingle({ station }) {
                 src="https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg"
                 alt={`Football field ${index + 1}`}
                 width={800}
-                height={400}
+                height={320}
                 className="aspect-video w-full rounded-b-md object-cover"
               />
             </CarouselItem>
@@ -92,14 +93,85 @@ export default function TgStationSingle({ station }) {
             <span>Ulashish</span>
           </Button>
 
-          <Button
-            variant="outline"
-            className="flex h-auto flex-col items-center gap-2 bg-card py-4"
-            onClick={() => openMaps(station.longitude, station.latitude)}
-          >
-            <Navigation className="h-6 w-6" />
-            <span>Borish</span>
-          </Button>
+          <Drawer>
+            <DrawerTrigger asChild>
+              <Button
+                variant="outline"
+                className="flex h-auto flex-col items-center gap-2 bg-card py-4"
+              >
+                <Navigation className="h-6 w-6" />
+                <span>Yo&apos;nalish</span>
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent>
+              <div className="flex flex-col divide-y">
+                <div className="py-2 px-4">
+                  <Button 
+                    variant="ghost"
+                    className="flex h-auto w-full items-center justify-start gap-3 p-3"
+                    onClick={() => openTgLink(`https://yandex.ru/maps/?rtext=~${station.latitude},${station.longitude}`)}
+                  >
+                    <Image
+                      src="/maps/navigator.webp"
+                      alt="Yandex Navigator"
+                      width={32}
+                      height={32}
+                      className="rounded-md"
+                    />
+                    <span>Yandex Navigator</span>
+                  </Button>
+                </div>
+                <div className="py-2 px-4">
+                  <Button 
+                    variant="ghost"
+                    className="flex h-auto w-full items-center justify-start gap-3 p-3"
+                    onClick={() => openTgLink(`https://yandex.ru/maps/?pt=${station.longitude},${station.latitude}&z=18&l=map`)}
+                  >
+                    <Image
+                      src="/maps/yandex.webp"
+                      alt="Yandex Maps"
+                      width={32}
+                      height={32}
+                      className="rounded-md"
+                    />
+                    <span>Yandex Maps</span>
+                  </Button>
+                </div>
+                <div className="py-2 px-4">
+                  <Button 
+                    variant="ghost"
+                    className="flex h-auto w-full items-center justify-start gap-3 p-3"
+                    onClick={() => openTgLink(`https://maps.google.com?q=${station.latitude},${station.longitude}`)}
+                  >
+                    <Image
+                      src="/maps/google.webp"
+                      alt="Google Maps"
+                      width={32}
+                      height={32}
+                      className="rounded-md"
+                    />
+                    <span>Google Maps</span>
+                  </Button>
+                </div>
+                <div className="py-2 px-4">
+                  <Button 
+                    variant="ghost"
+                    className="flex h-auto w-full items-center justify-start gap-3 p-3"
+                    onClick={() => openTgLink(`https://maps.apple.com/?q=${station.latitude},${station.longitude}`)}
+                  >
+                    <Image
+                      src="/maps/apple.webp"
+                      alt="Apple Maps"
+                      width={32}
+                      height={32}
+                      className="rounded-md"
+                    />
+                    <span>Apple Maps</span>
+                  </Button>
+                </div>
+              </div>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
 
