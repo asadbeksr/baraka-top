@@ -201,7 +201,7 @@ export function openTgLink(url: string) {
   const tg = getTelegramWebApp();
   console.log(tg)
   if (tg?.openLink) {
-    tg.openTelegramLink(url);
+    tg.openLink(url);
   } else {
     // Fallback for non-Telegram environments
     window.open(url, '_blank');

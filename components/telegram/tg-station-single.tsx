@@ -109,7 +109,7 @@ export default function TgStationSingle({ station }) {
                   <Button 
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => openTgLink(`https://yandex.ru/maps/?rtext=~${station.latitude},${station.longitude}`)}
+                    onClick={() => window.open(`yandexnavi://build_route_on_map?lat_to=${station.latitude}&lon_to=${station.longitude}`)}
                   >
                     <Image
                       src="/maps/navigator.webp"
@@ -125,7 +125,7 @@ export default function TgStationSingle({ station }) {
                   <Button 
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => openTgLink(`https://yandex.ru/maps/?pt=${station.longitude},${station.latitude}&z=18&l=map`)}
+                    onClick={() => window.open(`https://yandex.ru/maps/?rtext=~${station.latitude},${station.longitude}&rtt=auto`)}
                   >
                     <Image
                       src="/maps/yandex.webp"
@@ -141,7 +141,7 @@ export default function TgStationSingle({ station }) {
                   <Button 
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => openTgLink(`https://maps.google.com?q=${station.latitude},${station.longitude}`)}
+                    onClick={() => window.open(`google://?daddr=${station.latitude},${station.longitude}&directionsmode=driving`)}
                   >
                     <Image
                       src="/maps/google.webp"
@@ -157,7 +157,7 @@ export default function TgStationSingle({ station }) {
                   <Button 
                     variant="ghost"
                     className="flex h-auto w-full items-center justify-start gap-3 p-3"
-                    onClick={() => openTgLink(`https://maps.apple.com/?q=${station.latitude},${station.longitude}`)}
+                    onClick={() => window.open(`maps://?daddr=${station.latitude},${station.longitude}&dirflg=d`)}
                   >
                     <Image
                       src="/maps/apple.webp"
