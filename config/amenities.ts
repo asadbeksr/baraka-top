@@ -1,4 +1,4 @@
-export const AMENITIES = [
+const AMENITIES = [
   {
     name: "Wi-Fi",
     slug: "wifi",
@@ -40,3 +40,5 @@ export const AMENITIES = [
     slug: "atm",
   }
 ];
+
+module.exports = { AMENITIES };

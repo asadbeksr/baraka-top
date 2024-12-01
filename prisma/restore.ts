@@ -1,9 +1,35 @@
-const { PrismaClient } = require('@prisma/client')
-const { AMENITIES } = require('../config/amenities')
-const fs = require('fs')
-const path = require('path')
+import { PrismaClient } from '@prisma/client'
+import fs from 'fs'
+import path from 'path'
 
 const prisma = new PrismaClient()
+
+const AMENITIES = [
+  {
+    name: "Wi-Fi",
+    slug: "wifi",
+  },
+  {
+    name: "Restroom",
+    slug: "restroom",
+  },
+  {
+    name: "Coffee Shop",
+    slug: "coffee-shop",
+  },
+  {
+    name: "Car Wash",
+    slug: "car-wash",
+  },
+  {
+    name: "Mini Market",
+    slug: "mini-market",
+  },
+  {
+    name: "ATM",
+    slug: "atm",
+  }
+]
 
 async function main() {
   console.log('Start seeding amenities...')

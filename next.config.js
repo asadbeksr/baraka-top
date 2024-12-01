@@ -6,6 +6,17 @@ import("./env.mjs");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    json: true,
+    serverComponentsExternalPackages: ["@prisma/client"],
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.json$/,
+      type: 'json'
+    });
+    return config;
+  },
   images: {
     remotePatterns: [
       {
@@ -37,9 +48,6 @@ const nextConfig = {
         hostname: 'www.metanchi.uz'
       }
     ],
-  },
-  experimental: {
-    serverComponentsExternalPackages: ["@prisma/client"],
   },
 };
 

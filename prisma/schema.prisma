@@ -20,8 +20,8 @@ model Account {
   scope             String?
   id_token          String?
   session_state     String?
-  createdAt         DateTime @default(now()) @map("created_at")
-  updatedAt         DateTime @default(now()) @map("updated_at")
+  created_at         DateTime @default(now()) @map("created_at")
+  updated_at         DateTime @default(now()) @map("updated_at")
   user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
@@ -44,15 +44,29 @@ model User {
   id                     String    @id @default(cuid())
   name                   String?
   email                  String?   @unique
-  emailVerified          DateTime?
+  email_verified         DateTime? @map("email_verified")
   image                  String?
-  createdAt              DateTime  @default(now()) @map("created_at")
-  updatedAt              DateTime  @default(now()) @map("updated_at")
+  created_at             DateTime  @default(now()) @map("created_at")
+  updated_at             DateTime  @default(now()) @map("updated_at")
   role                   UserRole  @default(USER)
-  stripeCustomerId       String?   @unique @map("stripe_customer_id")
-  stripeSubscriptionId   String?   @unique @map("stripe_subscription_id")
-  stripePriceId          String?   @map("stripe_price_id")
-  stripeCurrentPeriodEnd DateTime? @map("stripe_current_period_end")
+  stripe_customer_id     String?   @unique @map("stripe_customer_id")
+  stripe_subscription_id String?   @unique @map("stripe_subscription_id")
+  stripe_price_id        String?   @map("stripe_price_id")
+  stripe_current_period_end DateTime? @map("stripe_current_period_end")
+
+  // Telegram specific fields
+  telegram_id            BigInt?   @unique @map("telegram_id")
+  is_bot                 Boolean?  @map("is_bot")
+  first_name             String?   @map("first_name")
+  last_name              String?   @map("last_name")
+  username               String?
+  language_code          String?   @map("language_code")
+  is_premium             Boolean?  @map("is_premium")
+  added_to_attachment_menu Boolean?  @map("added_to_attachment_menu")
+  allows_write_to_pm     Boolean?  @map("allows_write_to_pm")
+  photo_url              String?   @map("photo_url")
+  last_opened_at         DateTime? @map("last_opened_at")
+
   accounts               Account[]
   sessions               Session[]
 
@@ -76,20 +90,20 @@ enum UserRole {
 model Station {
   id                  String   @id @default(cuid())
   landmark            String?  
-  legalName           String?   @map("legal_name") 
+  legal_name          String?   @map("legal_name") 
   price               Float?   
   pressure            Float?
-  columnsCount        Int?     @map("columns_count")
-  gasTemperature      Float?   @map("gas_temperature")
-  methaneDensity      Float?   @map("methane_density")
-  cameraIP            String?  @map("live_camera_ip")
-  createdAt           DateTime? @default(now()) @map("created_at")
-  updatedAt           DateTime? @updatedAt @map("updated_at")
+  columns_count       Int?     @map("columns_count")
+  gas_temperature     Float?   @map("gas_temperature")
+  methane_density     Float?   @map("methane_density")
+  live_camera_ip      String?  @map("live_camera_ip")
+  created_at          DateTime? @default(now()) @map("created_at")
+  updated_at          DateTime? @updatedAt @map("updated_at")
   
   // New fields based on JSON data
   name                String?
   slug                String?
-  phoneNumber         String?   @map("phone_number")
+  phone_number        String?   @map("phone_number")
   region              String?
   website             String?
   address             String?
@@ -99,10 +113,10 @@ model Station {
   // Relations
   amenities          StationToAmenity[]
   photos             Photo[] 
-  primaryRelations   RelatedStation[] @relation("StationAsPrimary")
-  relatedRelations   RelatedStation[] @relation("StationAsRelated")
+  primary_relations   RelatedStation[] @relation("StationAsPrimary")
+  related_relations   RelatedStation[] @relation("StationAsRelated")
   reviews            Review[] 
-  workDates          WorkDate[]
+  work_dates         WorkDate[]
 
   @@map("stations")
 }
@@ -113,8 +127,8 @@ model Amenity {
   slug        String   @unique
   icon        String?
   description String?
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime? @updatedAt @map("updated_at")
+  created_at   DateTime @default(now()) @map("created_at")
+  updated_at   DateTime? @updatedAt @map("updated_at")
   
   // Relations
   stations    StationToAmenity[]
@@ -123,34 +137,34 @@ model Amenity {
 }
 
 model StationToAmenity {
-  stationId String
-  amenityId String
+  station_id String
+  amenity_id String
   enabled   Boolean  @default(true)
   
-  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
-  amenity   Amenity @relation(fields: [amenityId], references: [id], onDelete: Cascade)
+  station   Station @relation(fields: [station_id], references: [id], onDelete: Cascade)
+  amenity   Amenity @relation(fields: [amenity_id], references: [id], onDelete: Cascade)
 
-  @@id([stationId, amenityId])
+  @@id([station_id, amenity_id])
   @@map("station_to_amenities")
 }
 
 model Photo {
   id        String  @id @default(cuid())
   url       String
-  stationId String  @map("station_id")
-  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+  station_id String  @map("station_id")
+  station   Station @relation(fields: [station_id], references: [id], onDelete: Cascade)
 
   @@map("photos")
 }
 
 model RelatedStation {
   id               String  @id @default(cuid())
-  stationId        String
-  relatedStationId String @map("related_station_id")
-  station          Station @relation("StationAsPrimary", fields: [stationId], references: [id], onDelete: Cascade)
-  relatedStation   Station @relation("StationAsRelated", fields: [relatedStationId], references: [id], onDelete: Cascade)
+  station_id       String
+  related_station_id String @map("related_station_id")
+  station          Station @relation("StationAsPrimary", fields: [station_id], references: [id], onDelete: Cascade)
+  related_station   Station @relation("StationAsRelated", fields: [related_station_id], references: [id], onDelete: Cascade)
 
-  @@unique([stationId, relatedStationId])
+  @@unique([station_id, related_station_id])
   @@map("related_stations")
 }
 
@@ -158,8 +172,8 @@ model Review {
   id        String  @id @default(cuid())
   rating    Int
   comment   String?
-  stationId String
-  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+  station_id String
+  station   Station @relation(fields: [station_id], references: [id], onDelete: Cascade)
 
   @@map("reviews")
 }
@@ -169,8 +183,8 @@ model WorkDate {
   day       Int
   start     String
   end       String
-  stationId String  @map("station_id")
-  station   Station @relation(fields: [stationId], references: [id], onDelete: Cascade)
+  station_id String  @map("station_id")
+  station   Station @relation(fields: [station_id], references: [id], onDelete: Cascade)
 
   @@map("work_dates")
 }
