@@ -17,7 +17,7 @@ interface TelegramUserData {
 export async function POST(req: Request) {
   try {
     const userData: TelegramUserData = await req.json();
-    console.log('Received user data:', userData);
+    // console.log('Received user data:', userData);
 
     // Try to create first, if it fails due to unique constraint, then update
     try {
@@ -41,7 +41,7 @@ export async function POST(req: Request) {
         success: true, 
         user: {
           ...newUser,
-          telegram_id: newUser.telegram_id.toString()
+          telegram_id: newUser.telegram_id ? newUser.telegram_id.toString() : null
         }
       });
     } catch (createError) {
@@ -64,12 +64,12 @@ export async function POST(req: Request) {
             last_opened_at: new Date(),
           }
         });
-        console.log('Updated existing user:', updatedUser);
+        // console.log('Updated existing user:', updatedUser);
         return NextResponse.json({ 
           success: true, 
           user: {
             ...updatedUser,
-            telegram_id: updatedUser.telegram_id.toString()
+            telegram_id: updatedUser.telegram_id ? updatedUser.telegram_id.toString() : null
           }
         });
       }

@@ -76,9 +76,9 @@ export default function TgHome() {
         <ScrollBar orientation="horizontal" />
       </ScrollArea>
 
-      {/* <TgStations userLocation={userLocation}
+      <TgStations userLocation={userLocation}
       filterByLocation={true}
-      /> */}
+      />
     </div>
   );
 }

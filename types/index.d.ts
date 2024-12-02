@@ -56,12 +56,13 @@ export type SubscriptionPlan = {
 };
 
 export type UserSubscriptionPlan = SubscriptionPlan &
-  Pick<User, "stripeCustomerId" | "stripeSubscriptionId" | "stripePriceId"> & {
-    stripeCurrentPeriodEnd: number;
-    isPaid: boolean;
-    interval: "month" | "year" | null;
-    isCanceled?: boolean;
-  };
+  Pick<User, "stripeSubscriptionId" | "stripePriceId"> & {
+  stripeCustomerId: string | null;
+  stripeCurrentPeriodEnd: number;
+  isPaid: boolean;
+  interval: "month" | "year" | null;
+  isCanceled?: boolean;
+};
 
 // compare plans
 export type ColumnType = string | boolean | null;

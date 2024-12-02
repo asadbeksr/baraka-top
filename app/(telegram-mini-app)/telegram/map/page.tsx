@@ -61,7 +61,6 @@ export default function TgMap() {
   // Set up back button
   useEffect(() => {
     const tg = getTelegramWebApp();
-    console.log('tg', tg.BackButton);
     if (!tg?.BackButton) return;
 
     // Show back button

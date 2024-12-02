@@ -55,7 +55,6 @@ export default function TgMapComponent({
   const [mapInstance, setMapInstance] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
   const [selectedStation, setSelectedStation] = useState<Station | null>(null);
-  const scriptId = 'yandex-maps-script';
   const router = useRouter();
 
   const handleStationClick = (station: Station) => {
@@ -132,21 +131,14 @@ export default function TgMapComponent({
     }
   };
 
-  // Handle script load and cleanup
   useEffect(() => {
-    // Check if script already exists
-    const existingScript = document.getElementById(scriptId);
-    if (!existingScript) {
+    if (!window.ymaps) {
       const script = document.createElement('script');
-      const apiKey = process.env.NEXT_PUBLIC_YMAPS_API_KEY;
-      if (!apiKey) {
-        setError('Map API key not configured');
-        return;
-      }
-      script.id = scriptId;
-      script.src = `https://api-maps.yandex.ru/2.1/?apikey=${apiKey}&lang=ru_RU`;
+      script.src = `https://api-maps.yandex.ru/2.1/?apikey=${process.env.NEXT_PUBLIC_YMAPS_API_KEY}&lang=ru_RU`;
       script.async = true;
-      script.onload = initMap;
+      script.onload = () => {
+        window.ymaps.ready(initMap);
+      };
       script.onerror = () => {
         setError('Failed to load map service');
       };
@@ -161,22 +153,21 @@ export default function TgMapComponent({
         setMapInstance(null);
       }
     };
-  }, []);
+  }, [initMap, mapInstance]);
 
-  // Reinitialize map when props change
   useEffect(() => {
     if (window.ymaps && !mapInstance) {
       initMap();
     }
-  }, [initialLocation, stations]);
+  }, [initialLocation, stations, mapInstance, initMap]);
 
   if (!process.env.NEXT_PUBLIC_YMAPS_API_KEY) return null;
-  if (error) return <div className={cn("p-4", "text-red-500")}>{error}</div>;
+  if (error) return <div className={cn("text-red-500 p-4")}>{error}</div>;
 
   return (
-    <div className={cn("w-full", "h-full", "relative")}>
+    <div className={cn("relative w-full h-full")}>
       {selectedStation && !disablePopup && (
-        <Card className={cn(`absolute bottom-24 left-4 right-4 z-10 shadow-2xl border`)}>
+        <Card className={cn("absolute z-10 inset-x-4 bottom-24 shadow-2xl border")}>
           <CardHeader className={cn("pb-2", "relative")}>
             <button
               onClick={handleCloseCard}

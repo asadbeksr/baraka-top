@@ -42,12 +42,9 @@ export default function TgStations({ userLocation, filterByLocation }: TgStation
             longitude: userLocation.longitude
           });
           url += `?${params.toString()}`;
-          console.log('Fetching stations with URL:', url);
         }
 
-        console.log('Making API request...');
         const response = await fetch(url);
-        console.log('API response status:', response.status);
         
         if (!response.ok) {
           const errorText = await response.text();
@@ -56,7 +53,6 @@ export default function TgStations({ userLocation, filterByLocation }: TgStation
         }
 
         const data = await response.json();
-        console.log('API response data:', data);
         setStations(data.stations || []);
       } catch (err) {
         console.error('Error fetching stations:', err);
@@ -79,8 +75,10 @@ export default function TgStations({ userLocation, filterByLocation }: TgStation
 
   if (isLoading) {
     return (
-      <div className="p-4 text-center">
-        Yuklanmoqda...
+      <div className="flex-1 space-y-3 overflow-auto p-4">
+        {[1, 2,].map((index) => (
+          <div key={index} className="rounded-lg border overflow-hidden animate-pulse h-[20.9rem] bg-muted" />
+        ))}
       </div>
     );
   }

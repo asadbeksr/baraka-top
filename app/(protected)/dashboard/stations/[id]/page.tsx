@@ -14,7 +14,13 @@ export default async function StationsSinglePage({
   params: { id: string };
 }) {
   const isNewStation = params.id === "new";
-  const amenities = await getAllAmenities();
+  const amenities = (await getAllAmenities()).map(amenity => ({
+    ...amenity,
+    icon: amenity.icon || undefined,
+    description: amenity.description || undefined,
+    created_at: amenity.created_at || undefined,
+    updated_at: amenity.updated_at || undefined
+  }));
   
   if (isNewStation) {
     return (
@@ -29,8 +35,8 @@ export default async function StationsSinglePage({
               className="flex items-center gap-2"
               passHref
             >
-              <Button className="ml-auto shrink-0 gap-1 px-4">
-                <ArrowLeftIcon className="hidden size-4 sm:block" />
+              <Button className="gap-1 ml-auto px-4 shrink-0">
+                <ArrowLeftIcon className="size-4 hidden sm:block" />
                 <span>Back</span>
               </Button>
             </Link>
@@ -45,7 +51,6 @@ export default async function StationsSinglePage({
 
   const station = await getStationById(params.id);
 
-  console.log('station', station)
   if (!station) {
     notFound();
   }
@@ -62,8 +67,8 @@ export default async function StationsSinglePage({
             className="flex items-center gap-2"
             passHref
           >
-            <Button className="ml-auto shrink-0 gap-1 px-4">
-              <ArrowLeftIcon className="hidden size-4 sm:block" />
+            <Button className="gap-1 ml-auto px-4 shrink-0">
+              <ArrowLeftIcon className="size-4 hidden sm:block" />
               <span>Back</span>
             </Button>
           </Link>

@@ -14,7 +14,7 @@ export const sendVerificationRequest: EmailConfig["sendVerificationRequest"] =
     const user = await getUserByEmail(identifier);
     if (!user || !user.name) return;
 
-    const userVerified = user?.emailVerified ? true : false;
+    const userVerified = user?.email_verified ? true : false;
     const authSubject = userVerified
       ? `Sign-in link for ${siteConfig.name}`
       : "Activate your account";

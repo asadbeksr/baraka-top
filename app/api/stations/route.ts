@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 const parseCoordinate = (coord: string): number => {
   // Replace comma with dot and remove any whitespace
   const parsed = parseFloat(coord.replace(',', '.').trim());
-  console.log('Parsing coordinate:', { input: coord, parsed });
+  // console.log('Parsing coordinate:', { input: coord, parsed });
   return parsed;
 };
 
@@ -18,7 +18,7 @@ export async function GET(request: Request) {
     const lat = searchParams.get('latitude');
     const lng = searchParams.get('longitude');
 
-    console.log('API received coordinates:', { lat, lng });
+    // console.log('API received coordinates:', { lat, lng });
 
     let userLocation: { latitude: number; longitude: number; } | null = null;
     if (lat && lng) {
@@ -26,7 +26,7 @@ export async function GET(request: Request) {
       const latitude = parseFloat(lat.replace(',', '.'));
       const longitude = parseFloat(lng.replace(',', '.'));
 
-      console.log('Parsed coordinates:', { latitude, longitude });
+      // console.log('Parsed coordinates:', { latitude, longitude });
 
       if (!isNaN(latitude) && !isNaN(longitude)) {
         userLocation = { latitude, longitude };
@@ -36,7 +36,7 @@ export async function GET(request: Request) {
     }
 
     const stations = await getAllStations(userLocation);
-    console.log('Found stations:', stations.length);
+    // console.log('Found stations:', stations.length);
     
     return NextResponse.json({ stations });
   } catch (error) {
@@ -51,7 +51,7 @@ export async function GET(request: Request) {
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    console.log('Request body:', body);
+    // console.log('Request body:', body);
     const { amenities, ...stationData } = body;
 
     // First create the station without amenities
@@ -63,8 +63,8 @@ export async function POST(req: Request) {
     if (amenities && Array.isArray(amenities) && amenities.length > 0) {
       await prisma.stationToAmenity.createMany({
         data: amenities.map((amenity) => ({
-          stationId: station.id,
-          amenityId: amenity.amenityId,
+          station_id: station.id,
+          amenity_id: amenity.amenityId,
           enabled: amenity.enabled,
         })),
       });

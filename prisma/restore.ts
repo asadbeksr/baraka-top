@@ -89,8 +89,8 @@ async function main() {
           if (amenity) {
             await prisma.stationToAmenity.create({
               data: {
-                stationId: createdStation.id,
-                amenityId: amenity.id,
+                station_id: createdStation.id,
+                amenity_id: amenity.id,
               }
             })
           }

@@ -49,7 +49,7 @@ export default function TgMainLayout({ children }: MarketingLayoutProps) {
         }
 
         const data = await response.json();
-        console.log('Successfully saved telegram user:', data);
+        // console.log('Successfully saved telegram user:', data);
       } catch (error) {
         console.error('Error saving telegram user:', error);
       }

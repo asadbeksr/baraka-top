@@ -1,44 +1,62 @@
-const AMENITIES = [
+export interface Amenity {
+  id: string;
+  name: string;
+  slug: string;
+  icon?: string;
+  description?: string;
+  created_at?: Date;
+  updated_at?: Date | null;
+}
+
+export const AMENITIES: Amenity[] = [
   {
+    id: "wifi",
     name: "Wi-Fi",
     slug: "wifi",
   },
   {
+    id: "restroom",
     name: "Restroom",
     slug: "restroom",
   },
   {
+    id: "coffee-shop",
     name: "Coffee Shop",
     slug: "coffee-shop",
   },
   {
+    id: "car-wash",
     name: "Car Wash",
     slug: "car-wash",
   },
   {
+    id: "mini-market",
     name: "Mini Market",
     slug: "mini-market",
   },
   {
-    name: "24/7 Service",
-    slug: "24-7-service",
+    id: "atm",
+    name: "ATM",
+    slug: "atm",
   },
   {
-    name: "Air Pump",
-    slug: "air-pump",
+    id: "24-7",
+    name: "24/7",
+    slug: "24-7",
   },
   {
+    id: "tire-service",
     name: "Tire Service",
     slug: "tire-service",
   },
   {
-    name: "Oil Change",
-    slug: "oil-change",
+    id: "auto-service",
+    name: "Auto Service",
+    slug: "auto-service",
   },
   {
-    name: "ATM",
-    slug: "atm",
+    id: "payment-terminal",
+    name: "Payment Terminal",
+    slug: "payment-terminal",
   }
 ];
-
-module.exports = { AMENITIES };

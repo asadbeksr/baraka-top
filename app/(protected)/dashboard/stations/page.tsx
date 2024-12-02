@@ -28,7 +28,6 @@ export const metadata = constructMetadata({
 
 export default async function StationsPage() {
   const data = await getAllStations();
-  console.log(data, "D A A A A ");
 
   return (
     <>

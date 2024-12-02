@@ -1,7 +1,7 @@
-const { PrismaClient } = require('@prisma/client')
-const { AMENITIES } = require('../config/amenities')
-const fs = require('fs')
-const path = require('path')
+import { PrismaClient } from '@prisma/client'
+import { AMENITIES } from '../config/amenities'
+import fs from 'fs'
+import path from 'path'
 
 const prisma = new PrismaClient()
 
@@ -63,8 +63,8 @@ async function main() {
           if (amenity) {
             await prisma.stationToAmenity.create({
               data: {
-                stationId: createdStation.id,
-                amenityId: amenity.id,
+                station_id: createdStation.id,
+                amenity_id: amenity.id,
               }
             })
           }

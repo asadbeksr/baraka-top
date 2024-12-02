@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
-import { stationUpdateSchema } from "@/lib/validations/schemas";
+import { stationSchema } from "@/lib/validations/schemas";
 import { z } from "zod";
 
 export async function PATCH(
@@ -18,15 +18,13 @@ export async function PATCH(
     const body = await req.json();
     
     // Parse and validate the request body
-    const validatedData = stationUpdateSchema.parse(body);
+    const validatedData = stationSchema.parse(body);
     const { amenities, ...stationData } = validatedData;
 
     // Check if station exists
     const existingStation = await prisma.station.findUnique({
       where: { id: params.id },
-      include: {
-        amenities: true
-      }
+      include: { amenities: true },
     });
 
     if (!existingStation) {
@@ -36,31 +34,43 @@ export async function PATCH(
       );
     }
 
-    // Use a transaction to ensure data consistency
+    // Start a transaction to update both station and amenities
     const updatedStation = await prisma.$transaction(async (tx) => {
-      // Update station data
-      const updated = await tx.station.update({
+      // First, update the station data
+      const station = await tx.station.update({
         where: { id: params.id },
-        data: {
-          ...stationData,
-          amenities: amenities ? {
-            deleteMany: {},  // First delete all existing connections
-            create: amenities.map(amenity => ({  // Then create new ones
-              amenityId: amenity.amenityId,
-              enabled: amenity.enabled
-            }))
-          } : undefined
-        },
+        data: stationData,
+      });
+
+      // If amenities are provided, update them
+      if (amenities && amenities.length > 0) {
+        // Delete existing amenity connections for this station
+        await tx.stationToAmenity.deleteMany({
+          where: { station_id: station.id },
+        });
+
+        // Create new amenity connections
+        await tx.stationToAmenity.createMany({
+          data: amenities.map((amenity) => ({
+            station_id: station.id,
+            amenity_id: amenity.amenityId,
+            enabled: amenity.enabled,
+          })),
+        });
+      }
+
+      // Return the updated station with amenities
+      return tx.station.findUnique({
+        where: { id: station.id },
         include: {
           amenities: {
             include: {
-              amenity: true
-            }
-          }
+              amenity: true,
+            },
+          },
+          photos: true
         }
       });
-
-      return updated;
     });
 
     if (!updatedStation) {

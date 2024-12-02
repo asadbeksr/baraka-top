@@ -29,9 +29,21 @@ import {
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
 import { StationAmenities } from "./station-amenities";
-import { AMENITIES } from "@/config/amenities";
+import { AMENITIES, type Amenity } from "@/config/amenities";
+import { Station } from "@prisma/client";
 
-export default function StationForm({ station, amenities }) {
+interface StationFormProps {
+  station?: (Station & {
+    amenities?: {
+      id: string;
+      enabled: boolean;
+      camera_ip?: string;
+    }[];
+  }) | null;
+  amenities?: Amenity[];
+}
+
+export default function StationForm({ station, amenities = AMENITIES }: StationFormProps) {
   const router = useRouter();
   const isEditMode = Boolean(station);
   const [selectedAmenities, setSelectedAmenities] = useState(
@@ -46,15 +58,15 @@ export default function StationForm({ station, amenities }) {
     defaultValues: {
       name: station?.name || "",
       address: station?.address || "",
-      legalName: station?.legalName || "",
+      legal_name: station?.legal_name || "",
       region: station?.region || "",
       website: station?.website || "",
-      phoneNumber: station?.phoneNumber || "",
-      cameraIP: station?.cameraIP || "",
+      phone_number: station?.phone_number || "",
+      live_camera_ip: station?.live_camera_ip || "",
       landmark: station?.landmark || "",
-      methaneDensity: station?.methaneDensity || null,
-      columnsCount: station?.columnsCount || null,
-      gasTemperature: station?.gasTemperature || null,
+      methane_density: station?.methane_density || null,
+      columns_count: station?.columns_count || null,
+      gas_temperature: station?.gas_temperature || null,
       pressure: station?.pressure || null,
       price: station?.price || null,
       latitude: station?.latitude || null,
@@ -62,7 +74,7 @@ export default function StationForm({ station, amenities }) {
     },
   });
 
-  const handleAmenityChange = (amenity) => {
+  const handleAmenityChange = (amenity: { amenityId: string; enabled: boolean }) => {
     setSelectedAmenities(prev => {
       const existing = prev.find(a => a.amenityId === amenity.amenityId);
       if (existing) {
@@ -78,7 +90,7 @@ export default function StationForm({ station, amenities }) {
 
   const onSubmit = async (data: StationFormData) => {
     try {
-      const url = isEditMode ? `/api/stations/${station.id}` : '/api/stations';
+      const url = isEditMode && station ? `/api/stations/${station.id}` : '/api/stations';
       const method = isEditMode ? 'PATCH' : 'POST';
 
       const response = await fetch(url, {
@@ -205,7 +217,7 @@ export default function StationForm({ station, amenities }) {
 
               <FormField
                 control={form.control}
-                name="legalName"
+                name="legal_name"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Legal Name</FormLabel>
@@ -213,7 +225,7 @@ export default function StationForm({ station, amenities }) {
                       <Input 
                         placeholder="Legal name"
                         {...field}
-                        value={form.getValues("legalName") || ""}
+                        value={form.getValues("legal_name") || ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -237,7 +249,7 @@ export default function StationForm({ station, amenities }) {
 
               <FormField
                 control={form.control}
-                name="phoneNumber"
+                name="phone_number"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Phone Number</FormLabel>
@@ -245,7 +257,7 @@ export default function StationForm({ station, amenities }) {
                       <Input 
                         placeholder="Phone number"
                         {...field}
-                        value={form.getValues("phoneNumber") || ""}
+                        value={form.getValues("phone_number") || ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -367,7 +379,7 @@ export default function StationForm({ station, amenities }) {
 
               <FormField
                 control={form.control}
-                name="columnsCount"
+                name="columns_count"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Columns Count</FormLabel>
@@ -376,7 +388,7 @@ export default function StationForm({ station, amenities }) {
                         type="number"
                         placeholder="Columns count"
                         {...field}
-                        value={form.getValues("columnsCount") ?? ""}
+                        value={form.getValues("columns_count") ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -386,7 +398,7 @@ export default function StationForm({ station, amenities }) {
 
               <FormField
                 control={form.control}
-                name="gasTemperature"
+                name="gas_temperature"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Gas Temperature</FormLabel>
@@ -395,7 +407,7 @@ export default function StationForm({ station, amenities }) {
                         type="number"
                         placeholder="Gas temperature"
                         {...field}
-                        value={form.getValues("gasTemperature") ?? ""}
+                        value={form.getValues("gas_temperature") ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -405,7 +417,7 @@ export default function StationForm({ station, amenities }) {
 
               <FormField
                 control={form.control}
-                name="methaneDensity"
+                name="methane_density"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Methane Density</FormLabel>
@@ -414,7 +426,7 @@ export default function StationForm({ station, amenities }) {
                         type="number"
                         placeholder="Methane density"
                         {...field}
-                        value={form.getValues("methaneDensity") ?? ""}
+                        value={form.getValues("methane_density") ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -424,7 +436,7 @@ export default function StationForm({ station, amenities }) {
 
               <FormField
                 control={form.control}
-                name="cameraIP"
+                name="live_camera_ip"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Camera IP</FormLabel>
@@ -432,7 +444,7 @@ export default function StationForm({ station, amenities }) {
                       <Input 
                         placeholder="Camera IP"
                         {...field}
-                        value={form.getValues("cameraIP") || ""}
+                        value={form.getValues("live_camera_ip") || ""}
                       />
                     </FormControl>
                     <FormMessage />

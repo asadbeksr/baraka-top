@@ -15,7 +15,7 @@ export const getAllStations = async (userLocation?: Location | null) => {
   try {
     // First, let's check all stations in the database
     const allStations = await prisma.station.findMany();
-    console.log('Total stations in database:', allStations.length);
+    // console.log('Total stations in database:', allStations.length);
 
     // Check stations with any coordinates
     const stationsWithAnyCoords = await prisma.station.findMany({
@@ -26,22 +26,22 @@ export const getAllStations = async (userLocation?: Location | null) => {
         ]
       }
     });
-    console.log('Stations with any coordinates:', stationsWithAnyCoords.length);
-    console.log('Sample stations with coordinates:', 
-      stationsWithAnyCoords.slice(0, 3).map(s => ({
-        id: s.id,
-        name: s.name,
-        latitude: s.latitude,
-        longitude: s.longitude
-      }))
-    );
+    // console.log('Stations with any coordinates:', stationsWithAnyCoords.length);
+    // console.log('Sample stations with coordinates:', 
+    //   stationsWithAnyCoords.slice(0, 3).map(s => ({
+    //     id: s.id,
+    //     name: s.name,
+    //     latitude: s.latitude,
+    //     longitude: s.longitude
+    //   }))
+    // );
 
     let stations;
     if (userLocation?.latitude && userLocation?.longitude) {
       const lat = parseFloat(userLocation.latitude.toString().replace(',', '.'));
       const lng = parseFloat(userLocation.longitude.toString().replace(',', '.'));
       
-      console.log('Searching near coordinates:', { lat, lng });
+      // console.log('Searching near coordinates:', { lat, lng });
 
       // Simple distance calculation for debugging
       stations = await prisma.station.findMany({
@@ -65,17 +65,17 @@ export const getAllStations = async (userLocation?: Location | null) => {
       }).filter(station => station.distance <= MAX_RADIUS_KM) // Using MAX_RADIUS_KM constant here
         .sort((a, b) => a.distance - b.distance);
 
-      console.log('Found stations:', stations.length);
-      if (stations.length > 0) {
-        console.log('First 3 stations with distances:', 
-          stations.slice(0, 3).map(s => ({
-            name: s.name,
-            latitude: s.latitude,
-            longitude: s.longitude,
-            distance: s.distance
-          }))
-        );
-      }
+      // console.log('Found stations:', stations.length);
+      // if (stations.length > 0) {
+      //   console.log('First 3 stations with distances:', 
+      //     stations.slice(0, 3).map(s => ({
+      //       name: s.name,
+      //       latitude: s.latitude,
+      //       longitude: s.longitude,
+      //       distance: s.distance
+      //     }))
+      //   );
+      // }
     } else {
       stations = allStations;
     }
@@ -120,9 +120,9 @@ export const getStationById = async (id: string) => {
 
     // Flatten the amenities structure
     const amenities = station.amenities.map((amenityRelation) => ({
-      amenityId: amenityRelation.amenityId,
+      amenity_id: amenityRelation.amenity_id,
       enabled: amenityRelation.enabled,
-      stationId: amenityRelation.stationId,
+      station_id: amenityRelation.station_id,
       ...amenityRelation.amenity, // Spread the amenity data here
     }));
 
@@ -149,7 +149,7 @@ export const updateStation = async (id, data) => {
         amenities: {
           deleteMany: {},
           create: amenities.map(amenity => ({
-            amenityId: amenity.amenityId,
+            amenity_id: amenity.amenity_id,
             enabled: amenity.enabled
           }))
         }
@@ -179,7 +179,7 @@ export const createStation = async (data) => {
         ...stationData,
         amenities: {
           create: amenities.map(amenity => ({
-            amenityId: amenity.amenityId,
+            amenity_id: amenity.amenity_id,
             enabled: amenity.enabled
           }))
         }
