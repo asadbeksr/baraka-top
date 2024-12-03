@@ -1,74 +1,57 @@
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { useRouter, usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+import { useTransition } from "react";
 
-interface LanguageToggleProps {
-  value: "uz" | "ru";
-  onChange: (value: "uz" | "ru") => void;
-}
+export function LanguageToggle() {
+  const [isPending, startTransition] = useTransition();
+  const router = useRouter();
+  const pathname = usePathname();
+  const localActive = useLocale();
 
-export function LanguageToggle({ value, onChange }: LanguageToggleProps) {
+  const onValueChange = (nextLocale: string) => {
+    startTransition(() => {
+      // Get the path after the locale
+      const currentPath = pathname.split('/').slice(2).join('/');
+      router.replace(`/${nextLocale}${currentPath ? `/${currentPath}` : ''}`);
+    });
+  };
+
   return (
-    <div className="flex gap-4">
-      <button
-        onClick={() => onChange("uz")}
-        className={cn(
-          "flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent",
-          value === "uz" && "bg-accent"
-        )}
+    <div className="flex gap-2">
+      <Button
+        onClick={() => onValueChange("uz-Latn")}
+        variant={localActive === "uz-Latn" ? "default" : "ghost"}
+        size="sm"
+        className="flex items-center gap-2"
+        disabled={isPending}
       >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 640 480"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path fill="#1eb53a" d="M0 320h640v160H0z"/>
-          <path fill="#0099b5" d="M0 0h640v160H0z"/>
-          <path fill="#ce1126" d="M0 153.6h640v172.8H0z"/>
-          <path fill="#fff" d="M0 163.2h640v153.6H0z"/>
-          <circle cx="134.4" cy="76.8" r="57.6" fill="#fff"/>
-          <circle cx="153.6" cy="76.8" r="57.6" fill="#0099b5"/>
-          <g fill="#fff" transform="matrix(1.92 0 0 1.92 261.1 122.9)">
-            <g id="e">
-              <g id="d">
-                <g id="c">
-                  <g id="b">
-                    <path id="a" d="M0-6L-1.9-.3 1 .7"/>
-                    <use transform="scale(-1 1)"/>
-                  </g>
-                  <use transform="rotate(72)"/>
-                </g>
-                <use transform="rotate(-72)"/>
-                <use transform="rotate(144)"/>
-              </g>
-              <use transform="rotate(144)"/>
-            </g>
-            <use transform="rotate(-144)"/>
-          </g>
-        </svg>
-        <span>O&apos;zbekcha</span>
-      </button>
+        <span>🇺🇿</span>
+        <span>O&apos;zbek</span>
+      </Button>
 
-      <button
-        onClick={() => onChange("ru")}
-        className={cn(
-          "flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent",
-          value === "ru" && "bg-accent"
-        )}
+      <Button
+        onClick={() => onValueChange("uz-Cyrl")}
+        variant={localActive === "uz-Cyrl" ? "default" : "ghost"}
+        size="sm"
+        className="flex items-center gap-2"
+        disabled={isPending}
       >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 640 480"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g fillRule="evenodd" strokeWidth="1pt">
-            <path fill="#fff" d="M0 0h640v480H0z"/>
-            <path fill="#0039a6" d="M0 160h640v320H0z"/>
-            <path fill="#d52b1e" d="M0 320h640v160H0z"/>
-          </g>
-        </svg>
+        <span>🇺🇿</span>
+        <span>Ўзбек</span>
+      </Button>
+
+      <Button
+        onClick={() => onValueChange("ru")}
+        variant={localActive === "ru" ? "default" : "ghost"}
+        size="sm"
+        className="flex items-center gap-2"
+        disabled={isPending}
+      >
+        <span>🇷🇺</span>
         <span>Русский</span>
-      </button>
+      </Button>
     </div>
   );
 }

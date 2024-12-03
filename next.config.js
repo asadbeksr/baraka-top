@@ -1,4 +1,6 @@
+// @ts-check
 const { withContentlayer } = require("next-contentlayer2");
+const withNextIntl = require('next-intl/plugin')('./i18n/i18n.ts');
 
 import("./env.mjs");
 
@@ -16,4 +18,5 @@ const nextConfig = {
   },
 };
 
-module.exports = withContentlayer(nextConfig)
+module.exports =  withNextIntl(withContentlayer(nextConfig));
+

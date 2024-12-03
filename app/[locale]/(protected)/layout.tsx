@@ -10,15 +10,23 @@ import {
 import { ModeToggle } from "@/components/layout/mode-toggle";
 import { UserAccountNav } from "@/components/layout/user-account-nav";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+import { redirect as redirectIntl } from '@/i18n/routing.public';
+import { defaultLocale } from "@/i18n/config";
+import LanguageSwitcher from "@/components/language-switcher";
 
 interface ProtectedLayoutProps {
   children: React.ReactNode;
+  params: { locale: string };
 }
 
-export default async function Dashboard({ children }: ProtectedLayoutProps) {
+export default async function Dashboard({ children, params: { locale } }: ProtectedLayoutProps) {
   const user = await getCurrentUser();
 
-  if (!user) redirect("/login");
+  if (!user) {
+    // Redirect to login page with the current locale
+    redirectIntl('/login');
+    return null;
+  }
 
   const filteredLinks = sidebarLinks.map((section) => ({
     ...section,
@@ -40,6 +48,7 @@ export default async function Dashboard({ children }: ProtectedLayoutProps) {
               <SearchCommand links={filteredLinks} />
             </div>
 
+            <LanguageSwitcher />
             <ModeToggle />
             <UserAccountNav />
           </MaxWidthWrapper>

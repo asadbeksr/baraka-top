@@ -42,10 +42,21 @@ interface MenuItem {
   content?: ReactNode;
 }
 
-export default function TgUser() {
+interface TgUserProps {
+  translations: {
+    partnership: string;
+    settings: string;
+    language: string;
+    help: string;
+    about: string;
+    version: string;
+    description: string;
+  };
+}
+
+export default function TgUser({ translations }: TgUserProps) {
   const [user, setUser] = useState<TelegramUser>(getTelegramUser());
   const [openDrawer, setOpenDrawer] = useState<string | null>(null);
-  const [language, setLanguage] = useState<"uz" | "ru">("uz");
 
   useEffect(() => {
     setUser(getTelegramUser());
@@ -55,28 +66,28 @@ export default function TgUser() {
     {
       id: "partnership",
       icon: <BriefcaseBusinessIcon className="size-5" />,
-      title: "Hamkorlik",
+      title: translations.partnership,
       type: "link",
       href: "https://t.me/metanchi_partners",
     },
     {
       id: "settings",
       icon: <Settings className="size-5" />,
-      title: "Sozlamalar",
+      title: translations.settings,
       content: (
         <div className="flex flex-col gap-4">
           <div className="ml-2 flex items-center gap-2">
             <Languages className="size-5" />
-            <span>Til / Язык</span>
+            <span>{translations.language}</span>
           </div>
-          <LanguageToggle value={language} onChange={setLanguage} />
+          <LanguageToggle />
         </div>
       ),
     },
     {
       id: "help",
       icon: <HelpCircle className="size-5" />,
-      title: "Yordam",
+      title: translations.help,
       content: (
         <div className="flex flex-col gap-4">
           <Button
@@ -109,17 +120,14 @@ export default function TgUser() {
     {
       id: "about",
       icon: <Info className="size-5" />,
-      title: "Biz haqimizda",
+      title: translations.about,
       description: `v${version}`,
       content: (
         <div className="flex flex-col gap-4">
           <div className="space-y-4 text-sm text-muted-foreground">
-            Metanchi.uz — это ваш надежный помощник для заправки метановым газом
-            в Узбекистане. Теперь вы всегда будете в курсе ситуации на любой
-            АЗС. Узнавайте наличие газа, текущее давление и просматривайте
-            онлайн камеры, чтобы понять, есть ли очередь.
+            {translations.description}
           </div>
-          <p className="text-xs">Версия: {version}</p>
+          <p className="text-xs">{translations.version}: {version}</p>
         </div>
       ),
     },
@@ -194,7 +202,6 @@ export default function TgUser() {
             </div>
           ))}
         </div>
-        {/* <TgDebugInfo /> */}
       </Card>
     </div>
   );
