@@ -32,9 +32,13 @@ export const Tabs = ({
 }) => {
   const pathname = usePathname();
 
+  // Extract the path after the language prefix
+  const pathWithoutLang = pathname.replace(/^\/(uz|ru|oz)/, '');
+
   // Determine the active tab or fallback to "Bosh sahifa"
   const activeTabValue =
-    tabs.find((tab) => tab.value === pathname)?.value || "/telegram";
+    tabs.find((tab) => tab.value === pathWithoutLang)?.value || "/telegram";
+
 
   return (
     <div
