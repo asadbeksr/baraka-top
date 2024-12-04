@@ -31,6 +31,7 @@ import { useRouter } from "next/navigation";
 import { StationAmenities } from "./station-amenities";
 import { AMENITIES, type Amenity } from "@/config/amenities";
 import { Station } from "@prisma/client";
+import { StationFormType } from "@/types";
 
 interface StationFormProps {
   station?: (Station & {
@@ -41,9 +42,10 @@ interface StationFormProps {
     }[];
   }) | null;
   amenities?: Amenity[];
+  messages: StationFormType;
 }
 
-export default function StationForm({ station, amenities = AMENITIES }: StationFormProps) {
+export default function StationForm({ station, amenities = AMENITIES, messages }: StationFormProps) {
   const router = useRouter();
   const isEditMode = Boolean(station);
   const [selectedAmenities, setSelectedAmenities] = useState(
@@ -111,8 +113,8 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
 
       toast.success(
         isEditMode
-          ? "Station details have been updated."
-          : "New station has been created."
+          ? messages.stationUpdated
+          : messages.stationCreated
       );
       
       if(!isEditMode) {
@@ -121,7 +123,7 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
       router.refresh();
     } catch (error) {
       console.error("Failed to save station:", error);
-      toast.error("Failed to save station", {
+      toast.error(messages.failedToSaveStation, {
         description: error.message,
       });
     }
@@ -140,7 +142,7 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
       });
 
       if (response.ok) {
-        toast.success("Station deleted successfully");
+        toast.success(messages.stationDeleted);
         router.push('/dashboard/stations')
       } else {
         const error = await response.text();
@@ -148,7 +150,7 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
       }
     } catch (error) {
       console.error("Failed to delete station:", error);
-      toast.error("Failed to delete station", {
+      toast.error(messages.failedToDeleteStation, {
         description: error.message,
       });
     }
@@ -159,7 +161,7 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="space-y-1.5">
           <h2 className="text-2xl font-semibold leading-none tracking-tight">
-            {isEditMode ? "Edit Station" : "Create Station"}
+            {isEditMode ? messages.editStation : messages.createStation}
           </h2>
         </div>
         <div className="flex items-center gap-2">
@@ -170,26 +172,25 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                   variant="destructive" 
                   onClick={() => {}}
                 >
-                  Delete
+                  {messages.deleteStation}
                 </Button>
                 <AlertDialogContent>
                   <AlertDialogHeader>
-                    <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                    <AlertDialogTitle>{messages.deleteConfirmTitle}</AlertDialogTitle>
                     <AlertDialogDescription>
-                      This action cannot be undone. This will permanently delete the station
-                      and remove all of its data from our servers.
+                      {messages.deleteConfirmDescription}
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <AlertDialogFooter>
-                    <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction onClick={onDelete}>Delete</AlertDialogAction>
+                    <AlertDialogCancel>{messages.cancel}</AlertDialogCancel>
+                    <AlertDialogAction onClick={onDelete}>{messages.deleteStation}</AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>
               </AlertDialog>
             </>
           )}
           <Button type="submit" form="station-form">
-            {isEditMode ? "Save" : "Create"}
+            {isEditMode ? messages.save : messages.create}
           </Button>
         </div>
       </CardHeader>
@@ -206,9 +207,9 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Station Name</FormLabel>
+                    <FormLabel>{messages.stationName}</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Enter Station Name" />
+                      <Input {...field} placeholder={messages.stationName} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -220,10 +221,10 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="legal_name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Legal Name</FormLabel>
+                    <FormLabel>{messages.legalName}</FormLabel>
                     <FormControl>
                       <Input 
-                        placeholder="Legal name"
+                        placeholder={messages.legalName}
                         {...field}
                         value={form.getValues("legal_name") || ""}
                       />
@@ -238,9 +239,9 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="address"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Address</FormLabel>
+                    <FormLabel>{messages.address}</FormLabel>
                     <FormControl>
-                      <Input {...field} placeholder="Enter Address" />
+                      <Input {...field} placeholder={messages.address} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -252,10 +253,10 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="phone_number"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Phone Number</FormLabel>
+                    <FormLabel>{messages.phoneNumber}</FormLabel>
                     <FormControl>
                       <Input 
-                        placeholder="Phone number"
+                        placeholder={messages.phoneNumber}
                         {...field}
                         value={form.getValues("phone_number") || ""}
                       />
@@ -270,10 +271,10 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="website"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Website</FormLabel>
+                    <FormLabel>{messages.website}</FormLabel>
                     <FormControl>
                       <Input 
-                        placeholder="Website"
+                        placeholder={messages.website}
                         {...field}
                         value={form.getValues("website") || ""}
                       />
@@ -288,10 +289,10 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="region"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Region</FormLabel>
+                    <FormLabel>{messages.region}</FormLabel>
                     <FormControl>
                       <Input 
-                        placeholder="Region"
+                        placeholder={messages.region}
                         {...field}
                         value={form.getValues("region") || ""}
                       />
@@ -306,11 +307,11 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="latitude"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Latitude</FormLabel>
+                    <FormLabel>{messages.latitude}</FormLabel>
                     <FormControl>
                       <Input 
                         type="number"
-                        placeholder="Latitude"
+                        placeholder={messages.latitude}
                         {...field}
                         value={form.getValues("latitude") ?? ""}
                       />
@@ -325,11 +326,11 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="longitude"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Longitude</FormLabel>
+                    <FormLabel>{messages.longitude}</FormLabel>
                     <FormControl>
                       <Input 
                         type="number"
-                        placeholder="Longitude"
+                        placeholder={messages.longitude}
                         {...field}
                         value={form.getValues("longitude") ?? ""}
                       />
@@ -344,11 +345,11 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="price"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Price</FormLabel>
+                    <FormLabel>{messages.price}</FormLabel>
                     <FormControl>
                       <Input 
                         type="number"
-                        placeholder="Price"
+                        placeholder={messages.price}
                         {...field}
                         value={form.getValues("price") ?? ""}
                       />
@@ -363,11 +364,11 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="pressure"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Pressure</FormLabel>
+                    <FormLabel>{messages.pressure}</FormLabel>
                     <FormControl>
                       <Input 
                         type="number"
-                        placeholder="Pressure"
+                        placeholder={messages.pressure}
                         {...field}
                         value={form.getValues("pressure") ?? ""}
                       />
@@ -382,11 +383,11 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="columns_count"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Columns Count</FormLabel>
+                    <FormLabel>{messages.columns_count}</FormLabel>
                     <FormControl>
                       <Input 
                         type="number"
-                        placeholder="Columns count"
+                        placeholder={messages.columns_count}
                         {...field}
                         value={form.getValues("columns_count") ?? ""}
                       />
@@ -401,11 +402,11 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="gas_temperature"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Gas Temperature</FormLabel>
+                    <FormLabel>{messages.gas_temperature}</FormLabel>
                     <FormControl>
                       <Input 
                         type="number"
-                        placeholder="Gas temperature"
+                        placeholder={messages.gas_temperature}
                         {...field}
                         value={form.getValues("gas_temperature") ?? ""}
                       />
@@ -420,11 +421,11 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="methane_density"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Methane Density</FormLabel>
+                    <FormLabel>{messages.methane_density}</FormLabel>
                     <FormControl>
                       <Input 
                         type="number"
-                        placeholder="Methane density"
+                        placeholder={messages.methane_density}
                         {...field}
                         value={form.getValues("methane_density") ?? ""}
                       />
@@ -439,10 +440,10 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="live_camera_ip"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Camera IP</FormLabel>
+                    <FormLabel>{messages.live_camera_ip}</FormLabel>
                     <FormControl>
                       <Input 
-                        placeholder="Camera IP"
+                        placeholder={messages.live_camera_ip}
                         {...field}
                         value={form.getValues("live_camera_ip") || ""}
                       />
@@ -457,10 +458,10 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
                 name="landmark"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Landmark</FormLabel>
+                    <FormLabel>{messages.landmark}</FormLabel>
                     <FormControl>
                       <Input 
-                        placeholder="Landmark"
+                        placeholder={messages.landmark}
                         {...field}
                         value={form.getValues("landmark") || ""}
                       />
@@ -473,6 +474,7 @@ export default function StationForm({ station, amenities = AMENITIES }: StationF
 
             <StationAmenities
               amenities={amenities}
+              messages={messages}
               selectedAmenities={selectedAmenities}
               onAmenityChange={handleAmenityChange}
             />

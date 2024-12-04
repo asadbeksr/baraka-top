@@ -147,3 +147,36 @@ export interface Station {
   amenities?: { amenity: Amenity }[];
   photos?: Photo[];
 }
+
+
+export interface StationFormType {
+  editStation: string;
+  createStation: string;
+  deleteStation: string;
+  deleteConfirmTitle: string;
+  deleteConfirmDescription: string;
+  cancel: string;
+  save: string;
+  create: string;
+  stationUpdated: string;
+  stationCreated: string;
+  stationDeleted: string;
+  failedToSaveStation: string;
+  failedToDeleteStation: string;
+  stationName: string;
+  legalName: string;
+  address: string;
+  phoneNumber: string;
+  website: string;
+  region: string;
+  latitude: string;
+  longitude: string;
+  price: string;
+  methane_density: string;
+  columns_count: string;
+  gas_temperature: string;
+  pressure: string;
+  live_camera_ip: string;
+  landmark: string;
+  amenities: string;
+}

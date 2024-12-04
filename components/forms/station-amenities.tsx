@@ -4,6 +4,7 @@ import * as React from "react";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { StationFormType } from "@/types";
 
 interface Amenity {
   id: string;
@@ -21,11 +22,13 @@ interface StationAmenity {
 interface StationAmenitiesProps {
   amenities: Amenity[];
   selectedAmenities: StationAmenity[];
+  messages: StationFormType;
   onAmenityChange: (amenity: StationAmenity) => void;
 }
 
 export function StationAmenities({
   amenities,
+  messages,
   selectedAmenities,
   onAmenityChange,
 }: StationAmenitiesProps) {
@@ -37,7 +40,7 @@ export function StationAmenities({
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Amenities</CardTitle>
+        <CardTitle>{messages.amenities}</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
