@@ -23,9 +23,14 @@ import { ModeToggle } from "./mode-toggle";
 interface NavBarProps {
   scroll?: boolean;
   large?: boolean;
+  messages?: {
+    about: string;
+    faq: string;
+    partners: string;
+  };
 }
 
-export function NavBar({ scroll = false }: NavBarProps) {
+export function NavBar({ scroll = false, messages }: NavBarProps) {
   const scrolled = useScroll(50);
   const { data: session, status } = useSession();
   const { setShowSignInModal } = useContext(ModalContext);
@@ -66,21 +71,21 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   href={item.disabled ? "#" : item.href}
                   prefetch={true}
                   className={cn(
-                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
+                    "flex items-center text-lg font-medium up transition-colors hover:text-foreground/80 sm:text-sm",
                     item.href.startsWith(`/${selectedLayout}`)
                       ? "text-foreground"
                       : "text-foreground/60",
                     item.disabled && "cursor-not-allowed opacity-80",
                   )}
                 >
-                  {item.title}
+                  {messages && messages[item.title]}
                 </Link>
               ))}
             </nav>
           ) : null}
         </div>
 
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2">
           <div className="hidden lg:flex lg:grow-0">
             <ModeToggle />
           </div>
@@ -104,7 +109,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </div>
           ) : null}
 
-          {session ? (
+          {/* {session ? (
             <Link
               href={
                 session.user.role === "ADMIN"
@@ -129,7 +134,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </Button>
           ) : (
             <Skeleton className="hidden h-9 w-28 lg:flex" />
-          )}
+          )} */}
         </div>
       </MaxWidthWrapper>
     </header>

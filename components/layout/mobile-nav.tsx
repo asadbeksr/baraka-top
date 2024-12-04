@@ -16,7 +16,16 @@ import { Icons } from "@/components/shared/icons";
 import { ModeToggle } from "./mode-toggle";
 import LanguageSwitcher from "../language-switcher";
 
-export function NavMobile() {
+interface NavMobileProps {
+  messages?: {
+    [key: string]: string;
+  };
+}
+
+
+export function NavMobile({
+  messages,
+} : NavMobileProps) {
   const { data: session } = useSession();
   const [open, setOpen] = useState(false);
   const selectedLayout = useSelectedLayoutSegment();
@@ -56,7 +65,7 @@ export function NavMobile() {
 
       <nav
         className={cn(
-          "fixed inset-0 z-20 hidden w-full overflow-auto bg-background px-5 py-16 lg:hidden",
+          "fixed inset-0 z-20 hidden w-full overflow-auto bg-background px-5 py-20 lg:hidden",
           open && "block",
         )}
       >
@@ -68,12 +77,12 @@ export function NavMobile() {
                 onClick={() => setOpen(false)}
                 className="flex w-full font-medium capitalize"
               >
-                {title}
+                {messages?.[title] || title}
               </Link>
             </li>
           ))}
 
-          {session ? (
+          {/* {session ? (
             <>
               {session.user.role === "ADMIN" ? (
                 <li className="py-3">
@@ -119,7 +128,7 @@ export function NavMobile() {
                 </Link>
               </li>
             </>
-          )}
+          )} */}
         </ul>
 
         {documentation ? (
@@ -128,7 +137,7 @@ export function NavMobile() {
           </div>
         ) : null}
 
-        <div className="mt-5 flex items-center justify-end space-x-4">
+        <div className="mt-5 flex items-center justify-end space-x-2">
           <LanguageSwitcher />
           <ModeToggle />
         </div>

@@ -262,7 +262,7 @@ export const disableClosingConfirmation = () => {
 
 export const shareOnTelegram = () => {
   const url = `https://t.me/barakatopuz_bot?profile`;
-  const text = `Заправляйтесь удобно и быстро с Metanchi.uz`;
+  const text = `Заправляйтесь удобно и быстро с Metanchi`;
   const shareUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
   window.open(shareUrl, "_blank");
 };

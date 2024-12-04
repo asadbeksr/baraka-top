@@ -4,12 +4,12 @@ import { env } from "@/env.mjs";
 const site_url = env.NEXT_PUBLIC_APP_URL;
 
 export const siteConfig: SiteConfig = {
-  name: "Metanchi.uz",
+  name: "Metanchi",
   description:
-    "Metanchi.uz",
+    "Metanchi ",
   url: site_url,
-  ogImage: `${site_url}/_static/og.jpg`,
-  mailSupport: "salom@metanchi.uz",
+  ogImage: `${site_url}/_static/og.png`,
+  mailSupport: "support@metanchi.uz",
 };
 
 export const footerLinks: SidebarNavItem[] = [

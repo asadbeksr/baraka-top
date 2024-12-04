@@ -25,25 +25,42 @@ export default function LanguageSwitcher() {
     });
   };
 
+  const langList = [
+    {
+      value: 'uz',
+      label: '🇺🇿 O\'zbekcha',
+      trigger:  '🇺🇿 O\'z'
+    },
+    {
+      value: 'oz',
+      label: '🇺🇿 Ўзбекча',
+      trigger: '🇺🇿 Ўз'
+    },
+    {
+      value: 'ru',
+      label: '🇷🇺 Русский',
+      trigger: '🇷🇺 Ру'
+    },
+  ];
+
   return (
     <Select
       defaultValue={localActive}
       onValueChange={onValueChange}
       disabled={isPending}
     >
-      <SelectTrigger className="w-[120px]">
-        <SelectValue placeholder="Select language" />
+      <SelectTrigger className="w-[90px] border-none bg-secondary">
+        <SelectValue placeholder="Select language" >
+          {langList.find((lang) => lang.value === localActive)?.trigger}
+        </SelectValue>
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="uz" className="flex items-center gap-2">
-          <span>🇺🇿</span> O&apos;zbek
-        </SelectItem>
-        <SelectItem value="oz" className="flex items-center gap-2">
-          <span>🇺🇿</span> Ўзбек
-        </SelectItem>
-        <SelectItem value="ru" className="flex items-center gap-2">
-          <span>🇷🇺</span> Русский
-        </SelectItem>
+
+        {langList.map((lang) => (
+          <SelectItem key={lang.value} value={lang.value} className="flex items-center gap-2">
+            {lang.label}
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
   );

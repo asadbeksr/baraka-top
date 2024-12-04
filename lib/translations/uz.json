@@ -1,9 +1,19 @@
 {
   "HomePage": {
-    "title": "Metanchi.uz — заправка метаном без очередей",
+    "about": "Biz haqimizda",
+    "faq": "Ko'p so'raladigan savollar",
+    "partners": "Hamkorlar uchun",
+    "contact": "Bog'lanish",
+    "terms": "Foydalanish shartlari",
+    "privacy": "Maxfiylik siyosati",
+    "version": "Versiya",
+
+    "title": "Metanchi — заправка метаном без очередей",
     "description": "Узнайте о наличии газа, давлении и очередях на АГЗС с помощью онлайн-камер и данных в реальном времени.",
     "cta_text": "Boshlash",
-    "about": "Biz haqimizda"
+
+    
+    "all_rights_reserved": "«2024© MCHJ «Metanchi». STIR 311762479. Barcha huquqlar himoyalangan»"
   },
   "StationsPage": {
     "heading": "Zapravkalar",
@@ -19,7 +29,7 @@
     "help": "Yordam",
     "about": "Biz haqimizda",
     "version": "Versiya",
-    "description": "Metanchi.uz — bu O'zbekistondagi metan gaz zapravkalari uchun ishonchli yordamchingiz. Endi siz har qanday AGKS dagi vaziyatdan xabardor bo'lasiz. Gaz borligini, bosimni bilib oling va navbat bor-yo'qligini ko'rish uchun onlayn kameralarni ko'ring."
+    "description": "Metanchi — bu O'zbekistondagi metan gaz zapravkalari uchun ishonchli yordamchingiz. Endi siz har qanday AGKS dagi vaziyatdan xabardor bo'lasiz. Gaz borligini, bosimni bilib oling va navbat bor-yo'qligini ko'rish uchun onlayn kameralarni ko'ring."
   },
   "TgNavbar": {
     "home": "Bosh sahifa",

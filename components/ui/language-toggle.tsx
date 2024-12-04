@@ -28,7 +28,7 @@ export function LanguageToggle() {
         disabled={isPending}
       >
         <span>🇺🇿</span>
-        <span>O&apos;zbek</span>
+        <span>O&apos;zbekcha</span>
       </Button>
 
       <Button
@@ -39,7 +39,7 @@ export function LanguageToggle() {
         disabled={isPending}
       >
         <span>🇺🇿</span>
-        <span>Ўзбек</span>
+        <span>Ўзбекча</span>
       </Button>
 
       <Button

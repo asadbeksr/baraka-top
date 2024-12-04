@@ -26,7 +26,7 @@ const projects: ProjectType[] = [
     color: "bg-blue-500",
   },
   {
-    title: "Metanchi.uz",
+    title: "Metanchi",
     slug: "metanchi",
     color: "bg-primary",
   },

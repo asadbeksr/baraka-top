@@ -6,8 +6,8 @@ import InfoCard from "@/components/dashboard/info-card";
 import TransactionsList from "@/components/dashboard/transactions-list";
 
 export const metadata = constructMetadata({
-  title: "Admin - Metanchi.uz",
-  description: "Admin - Metanchi.uz",
+  title: "Admin - Metanchi",
+  description: "Admin - Metanchi",
 });
 
 export default async function AdminPage() {

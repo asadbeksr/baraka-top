@@ -1,14 +1,13 @@
 import * as React from "react";
 import Link from "next/link";
-
-import { footerLinks, siteConfig } from "@/config/site";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
-import { ModeToggle } from "@/components/layout/mode-toggle";
-
+import { footerLinks } from "@/config/site";
 import { NewsletterForm } from "../forms/newsletter-form";
 import { Icons } from "../shared/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
+  const t = useTranslations("HomePage");
   return (
     <footer className={cn("border-t", className)}>
       <div className="container grid max-w-6xl grid-cols-2 gap-6 py-14 md:grid-cols-5">
@@ -32,47 +31,23 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           </div>
         ))}
         <div className="col-span-full flex flex-col items-end sm:col-span-1 md:col-span-2">
-          <NewsletterForm />
+          {/* <NewsletterForm /> */}
         </div>
       </div>
 
-      <div className="border-t py-4">
-        <div className="container flex max-w-6xl items-center justify-between">
-          <span className="text-muted-foreground text-sm">
-            Copyright &copy; 2024. All rights reserved.
+      <div className="border-t py-6">
+        <div className="container flex max-w-6xl items-center justify-between gap-4 flex-col-reverse md:flex-row">
+          <span className="text-xs text-muted-foreground">
+            {t("all_rights_reserved")}
           </span>
-          {/* <p className="text-left text-sm text-muted-foreground">
-            Built by{" "}
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              mickasmt
-            </Link>
-            . Hosted on{" "}
-            <Link
-              href="https://vercel.com"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              Vercel
-            </Link>
-            . Illustrations by{" "}
-            <Link
-              href="https://popsy.co"
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              Popsy
-            </Link>
-          </p> */}
 
-          <div className="flex items-center gap-3">
-            <ModeToggle />
+          <div className="flex items-center gap-3 text-xs text-muted-foreground">
+            <Link className="underline-offset-4 hover:underline" href="/terms">
+            Публичная оферта
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/privacy">
+              Политика конфиденциальности
+            </Link>
           </div>
         </div>
       </div>

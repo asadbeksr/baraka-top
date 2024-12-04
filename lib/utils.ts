@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+// At the top of the file
+import WebApp from "@twa-dev/sdk";
 import { clsx, type ClassValue } from "clsx";
 import ms from "ms";
 import { twMerge } from "tailwind-merge";
@@ -6,9 +8,7 @@ import { twMerge } from "tailwind-merge";
 import { env } from "@/env.mjs";
 import { siteConfig } from "@/config/site";
 
-// At the top of the file
-import WebApp from '@twa-dev/sdk';
-import { getTelegramWebApp } from './telegram';
+import { getTelegramWebApp } from "./telegram";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -31,22 +31,29 @@ export function constructMetadata({
     title,
     description,
     keywords: [
-      "Next.js",
-      "React",
-      "Prisma",
-      "Neon",
-      "Auth.js",
-      "shadcn ui",
-      "Resend",
-      "React Email",
-      "Stripe",
+      "metan zapravkalari",
+      "haydovchilar uchun ilova",
+      "zapravkalar haqidagi ma'lumot",
+      "gaz narxi",
+      "zapravkada navbat",
+      "gaz bosimi",
+      "zapravkadan jonli video",
+      "metan gaz",
+      "avtomobillar",
+      "zapravkalarni tekshirish",
+      "zapravkalarni izlash",
+      "yoqilg'i",
+      "gaz uskunasini o'rnatish",
+      "Toshkent",
+      "O'zbekiston",
+      "haydovchilar uchun ilova",
     ],
     authors: [
       {
-        name: "mickasmt",
+        name: "metanchi.uz",
       },
     ],
-    creator: "mickasmt",
+    creator: "metanchi.uz",
     openGraph: {
       type: "website",
       locale: "en_US",
@@ -60,7 +67,6 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@miickasmt",
     },
     icons,
     metadataBase: new URL(siteConfig.url),
@@ -176,21 +182,21 @@ export const placeholderBlurhash =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAoJJREFUWEfFl4lu4zAMRO3cx/9/au6reMaOdkxTTl0grQFCRoqaT+SQotq2bV9N8rRt28xms87m83l553eZ/9vr9Wpkz+ezkT0ej+6dv1X81AFw7M4FBACPVn2c1Z3zLgDeJwHgeLFYdAARYioAEAKJEG2WAjl3gCwNYymQQ9b7/V4spmIAwO6Wy2VnAMikBWlDURBELf8CuN1uHQSrPwMAHK5WqwFELQ01AIXdAa7XawfAb3p6AOwK5+v1ugAoEq4FRSFLgavfQ49jAGQpAE5wjgGCeRrGdBArwHOPcwFcLpcGU1X0IsBuN5tNgYhaiFFwHTiAwq8I+O5xfj6fOz38K+X/fYAdb7fbAgFAjIJ6Aav3AYlQ6nfnDoDz0+lUxNiLALvf7XaDNGQ6GANQBKR85V27B4D3QQRw7hGIYlQKWGM79hSweyCUe1blXhEAogfABwHAXAcqSYkxCtHLUK3XBajSc4Dj8dilAeiSAgD2+30BAEKV4GKcAuDqB4TdYwBgPQByCgApUBoE4EJUGvxUjF3Q69/zLw3g/HA45ABKgdIQu+JPIyDnisCfAxAFNFM0EFNQ64gfS0EUoQP8ighrZSjn3oziZEQpauyKbfjbZchHUL/3AS/Dd30gAkxuRACgfO+EWQW8qwI1o+wseNuKcQiESjALvwNoMI0TcRzD4lFcPYwIM+JTF5x6HOs8yI7jeB5oKhpMRFH9UwaSCDB2Jmg4rc6E2TT0biIaG0rQhNqyhpHBcayTTSXH6vcDL7/sdqRK8LkwTsU499E8vRcAojHcZ4AxABdilgrp4lsXk8oVqgwh7+6H3phqd8J0Kk4vbx/+sZqCD/vNLya/5dT9fAH8g1WdNGgwbQAAAABJRU5ErkJggg==";
 
 export function openYandexNavigator(longitude, latitude) {
-    const yandexUrl = `yandexnavi://build_route_on_map?lat_to=${latitude}&lon_to=${longitude}`;
-    window.open(yandexUrl, "_blank"); // Opens the URL in a new tab or app
-  }
+  const yandexUrl = `yandexnavi://build_route_on_map?lat_to=${latitude}&lon_to=${longitude}`;
+  window.open(yandexUrl, "_blank"); // Opens the URL in a new tab or app
+}
 
-  export function openGMaps(longitude, latitude) {
-    const googleUrl = `https://www.google.com/maps?q=${latitude},${longitude}`
-    window.open(googleUrl, "_blank"); // Opens the URL in a new tab or app
-  }
+export function openGMaps(longitude, latitude) {
+  const googleUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  window.open(googleUrl, "_blank"); // Opens the URL in a new tab or app
+}
 
 export function openMaps(longitude: number, latitude: number) {
   // Check if we're on the client side
-  if (typeof window !== 'undefined' && WebApp) {
+  if (typeof window !== "undefined" && WebApp) {
     // Format: https://yandex.ru/maps/?pt={longitude},{latitude}&z=15
     const mapUrl = `https://yandex.ru/maps/?pt=${longitude},${latitude}&z=15`;
-    
+
     WebApp.openLink(mapUrl, {
       try_instant_view: true,
     });
@@ -199,18 +205,18 @@ export function openMaps(longitude: number, latitude: number) {
 
 export function openTgLink(url: string) {
   const tg = getTelegramWebApp();
-  console.log(tg)
+  console.log(tg);
   if (tg?.openLink) {
     tg.openLink(url);
   } else {
     // Fallback for non-Telegram environments
-    window.open(url, '_blank');
+    window.open(url, "_blank");
   }
 }
 
 export const formatPricePerM3 = (
   price: number | null | undefined,
-  lang: 'uz' | 'en' | 'ru' = 'uz' // Default to 'uz'
+  lang: "uz" | "en" | "ru" = "uz", // Default to 'uz'
 ): string => {
   const suffix = {
     uz: "so'm / м³",
@@ -219,8 +225,8 @@ export const formatPricePerM3 = (
   };
 
   const formattedPrice = price
-    ? new Intl.NumberFormat(lang === 'ru' ? 'ru-RU' : 'uz-UZ').format(price)
-    : '0';
+    ? new Intl.NumberFormat(lang === "ru" ? "ru-RU" : "uz-UZ").format(price)
+    : "0";
 
   return `${formattedPrice} ${suffix[lang]}`;
 };
