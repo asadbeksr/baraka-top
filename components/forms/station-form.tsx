@@ -95,15 +95,24 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
       const url = isEditMode && station ? `/api/stations/${station.id}` : '/api/stations';
       const method = isEditMode ? 'PATCH' : 'POST';
 
+      const formData = {
+        ...data,
+        methane_density: data.methane_density ? parseFloat(String(data.methane_density)) : null,
+        columns_count: data.columns_count ? parseInt(String(data.columns_count)) : null,
+        gas_temperature: data.gas_temperature ? parseFloat(String(data.gas_temperature)) : null,
+        pressure: data.pressure ? parseFloat(String(data.pressure)) : null,
+        price: data.price ? parseFloat(String(data.price)) : null,
+        latitude: data.latitude ? parseFloat(String(data.latitude)) : null,
+        longitude: data.longitude ? parseFloat(String(data.longitude)) : null,
+        amenities: selectedAmenities
+      };
+
       const response = await fetch(url, {
         method,
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          ...data,
-          amenities: selectedAmenities
-        }),
+        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
@@ -311,9 +320,11 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
                     <FormControl>
                       <Input 
                         type="number"
+                        step="any"
                         placeholder={messages.latitude}
                         {...field}
-                        value={form.getValues("latitude") ?? ""}
+                        onChange={(e) => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                        value={field.value ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -330,9 +341,11 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
                     <FormControl>
                       <Input 
                         type="number"
+                        step="any"
                         placeholder={messages.longitude}
                         {...field}
-                        value={form.getValues("longitude") ?? ""}
+                        onChange={(e) => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                        value={field.value ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -349,9 +362,11 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
                     <FormControl>
                       <Input 
                         type="number"
+                        step="any"
                         placeholder={messages.price}
                         {...field}
-                        value={form.getValues("price") ?? ""}
+                        onChange={(e) => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                        value={field.value ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -368,9 +383,11 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
                     <FormControl>
                       <Input 
                         type="number"
+                        step="any"
                         placeholder={messages.pressure}
                         {...field}
-                        value={form.getValues("pressure") ?? ""}
+                        onChange={(e) => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                        value={field.value ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -387,9 +404,11 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
                     <FormControl>
                       <Input 
                         type="number"
+                        step="1"
                         placeholder={messages.columns_count}
                         {...field}
-                        value={form.getValues("columns_count") ?? ""}
+                        onChange={(e) => field.onChange(e.target.value ? parseInt(e.target.value) : null)}
+                        value={field.value ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -406,9 +425,11 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
                     <FormControl>
                       <Input 
                         type="number"
+                        step="any"
                         placeholder={messages.gas_temperature}
                         {...field}
-                        value={form.getValues("gas_temperature") ?? ""}
+                        onChange={(e) => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                        value={field.value ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
@@ -425,9 +446,11 @@ export default function StationForm({ station, amenities = AMENITIES, messages }
                     <FormControl>
                       <Input 
                         type="number"
+                        step="any"
                         placeholder={messages.methane_density}
                         {...field}
-                        value={form.getValues("methane_density") ?? ""}
+                        onChange={(e) => field.onChange(e.target.value ? parseFloat(e.target.value) : null)}
+                        value={field.value ?? ""}
                       />
                     </FormControl>
                     <FormMessage />
