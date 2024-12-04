@@ -13,15 +13,30 @@ import Script from "next/script";
 interface RootLayoutProps {
   children: React.ReactNode;
   params: {
-    locale: string;
+    locale: Locale;
   };
 }
+
+type Locale = "oz" | "uz" | "ru";
+
+const getLocale = (locale: Locale): string => {
+  switch (locale) {
+    case "oz":
+      return "uz_cyrl";
+    case "uz":
+      return "uz_latn";
+    case "ru":
+      return "ru";
+    default:
+      return "uz";
+  }
+};
 
 export const metadata = constructMetadata();
 
 export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
-    <html lang={params.locale} suppressHydrationWarning>
+    <html lang={getLocale(params.locale)} suppressHydrationWarning>
       <head>
         <Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" />
       </head>

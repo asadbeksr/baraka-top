@@ -16,7 +16,9 @@ import { DocsSearch } from "@/components/docs/search";
 import { ModalContext } from "@/components/modals/providers";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+
 import LanguageSwitcher from "../language-switcher";
+import { ModeToggle } from "./mode-toggle";
 
 interface NavBarProps {
   scroll?: boolean;
@@ -79,7 +81,12 @@ export function NavBar({ scroll = false }: NavBarProps) {
         </div>
 
         <div className="flex items-center space-x-3">
-        <LanguageSwitcher />
+          <div className="hidden lg:flex lg:grow-0">
+            <ModeToggle />
+          </div>
+          <div className="hidden lg:flex lg:grow-0">
+            <LanguageSwitcher />
+          </div>
 
           {/* right header for docs */}
           {documentation ? (
@@ -91,22 +98,22 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 <Icons.search className="size-6 text-muted-foreground" />
               </div>
               <div className="flex space-x-4">
-                  <Icons.gitHub className="size-7" />
-                  <span className="sr-only">GitHub</span>
+                <Icons.gitHub className="size-7" />
+                <span className="sr-only">GitHub</span>
               </div>
             </div>
           ) : null}
 
           {session ? (
             <Link
-              href={session.user.role === "ADMIN" ? "/dashboard/stations" : "/dashboard/stations"}
+              href={
+                session.user.role === "ADMIN"
+                  ? "/dashboard/stations"
+                  : "/dashboard/stations"
+              }
               className="hidden md:block"
             >
-              <Button
-                className="gap-2 px-5"
-                variant="default"
-                size="sm"
-              >
+              <Button className="gap-2 px-5" variant="default" size="sm">
                 <span>Dashboard</span>
               </Button>
             </Link>
@@ -123,7 +130,6 @@ export function NavBar({ scroll = false }: NavBarProps) {
           ) : (
             <Skeleton className="hidden h-9 w-28 lg:flex" />
           )}
-
         </div>
       </MaxWidthWrapper>
     </header>

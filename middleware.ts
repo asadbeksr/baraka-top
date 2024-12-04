@@ -3,7 +3,7 @@ import { locales } from './i18n/config';
 
 export default createMiddleware({
   locales,
-  defaultLocale: 'uz-Latn',
+  defaultLocale: 'uz',
   // Add locales to all routes
   localePrefix: 'always'
 });

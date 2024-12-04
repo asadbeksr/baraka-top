@@ -21,8 +21,8 @@ export function LanguageToggle() {
   return (
     <div className="flex gap-2">
       <Button
-        onClick={() => onValueChange("uz-Latn")}
-        variant={localActive === "uz-Latn" ? "default" : "ghost"}
+        onClick={() => onValueChange("uz")}
+        variant={localActive === "uz" ? "default" : "ghost"}
         size="sm"
         className="flex items-center gap-2"
         disabled={isPending}
@@ -32,8 +32,8 @@ export function LanguageToggle() {
       </Button>
 
       <Button
-        onClick={() => onValueChange("uz-Cyrl")}
-        variant={localActive === "uz-Cyrl" ? "default" : "ghost"}
+        onClick={() => onValueChange("oz")}
+        variant={localActive === "oz" ? "default" : "ghost"}
         size="sm"
         className="flex items-center gap-2"
         disabled={isPending}

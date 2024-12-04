@@ -35,10 +35,10 @@ export default function LanguageSwitcher() {
         <SelectValue placeholder="Select language" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="uz-Latn" className="flex items-center gap-2">
+        <SelectItem value="uz" className="flex items-center gap-2">
           <span>🇺🇿</span> O&apos;zbek
         </SelectItem>
-        <SelectItem value="uz-Cyrl" className="flex items-center gap-2">
+        <SelectItem value="oz" className="flex items-center gap-2">
           <span>🇺🇿</span> Ўзбек
         </SelectItem>
         <SelectItem value="ru" className="flex items-center gap-2">
