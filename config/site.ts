@@ -14,30 +14,31 @@ export const siteConfig: SiteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Company",
+    title: "company",
     items: [
-      { title: "About", href: "#" },
-      { title: "Enterprise", href: "#" },
-      { title: "Terms", href: "/terms" },
-      { title: "Privacy", href: "/privacy" },
+      { title: "about", href: "#about" },
+      // { title: "terms", href: "/terms" },
+      // { title: "privacy", href: "/privacy" },
+      { title: "contact", href: "https://t.me/uzkuka" },
     ],
   },
   {
-    title: "Product",
+    title: "socials",
     items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
+      { title: "telegram", href: "https://t.me/metanchi_uz" },
+      { title: "instagram", href: "https://instagram.com/metanchi_uz" },
     ],
   },
-  {
-    title: "Docs",
-    items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
-    ],
-  },
+
 ];
+
+
+// {
+//   title: "Docs",
+//   items: [
+//     { title: "Introduction", href: "#" },
+//     { title: "Installation", href: "#" },
+//     { title: "Components", href: "#" },
+//     { title: "Code Blocks", href: "#" },
+//   ],
+// },

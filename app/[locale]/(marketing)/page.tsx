@@ -13,6 +13,7 @@ import { ClockIcon, InfoIcon, MapPinIcon, MessageSquareIcon, Search, ThumbsUpIco
 import { Accordion, AccordionContent, AccordionItem } from "@radix-ui/react-accordion";
 import { AccordionTrigger } from "@/components/ui/accordion";
 import Link from "next/link";
+import FaqSection from "@/components/sections/faq";
 
 export default function IndexPage() {
   const t = useTranslations("HomePage");
@@ -25,10 +26,10 @@ export default function IndexPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                Metanchi.uz — Ваш помощник на метановых заправках
+                Metanchi — Ваш помощник на метановых заправках
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                С помощью Metanchi.uz вы всегда будете в курсе актуальной информации о метановых заправках. Найдите ближайшую заправку, проверьте очередь и узнайте цену на газ — все в одном месте!
+                С помощью Metanchi вы всегда будете в курсе актуальной информации о метановых заправках. Найдите ближайшую заправку, проверьте очередь и узнайте цену на газ — все в одном месте!
               </p>
               <Button size="lg" className="bg-yellow-400 hover:bg-yellow-500 text-black">
                 Начать
@@ -44,7 +45,7 @@ export default function IndexPage() {
                 Как пользоваться
               </h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Metanchi.uz — это сервис, который помогает вам получать актуальную информацию о метановых заправках прямо на вашем устройстве.
+                Metanchi — это сервис, который помогает вам получать актуальную информацию о метановых заправках прямо на вашем устройстве.
               </p>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
                 <Card>
@@ -122,7 +123,7 @@ export default function IndexPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Преимущества использования Metanchi.uz
+                Преимущества использования Metanchi
               </h2>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
                 <Card>
@@ -157,41 +158,9 @@ export default function IndexPage() {
           </div>
         </section> */}
 
-        {/* <section id="faq" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Часто задаваемые вопросы
-              </h2>
-              <Accordion type="single" collapsible className="w-full max-w-2xl">
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>Как найти ближайшую заправку?</AccordionTrigger>
-                  <AccordionContent>
-                    Откройте приложение Metanchi.uz и посмотрите карту с ближайшими заправками. Выберите заправку и постройте маршрут.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-2">
-                  <AccordionTrigger>Как часто обновляется информация о заправках?</AccordionTrigger>
-                  <AccordionContent>
-                    Информация обновляется в реальном времени, что гарантирует её актуальность.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-3">
-                  <AccordionTrigger>Как оставить отзыв о заправке?</AccordionTrigger>
-                  <AccordionContent>
-                    Вы можете оставить отзыв, нажав на заправку на карте и выбрав опцию 'Оставить отзыв'.
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-4">
-                  <AccordionTrigger>Что делать, если я столкнулся с проблемой?</AccordionTrigger>
-                  <AccordionContent>
-                    Свяжитесь с нашей службой поддержки через контактную форму на сайте.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
-          </div>
-        </section> */}
+        <FaqSection />
+
+    
 
 
       {/* <PreviewLanding />

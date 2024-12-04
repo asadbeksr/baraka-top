@@ -7,11 +7,22 @@
     "terms": "Foydalanish shartlari",
     "privacy": "Maxfiylik siyosati",
     "version": "Versiya",
+    "company": "Kompaniya",
+
+    "socials": "Metanchi ijtimoiy tarmoqlarda",
+    "telegram": "Telegram",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "Linkedin",
+    "youtube": "YouTube",
 
     "title": "Metanchi — заправка метаном без очередей",
     "description": "Узнайте о наличии газа, давлении и очередях на АГЗС с помощью онлайн-камер и данных в реальном времени.",
     "cta_text": "Boshlash",
 
+    "download_app": "Ilovani yuklab olish",
+    "soon": "tez orada",
     
     "all_rights_reserved": "«2024© MCHJ «Metanchi». STIR 311762479. Barcha huquqlar himoyalangan»"
   },

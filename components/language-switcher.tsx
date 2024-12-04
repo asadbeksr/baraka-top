@@ -18,10 +18,20 @@ export default function LanguageSwitcher() {
   const localActive = useLocale();
 
   const onValueChange = (nextLocale: string) => {
+    // Store current scroll position
+    const scrollPos = window.scrollY;
+    
     startTransition(() => {
       // Get the path after the locale
       const currentPath = pathname.split('/').slice(2).join('/');
-      router.replace(`/${nextLocale}${currentPath ? `/${currentPath}` : ''}`);
+      router.replace(`/${nextLocale}${currentPath ? `/${currentPath}` : ''}`, {
+        scroll: false // Prevent automatic scrolling
+      });
+      
+      // Restore scroll position after a short delay
+      setTimeout(() => {
+        window.scrollTo(0, scrollPos);
+      }, 0);
     });
   };
 
@@ -29,7 +39,7 @@ export default function LanguageSwitcher() {
     {
       value: 'uz',
       label: '🇺🇿 O\'zbekcha',
-      trigger:  '🇺🇿 O\'z'
+      trigger: '🇺🇿 O\'z'
     },
     {
       value: 'oz',
@@ -55,7 +65,6 @@ export default function LanguageSwitcher() {
         </SelectValue>
       </SelectTrigger>
       <SelectContent>
-
         {langList.map((lang) => (
           <SelectItem key={lang.value} value={lang.value} className="flex items-center gap-2">
             {lang.label}

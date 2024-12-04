@@ -8,7 +8,7 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: "partners",
-      href: "/#for-partners",
+      href: "https://t.me/metanchi_partners",
     },
     {
       title: "faq",
