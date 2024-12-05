@@ -20,7 +20,7 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
     <div className="flex min-h-screen flex-col">
       <NavMobile messages={messages} />
       <NavBar scroll={true} messages={messages} />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 flex flex-col">{children}</main>
       <SiteFooter />
     </div>
   );
