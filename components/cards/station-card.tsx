@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -19,15 +20,12 @@ import {
 
 import { cn, formatPricePerM3 } from "@/lib/utils";
 
+import { EmptyPlaceholder } from "../shared/empty-placeholder";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselDots,
-  CarouselItem,
-} from "../ui/carousel";
+
+const HLSPlayer = dynamic(() => import("../ui/hls-player"), { ssr: false });
 
 interface Amenity {
   id: string;
@@ -49,7 +47,7 @@ interface Station {
   columnsCount?: number | null;
   gasTemperature?: number | null;
   methaneDensity?: number | null;
-  cameraIP?: string | null;
+  live_camera_ip?: string | null;
   phoneNumber?: string | null;
   region?: string | null;
   website?: string | null;
@@ -99,32 +97,17 @@ export function StationCard({
     <Card className={`bg-card shadow-xl ${className}`}>
       <CardHeader className="p-0">
         <div className="relative aspect-video">
-          <Carousel className="w-full">
-            <CarouselContent>
-              {[1, 2, 3, 4].map((_, index) => (
-                <CarouselItem key={index}>
-                  <Image
-                    src="https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg"
-                    alt={`Football field ${index + 1}`}
-                    width={800}
-                    height={400}
-                    className="aspect-video w-full rounded-t-md object-cover"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselDots />
-          </Carousel>
+          {station.live_camera_ip ? (
+            <HLSPlayer
+              camera={station.live_camera_ip}
+              className="aspect-video w-full rounded-t-md object-cover"
+            />
+          ) : (
+            <EmptyPlaceholder className="mt-5 border-none shadow-none">
+              <EmptyPlaceholder.Icon name="camera" />
+            </EmptyPlaceholder>
+          )}
 
-          {/* <Image
-            src={
-              station.imageUrl ||
-              "https://www.gazeta.uz/media/img/2023/02/XQi2ON16754157026113_b.jpg"
-            }
-            alt={station.name || "Station image"}
-            fill
-            className="rounded-t-lg object-cover"
-          /> */}
           <div className="absolute bottom-2 right-2 flex items-center gap-2">
             {typeof distance === "number" && (
               <Badge className="flex items-center gap-1 text-sm">

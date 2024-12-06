@@ -3,6 +3,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   BookOpen,
+  CctvIcon,
   Check,
   ChevronLeft,
   ChevronRight,
@@ -52,6 +53,7 @@ export const Icons = {
   dashboard: LayoutPanelLeft,
   ellipsis: MoreVertical,
   fuel: FuelIcon,
+  camera: CctvIcon,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

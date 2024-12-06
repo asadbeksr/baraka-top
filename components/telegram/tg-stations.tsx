@@ -93,7 +93,7 @@ export default function TgStations({ userLocation, filterByLocation }: TgStation
 
   return (
     <div className="flex-1 space-y-4 overflow-auto p-4">
-      {stations.map((station) => (
+      {stations.slice(0,1).map((station) => (
         <StationCard
           key={station.id}
           station={station}
