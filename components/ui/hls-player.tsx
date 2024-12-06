@@ -18,7 +18,11 @@ const HLSPlayer = ({
   useEffect(() => {
     if (!camera) return;
 
-    const src = `${env.NEXT_PUBLIC_RTSP_STREAM_URL}/stream/${camera}/channel/0/hlsll/live/index.m3u8`;
+    const baseURL = env.NEXT_PUBLIC_RTSP_STREAM_URL?.replace(/['"]/g, '').replace(/\/$/, '');
+    const src = `${baseURL}/stream/${camera}/channel/0/hlsll/live/index.m3u8`;
+
+    console.log("Constructed HLS URL:", src);
+
     const video = videoRef.current;
     if (!video) return;
 
